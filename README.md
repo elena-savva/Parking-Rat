@@ -347,7 +347,7 @@ Run these from the matching phase folder after building and sourcing `install/se
 From `phase_1/`:
 
 ```bash
-ros2 launch goal_navigation goal_navigation.launch.py goal_x:=[X-position] goal_y:=[Y-position]
+ros2 launch goal_navigation goal_navigation.launch.py goal_x:=[X-position-meters] goal_y:=[Y-position-meters]
 ```
 
 This starts the coordinate navigator, motor kinematics, odometry, front ToF reader, and optional telemetry camera overlay. The robot tries to reach the requested coordinate, stops for obstacles seen on `/tof/front`, checks right and left, avoids the obstacle, then continues toward the goal.
