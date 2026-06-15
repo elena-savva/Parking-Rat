@@ -1,26 +1,31 @@
 # Parking Rat
 
-Parking Rat is a ROS 2 robot project for camera-based line following, color-triggered behavior, ArUco marker parking, and differential-drive motion control on a Jetson/Raspberry Pi-style robot platform.
+Parking Rat is a ROS 2 robot project for autonomous navigation and parking on a Jetson/Raspberry Pi-style differential-drive robot platform. The project has two important phases with different goals:
 
-The repository is organized into two project phases. `phase_2/` is the most complete/current version and is the best starting point for running the final integrated robot behavior. `phase_1/` keeps an earlier but similar organization for reference.
+- `phase_1/` focuses on coordinate-based goal navigation and front ToF obstacle avoidance.
+- `phase_2/` focuses on line following, color recognition, and ArUco marker reading/parking behavior.
+
+Both phases matter. They share the same broad robot stack, but they are not simply old/new copies of each other.
 
 ## What the robot does
 
 - Captures compressed camera frames from a Jetson camera.
 - Undistorts and preprocesses camera images for different vision tasks.
+- Navigates to coordinate goals in the `odom` frame.
+- Uses a front ToF distance sensor to detect and avoid obstacles.
 - Tracks a dark line and publishes lateral error for steering.
 - Detects colored objects/signals for go/stop behavior.
 - Detects ArUco markers and publishes marker ID, distance, angle error, and heading.
 - Converts `/cmd_vel` velocity commands into left/right motor control.
 - Estimates odometry from commanded velocity, encoder constants, and optional IMU heading.
-- Runs a navigator state machine that combines line following, color detection, ArUco parking, and goal navigation topics.
+- Runs behavior-level navigation logic for coordinate goals, obstacle avoidance, line following, color detection, and ArUco parking.
 
 ## Repository layout
 
 ```text
 .
-|-- phase_1/                  Earlier project phase/reference copy
-|-- phase_2/                  Current main ROS 2 workspace
+|-- phase_1/                  Coordinate navigation and obstacle avoidance phase
+|-- phase_2/                  Line following, color recognition, and ArUco phase
 |   |-- behaviors/            High-level robot behaviors
 |   |-- calibration/          Camera and wheel calibration scripts/data
 |   |-- config/               Shared motion and vision YAML configs
@@ -42,7 +47,10 @@ The `build/`, `install/`, and `log/` folders are generated artifacts. They are u
 
 ### `jetson_camera`
 
-Location: `phase_2/vision/camera/jetson_camera/`
+Locations:
+
+- `phase_1/vision/camera/jetson_camera/`
+- `phase_2/vision/camera/jetson_camera/`
 
 Camera capture and processing package.
 
@@ -62,7 +70,10 @@ Important topics:
 
 ### `jetson_camera_interfaces`
 
-Location: `phase_2/vision/interfaces/jetson_camera_interfaces/`
+Locations:
+
+- `phase_1/vision/interfaces/jetson_camera_interfaces/`
+- `phase_2/vision/interfaces/jetson_camera_interfaces/`
 
 Defines the custom `ProcessedImagePair` message:
 
@@ -74,7 +85,10 @@ sensor_msgs/CompressedImage undistorted_image
 
 ### `motor_control`
 
-Location: `phase_2/motion/control/motor_control/`
+Locations:
+
+- `phase_1/motion/control/motor_control/`
+- `phase_2/motion/control/motor_control/`
 
 Differential-drive control and navigation support.
 
@@ -85,13 +99,49 @@ Important executables:
 - `pid_controller`: drives toward `/goal_pose` and publishes `/goal_reached`.
 - `movement_node`: publishes waypoint goals.
 - `hand_follower`: experimental camera/hand-following controller.
+- Phase 1 also includes `tof_reader_node` and `imu_reader_node` in the `motor_control` package.
 
 Important config:
 
 - `phase_2/motion/control/motor_control/config/kinematics.yaml`
 - `phase_2/config/motion/kinematics.yaml`
 
-### `line_following`
+### Phase 1 `goal_navigation`
+
+Location: `phase_1/behaviors/goal_navigation/goal_navigation/`
+
+Coordinate-based navigation with front ToF obstacle avoidance.
+
+Important executables:
+
+- `go_to_goal_node`: drives toward a requested `(goal_x, goal_y)` coordinate using odometry.
+- `telemetry_overlay_node`: overlays current pose, goal, distance left, heading, and ToF obstacle distance on the camera stream.
+
+Important topics:
+
+- `/cmd_vel`
+- `/odom`
+- `/tof/front`
+- `/goal_reached`
+- `/goal_navigation/debug/compressed`
+
+Algorithm summary:
+
+- Drive toward the goal in the `odom` frame.
+- Use cardinal/orthogonal headings when enabled: `0`, `90`, `180`, and `-90` degrees.
+- Stop when the front ToF distance is below `obstacle_stop_distance` for enough consecutive readings.
+- Check the right and left side paths.
+- Choose a usable side, drive around the obstacle, and resume navigation to the coordinate goal.
+
+Coordinate convention:
+
+- Start pose is `(0.0, 0.0, 0.0)`.
+- `+x` points forward from the robot starting direction.
+- `+y` points left.
+- Units are meters.
+- Frame is `odom`.
+
+### Phase 2 `line_following`
 
 Location: `phase_2/behaviors/line_following/line_following/`
 
@@ -114,7 +164,7 @@ Important topics:
 - `/cmd_vel`
 - `/goal_pose`
 
-### `color_detection_mode`
+### Phase 2 `color_detection_mode`
 
 Location: `phase_2/behaviors/color_detection/color_detection_mode/`
 
@@ -137,7 +187,7 @@ Important topics:
 - `/robot/debug/compressed`
 - `/cmd_vel`
 
-### `aruco_parking`
+### Phase 2 `aruco_parking`
 
 Location: `phase_2/behaviors/aruco_parking/aruco_parking/`
 
@@ -157,11 +207,11 @@ Important topics:
 - `/aruco/target_id`
 - `/robot/debug/compressed`
 
-### `goal_navigation`
+### Phase 2 `goal_navigation`
 
 Location: `phase_2/behaviors/goal_navigation/goal_navigation/`
 
-Publishes start-relative coordinate goals for testing odometry/PID navigation.
+Publishes start-relative coordinate goals for testing odometry/PID navigation in the Phase 2 stack. The fuller coordinate-navigation and obstacle-avoidance behavior lives in Phase 1.
 
 Important executable:
 
@@ -181,7 +231,38 @@ Coordinate convention:
 
 ## System flow
 
-The full mission is built around this pipeline:
+### Phase 1 coordinate navigation and obstacle avoidance
+
+Phase 1 is built around coordinate goals, odometry, and a front ToF sensor:
+
+```text
+goal_navigation launch
+  -> starts kinematics_node
+  -> starts odometry_node
+  -> starts tof_reader_node after a short delay
+  -> optionally starts imu_reader_node
+  -> optionally starts camera_publisher and telemetry_overlay_node
+
+tof_reader_node
+  -> /tof/front
+
+go_to_goal_node
+  -> reads /odom and /tof/front
+  -> drives toward goal_x/goal_y
+  -> stops when an obstacle is close
+  -> checks right and left paths
+  -> drives around the obstacle
+  -> resumes coordinate navigation
+  -> publishes /cmd_vel and /goal_reached
+
+telemetry_overlay_node
+  -> overlays pose, goal, heading, distance left, and ToF readings
+  -> publishes /goal_navigation/debug/compressed
+```
+
+### Phase 2 line, color, and ArUco behavior
+
+Phase 2 is built around camera-driven perception and behavior switching:
 
 ```text
 Jetson camera
@@ -248,15 +329,29 @@ phase_2/docs/dependencies.txt
 
 ## Build
 
-From the current main workspace:
+Build each phase from its own workspace folder.
+
+### Phase 1
 
 ```bash
-cd phase_2
+cd phase_1
 colcon build
 source install/setup.bash
 ```
 
-To build only the main packages:
+To build only the main Phase 1 packages:
+
+```bash
+cd phase_1
+colcon build --packages-select \
+  jetson_camera_interfaces \
+  jetson_camera \
+  motor_control \
+  goal_navigation
+source install/setup.bash
+```
+
+### Phase 2
 
 ```bash
 cd phase_2
@@ -275,9 +370,47 @@ If you change message definitions in `jetson_camera_interfaces`, rebuild that pa
 
 ## Run commands
 
-Run these from `phase_2/` after building and sourcing `install/setup.bash`.
+Run these from the matching phase folder after building and sourcing `install/setup.bash`.
 
-### Camera pipeline
+### Phase 1 coordinate navigation with obstacle avoidance
+
+From `phase_1/`:
+
+```bash
+ros2 launch goal_navigation goal_navigation.launch.py goal_x:=1.0 goal_y:=0.0
+```
+
+This starts the coordinate navigator, motor kinematics, odometry, front ToF reader, and optional telemetry camera overlay. The robot tries to reach the requested coordinate, stops for obstacles seen on `/tof/front`, checks right and left, avoids the obstacle, then continues toward the goal.
+
+Useful Phase 1 options:
+
+```bash
+ros2 launch goal_navigation goal_navigation.launch.py \
+  goal_x:=1.0 goal_y:=0.0 \
+  show_overlay_window:=false
+
+ros2 launch goal_navigation goal_navigation.launch.py \
+  goal_x:=1.0 goal_y:=0.0 \
+  enable_camera_overlay:=false
+
+ros2 launch goal_navigation goal_navigation.launch.py \
+  goal_x:=1.0 goal_y:=0.0 \
+  obstacle_stop_distance:=0.25 \
+  obstacle_confirm_count:=3 \
+  path_clear_distance:=0.30 \
+  avoid_forward_distance:=0.25
+```
+
+To check the front ToF sensor directly:
+
+```bash
+ros2 topic echo /tof/front
+```
+
+### Phase 2 camera pipeline
+
+From `phase_2/`:
+
 
 ```bash
 ros2 launch jetson_camera camera_pipeline.launch.py
@@ -285,7 +418,7 @@ ros2 launch jetson_camera camera_pipeline.launch.py
 
 This starts camera publishing, processing, and pair viewing.
 
-### Line following
+### Phase 2 line following
 
 ```bash
 ros2 launch line_following line_following.launch.py
@@ -300,7 +433,7 @@ angular_tracker -> /cmd_vel
 kinematics_node -> motors
 ```
 
-### Color detection mode
+### Phase 2 color detection mode
 
 ```bash
 ros2 launch color_detection_mode color_detection_mode.launch.py
@@ -312,19 +445,19 @@ For the display-only go/stop detector:
 ros2 launch color_detection_mode go_stop.launch.py
 ```
 
-### ArUco parking detector
+### Phase 2 ArUco parking detector
 
 ```bash
 ros2 launch aruco_parking aruco_parking.launch.py
 ```
 
-### Motion control only
+### Phase 2 motion control only
 
 ```bash
 ros2 launch motor_control motor_control.launch.py
 ```
 
-### Goal navigation
+### Phase 2 goal publisher test
 
 ```bash
 ros2 launch goal_navigation goal_navigation.launch.py
@@ -338,7 +471,7 @@ ros2 launch goal_navigation goal_navigation.launch.py goal_x:=0.0 goal_y:=0.5
 ros2 launch goal_navigation goal_navigation.launch.py goal_x:=0.0 goal_y:=-0.5
 ```
 
-### Full mission
+### Phase 2 full mission
 
 The successful run example used:
 
@@ -384,9 +517,10 @@ The viewer is intended for topics such as `/robot/debug/compressed`.
 
 ### Camera calibration
 
-Camera calibration files live under:
+Camera calibration files live under both phase folders, for example:
 
 ```text
+phase_1/calibration/camera/
 phase_2/calibration/camera/
 ```
 
@@ -401,9 +535,10 @@ The `processing_node` uses calibration data to publish undistorted images.
 
 ### Wheel and motor calibration
 
-Wheel calibration scripts live under:
+Wheel calibration scripts live under both phase folders, for example:
 
 ```text
+phase_1/calibration/wheel/
 phase_2/calibration/wheel/
 ```
 
@@ -423,6 +558,7 @@ After launching a pipeline, these commands are helpful:
 
 ```bash
 ros2 topic list
+ros2 topic echo /tof/front
 ros2 topic echo /vision_error_x
 ros2 topic echo /color_detection/result
 ros2 topic echo /aruco/detected
@@ -447,9 +583,9 @@ ros2 topic pub --once /cmd_vel geometry_msgs/msg/Twist \
 
 ## Notes and known issues
 
-- `phase_2/` is the current main project area; `phase_1/` is mostly a previous reference copy.
+- `phase_1/` and `phase_2/` are both important, but they solve different parts of the project. Phase 1 is for coordinate navigation and obstacle avoidance; Phase 2 is for line following, color recognition, and ArUco reading.
 - The repository includes generated `build/`, `install/`, and `log/` folders. If builds behave strangely, clean those generated folders and rebuild.
-- Some launch files are duplicated in package folders and in `phase_2/launch/`. Prefer package launch files when using `ros2 launch package_name file.launch.py`.
+- Some launch files are duplicated in package folders and in phase-level `launch/` folders. Prefer package launch files when using `ros2 launch package_name file.launch.py`.
 - `phase_2/launch/full_mission.launch.py` references `pid_controller_node`, but the `motor_control` package entry point is named `pid_controller`. The package-local `line_following/full_mission.launch.py` uses the correct executable name.
 - Some comments/logs in launch files show mojibake characters from an encoding mismatch. The code is still readable, but those comments can be cleaned later.
 - `succesful_run_example.txt` is misspelled in the repository name but kept as-is to avoid breaking references.
@@ -460,7 +596,8 @@ ros2 topic pub --once /cmd_vel geometry_msgs/msg/Twist \
 The project was reorganized from earlier assignment and test-script folders. See:
 
 ```text
+phase_1/docs/source_inventory.md
 phase_2/docs/source_inventory.md
 ```
 
-That file records how vision, camera calibration, motion control, low-level drivers, wheel calibration, and behavior packages were copied into the current structure.
+Those files record how vision, camera calibration, motion control, low-level drivers, wheel calibration, and behavior packages were copied into the current structures.
