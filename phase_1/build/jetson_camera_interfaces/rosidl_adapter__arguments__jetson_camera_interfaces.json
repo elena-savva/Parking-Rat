@@ -1,0 +1,6 @@
+{
+  "package_name": "jetson_camera_interfaces",
+  "non_idl_tuples": [
+    "/home/jetson/EVC/workshops/final_project_v5/vision/interfaces/jetson_camera_interfaces:msg/ProcessedImagePair.msg"
+  ]
+}

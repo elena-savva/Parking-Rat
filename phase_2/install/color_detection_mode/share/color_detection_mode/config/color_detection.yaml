@@ -1,0 +1,11 @@
+color_detection_node:
+  ros__parameters:
+    image_pair_topic: /camera/image_pair
+    cmd_vel_topic: /cmd_vel
+    result_topic: /color_detection/result
+    roi_top_frac: 0.30
+    roi_bottom_frac: 0.70
+    forward_speed: 0.20
+    min_area: 500
+    show_display: true
+    window_name: Raw vs Calibrated Color Detection

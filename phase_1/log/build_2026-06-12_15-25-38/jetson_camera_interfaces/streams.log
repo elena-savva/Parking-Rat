@@ -1,0 +1,138 @@
+[1.346s] Invoking command in '/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces -- -j4 -l4
+[4.050s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[4.051s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[4.051s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.052s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[4.052s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.053s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[4.053s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.054s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[4.054s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[4.055s] CMake Error: The current CMakeCache.txt directory /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces/CMakeCache.txt is different than the directory /home/jetson/EVC/workshops/final_project_v3/build/jetson_camera_interfaces where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+[5.504s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[7.583s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.742s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.866s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[8.868s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[8.968s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[8.969s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[8.969s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+[9.368s] -- Configuring done
+[9.716s] -- Generating done
+[9.823s] -- Build files have been written to: /home/jetson/EVC/workshops/final_project_v3/build/jetson_camera_interfaces
+[10.010s] [  3%] Built target jetson_camera_interfaces__cpp
+[10.024s] [ 12%] Built target jetson_camera_interfaces__rosidl_generator_c
+[10.230s] [ 22%] Built target jetson_camera_interfaces__rosidl_typesupport_introspection_cpp
+[10.291s] [ 32%] Built target jetson_camera_interfaces__rosidl_typesupport_introspection_c
+[10.315s] [ 41%] Built target jetson_camera_interfaces__rosidl_typesupport_fastrtps_cpp
+[10.336s] [ 51%] Built target jetson_camera_interfaces__rosidl_typesupport_cpp
+[10.434s] [ 61%] Built target jetson_camera_interfaces__rosidl_typesupport_c
+[10.493s] [ 70%] Built target jetson_camera_interfaces__rosidl_typesupport_fastrtps_c
+[10.583s] [ 70%] Built target jetson_camera_interfaces
+[10.684s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[12.539s] [ 74%] Built target jetson_camera_interfaces__py
+[12.653s] [ 80%] Built target jetson_camera_interfaces__python
+[12.819s] [ 87%] Built target jetson_camera_interfaces__rosidl_typesupport_c__pyext
+[12.835s] [ 93%] Built target jetson_camera_interfaces__rosidl_typesupport_introspection_c__pyext
+[12.837s] [100%] Built target jetson_camera_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[13.073s] Invoked command in '/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces -- -j4 -l4
+[13.136s] Invoking command in '/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces
+[13.197s] -- Install configuration: ""
+[13.198s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/ament_index/resource_index/rosidl_interfaces/jetson_camera_interfaces
+[13.203s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces
+[13.203s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg
+[13.204s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail
+[13.204s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__functions.h
+[13.205s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__struct.h
+[13.205s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__type_support.h
+[13.206s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__functions.c
+[13.206s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/rosidl_generator_c__visibility_control.h
+[13.207s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/processed_image_pair.h
+[13.207s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/environment/library_path.sh
+[13.208s] -- Installing: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/environment/library_path.dsv
+[13.212s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/libjetson_camera_interfaces__rosidl_generator_c.so
+[13.214s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces
+[13.215s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg
+[13.216s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail
+[13.217s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__rosidl_typesupport_fastrtps_c.h
+[13.221s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[13.223s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/libjetson_camera_interfaces__rosidl_typesupport_fastrtps_c.so
+[13.225s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces
+[13.226s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg
+[13.227s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail
+[13.228s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__rosidl_typesupport_fastrtps_cpp.hpp
+[13.233s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/dds_fastrtps
+[13.238s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[13.242s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/libjetson_camera_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[13.243s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces
+[13.244s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg
+[13.246s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail
+[13.247s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__rosidl_typesupport_introspection_c.h
+[13.248s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__type_support.c
+[13.252s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[13.255s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/libjetson_camera_interfaces__rosidl_typesupport_introspection_c.so
+[13.256s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/libjetson_camera_interfaces__rosidl_typesupport_c.so
+[13.257s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces
+[13.261s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg
+[13.262s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail
+[13.264s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__traits.hpp
+[13.265s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__builder.hpp
+[13.266s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__struct.hpp
+[13.266s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__type_support.hpp
+[13.272s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[13.272s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/processed_image_pair.hpp
+[13.273s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces
+[13.273s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg
+[13.274s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail
+[13.283s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__rosidl_typesupport_introspection_cpp.hpp
+[13.284s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__type_support.cpp
+[13.284s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/libjetson_camera_interfaces__rosidl_typesupport_introspection_cpp.so
+[13.286s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/libjetson_camera_interfaces__rosidl_typesupport_cpp.so
+[13.291s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/environment/pythonpath.sh
+[13.292s] -- Installing: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/environment/pythonpath.dsv
+[13.294s] -- Installing: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/python3.8/site-packages/jetson_camera_interfaces/__init__.py
+[13.475s] Compiling '/home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/python3.8/site-packages/jetson_camera_interfaces/__init__.py'...
+[13.510s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/python3.8/site-packages/jetson_camera_interfaces/msg
+[13.513s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/python3.8/site-packages/jetson_camera_interfaces/msg/_processed_image_pair_s.c
+[13.513s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/python3.8/site-packages/jetson_camera_interfaces/msg/_processed_image_pair.py
+[13.514s] -- Installing: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/python3.8/site-packages/jetson_camera_interfaces/msg/__init__.py
+[13.514s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/python3.8/site-packages/jetson_camera_interfaces/jetson_camera_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[13.517s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/python3.8/site-packages/jetson_camera_interfaces/jetson_camera_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[13.522s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/python3.8/site-packages/jetson_camera_interfaces/jetson_camera_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[13.524s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/libjetson_camera_interfaces__python.so
+[13.525s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/msg/ProcessedImagePair.idl
+[13.526s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/msg/ProcessedImagePair.msg
+[13.526s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/ament_index/resource_index/package_run_dependencies/jetson_camera_interfaces
+[13.527s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/ament_index/resource_index/parent_prefix_path/jetson_camera_interfaces
+[13.527s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/environment/ament_prefix_path.sh
+[13.528s] -- Installing: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/environment/ament_prefix_path.dsv
+[13.534s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/environment/path.sh
+[13.535s] -- Installing: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/environment/path.dsv
+[13.537s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/local_setup.bash
+[13.538s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/local_setup.sh
+[13.544s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/local_setup.zsh
+[13.545s] -- Installing: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/local_setup.dsv
+[13.546s] -- Installing: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/package.dsv
+[13.548s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/ament_index/resource_index/packages/jetson_camera_interfaces
+[13.555s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_generator_cExport.cmake
+[13.556s] -- Installing: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_generator_cExport-noconfig.cmake
+[13.563s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[13.564s] -- Installing: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[13.567s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_typesupport_cExport.cmake
+[13.568s] -- Installing: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[13.573s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_generator_cppExport.cmake
+[13.576s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[13.578s] -- Installing: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[13.584s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_typesupport_cppExport.cmake
+[13.585s] -- Installing: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[13.587s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/rosidl_cmake-extras.cmake
+[13.588s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[13.589s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[13.593s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[13.595s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[13.596s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[13.597s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[13.598s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfacesConfig.cmake
+[13.599s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfacesConfig-version.cmake
+[13.604s] -- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/package.xml
+[13.619s] Invoked command in '/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces

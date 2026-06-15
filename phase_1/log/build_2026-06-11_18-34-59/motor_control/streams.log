@@ -1,0 +1,33 @@
+[5.790s] Invoking command in '/home/jetson/EVC/workshops/final_project_v5/motion/control/motor_control': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/motor_control build --build-base /home/jetson/EVC/workshops/final_project_v5/build/motor_control/build install --record /home/jetson/EVC/workshops/final_project_v5/build/motor_control/install.log --install-scripts $base/lib/motor_control --single-version-externally-managed install_data
+[6.873s] /usr/local/lib/python3.8/dist-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[6.874s]   warnings.warn(
+[7.028s] running egg_info
+[7.033s] writing ../../../build/motor_control/motor_control.egg-info/PKG-INFO
+[7.034s] writing dependency_links to ../../../build/motor_control/motor_control.egg-info/dependency_links.txt
+[7.035s] writing entry points to ../../../build/motor_control/motor_control.egg-info/entry_points.txt
+[7.037s] writing requirements to ../../../build/motor_control/motor_control.egg-info/requires.txt
+[7.038s] writing top-level names to ../../../build/motor_control/motor_control.egg-info/top_level.txt
+[7.052s] reading manifest file '../../../build/motor_control/motor_control.egg-info/SOURCES.txt'
+[7.072s] writing manifest file '../../../build/motor_control/motor_control.egg-info/SOURCES.txt'
+[7.074s] running build
+[7.074s] running build_py
+[7.079s] copying motor_control/tof_reader_node.py -> /home/jetson/EVC/workshops/final_project_v5/build/motor_control/build/lib/motor_control
+[7.082s] running install
+[7.087s] running install_lib
+[7.094s] copying /home/jetson/EVC/workshops/final_project_v5/build/motor_control/build/lib/motor_control/tof_reader_node.py -> /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages/motor_control
+[7.100s] byte-compiling /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages/motor_control/tof_reader_node.py to tof_reader_node.cpython-38.pyc
+[7.107s] running install_data
+[7.109s] copying config/kinematics.yaml -> /home/jetson/EVC/workshops/final_project_v5/install/motor_control/share/motor_control/config
+[7.111s] running install_egg_info
+[7.118s] removing '/home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages/motor_control-0.0.0-py3.8.egg-info' (and everything under it)
+[7.120s] Copying ../../../build/motor_control/motor_control.egg-info to /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages/motor_control-0.0.0-py3.8.egg-info
+[7.127s] running install_scripts
+[7.220s] Installing hand_follower script to /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/motor_control
+[7.221s] Installing imu_reader_node script to /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/motor_control
+[7.223s] Installing kinematics_node script to /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/motor_control
+[7.225s] Installing movement_node script to /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/motor_control
+[7.227s] Installing odometry_node script to /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/motor_control
+[7.228s] Installing pid_controller script to /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/motor_control
+[7.230s] Installing tof_reader_node script to /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/motor_control
+[7.236s] writing list of installed files to '/home/jetson/EVC/workshops/final_project_v5/build/motor_control/install.log'
+[7.421s] Invoked command in '/home/jetson/EVC/workshops/final_project_v5/motion/control/motor_control' returned '0': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/motor_control build --build-base /home/jetson/EVC/workshops/final_project_v5/build/motor_control/build install --record /home/jetson/EVC/workshops/final_project_v5/build/motor_control/install.log --install-scripts $base/lib/motor_control --single-version-externally-managed install_data

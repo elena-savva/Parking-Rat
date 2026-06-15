@@ -1,0 +1,14 @@
+# line_following.yaml
+# Configuration for the line following behavior.
+# Loaded by line_following.launch.py for both nodes.
+
+line_tracker:
+  ros__parameters:
+    input_topic: /camera/image_raw
+    output_topic: /robot/debug/compressed
+
+angular_tracker:
+  ros__parameters: {}
+    # No ROS parameters declared yet — tuning values are set as class
+    # attributes in angular_tracker_node.py for easy in-code adjustment.
+    # Move them here when you want to tune without recompiling.

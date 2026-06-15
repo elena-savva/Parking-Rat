@@ -1,0 +1,478 @@
+[0.000000] (-) TimerEvent: {}
+[0.001390] (Adafruit_SSD1306) JobQueued: {'identifier': 'Adafruit_SSD1306', 'dependencies': OrderedDict()}
+[0.001600] (aruco_parking) JobQueued: {'identifier': 'aruco_parking', 'dependencies': OrderedDict()}
+[0.001731] (goal_navigation) JobQueued: {'identifier': 'goal_navigation', 'dependencies': OrderedDict()}
+[0.001856] (jetson_camera) JobQueued: {'identifier': 'jetson_camera', 'dependencies': OrderedDict()}
+[0.001979] (jetson_camera_interfaces) JobQueued: {'identifier': 'jetson_camera_interfaces', 'dependencies': OrderedDict()}
+[0.002098] (line_following) JobQueued: {'identifier': 'line_following', 'dependencies': OrderedDict()}
+[0.002224] (motor_control) JobQueued: {'identifier': 'motor_control', 'dependencies': OrderedDict()}
+[0.002344] (color_detection_mode) JobQueued: {'identifier': 'color_detection_mode', 'dependencies': OrderedDict([('jetson_camera_interfaces', '/home/jetson/EVC/workshops/final_project_v4/install/jetson_camera_interfaces')])}
+[0.002487] (jetson_camera_interfaces) JobStarted: {'identifier': 'jetson_camera_interfaces'}
+[0.037463] (Adafruit_SSD1306) JobStarted: {'identifier': 'Adafruit_SSD1306'}
+[0.054232] (aruco_parking) JobStarted: {'identifier': 'aruco_parking'}
+[0.093821] (-) TimerEvent: {}
+[0.131142] (goal_navigation) JobStarted: {'identifier': 'goal_navigation'}
+[0.161152] (jetson_camera_interfaces) JobProgress: {'identifier': 'jetson_camera_interfaces', 'progress': 'cmake'}
+[0.185229] (jetson_camera_interfaces) JobProgress: {'identifier': 'jetson_camera_interfaces', 'progress': 'build'}
+[0.188635] (jetson_camera_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetson/EVC/workshops/final_project_v4/build/jetson_camera_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/jetson/EVC/workshops/final_project_v4/build/jetson_camera_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jetson'), ('SSH_CLIENT', '192.168.8.130 34724 22'), ('LC_TIME', 'nl_NL.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib::/usr/local/cuda/lib64'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson'), ('SSH_TTY', '/dev/pts/7'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Nano Developer Kit'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1654424002069'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Porg'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '17'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda/bin'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:15.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', 'p3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/EVC/workshops/final_project_v4/build/jetson_camera_interfaces'), ('SSH_CONNECTION', '192.168.8.130 34724 192.168.8.208 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '4.6'), ('JETSON_P_NUMBER', 'pread-moto'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.193991] (-) TimerEvent: {}
+[0.301036] (-) TimerEvent: {}
+[0.402119] (-) TimerEvent: {}
+[0.504598] (-) TimerEvent: {}
+[0.605384] (-) TimerEvent: {}
+[0.706255] (-) TimerEvent: {}
+[0.806976] (-) TimerEvent: {}
+[0.907730] (-) TimerEvent: {}
+[1.009615] (-) TimerEvent: {}
+[1.110295] (-) TimerEvent: {}
+[1.211000] (-) TimerEvent: {}
+[1.311751] (-) TimerEvent: {}
+[1.412503] (-) TimerEvent: {}
+[1.513652] (-) TimerEvent: {}
+[1.614374] (-) TimerEvent: {}
+[1.715353] (-) TimerEvent: {}
+[1.816656] (-) TimerEvent: {}
+[1.917740] (-) TimerEvent: {}
+[2.018903] (-) TimerEvent: {}
+[2.119647] (-) TimerEvent: {}
+[2.220427] (-) TimerEvent: {}
+[2.321458] (-) TimerEvent: {}
+[2.422186] (-) TimerEvent: {}
+[2.523195] (-) TimerEvent: {}
+[2.624220] (-) TimerEvent: {}
+[2.725104] (-) TimerEvent: {}
+[2.825873] (-) TimerEvent: {}
+[2.927460] (-) TimerEvent: {}
+[3.028440] (-) TimerEvent: {}
+[3.129349] (-) TimerEvent: {}
+[3.230228] (-) TimerEvent: {}
+[3.331262] (-) TimerEvent: {}
+[3.432183] (-) TimerEvent: {}
+[3.534119] (-) TimerEvent: {}
+[3.634875] (-) TimerEvent: {}
+[3.735544] (-) TimerEvent: {}
+[3.836338] (-) TimerEvent: {}
+[3.937122] (-) TimerEvent: {}
+[4.038153] (-) TimerEvent: {}
+[4.138891] (-) TimerEvent: {}
+[4.239544] (-) TimerEvent: {}
+[4.340272] (-) TimerEvent: {}
+[4.440947] (-) TimerEvent: {}
+[4.541622] (-) TimerEvent: {}
+[4.639932] (jetson_camera_interfaces) StdoutLine: {'line': b'[  3%] Built target jetson_camera_interfaces__cpp\n'}
+[4.641114] (jetson_camera_interfaces) StdoutLine: {'line': b'[ 12%] Built target jetson_camera_interfaces__rosidl_generator_c\n'}
+[4.641712] (-) TimerEvent: {}
+[4.642645] (jetson_camera_interfaces) StdoutLine: {'line': b'[ 22%] Built target jetson_camera_interfaces__rosidl_typesupport_cpp\n'}
+[4.643552] (jetson_camera_interfaces) StdoutLine: {'line': b'[ 32%] Built target jetson_camera_interfaces__rosidl_typesupport_introspection_c\n'}
+[4.644170] (jetson_camera_interfaces) StdoutLine: {'line': b'[ 41%] Built target jetson_camera_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[4.645600] (jetson_camera_interfaces) StdoutLine: {'line': b'[ 51%] Built target jetson_camera_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[4.647762] (jetson_camera_interfaces) StdoutLine: {'line': b'[ 61%] Built target jetson_camera_interfaces__rosidl_typesupport_c\n'}
+[4.648203] (jetson_camera_interfaces) StdoutLine: {'line': b'[ 70%] Built target jetson_camera_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[4.648863] (jetson_camera_interfaces) StdoutLine: {'line': b'[ 70%] Built target jetson_camera_interfaces\n'}
+[4.649447] (jetson_camera_interfaces) StdoutLine: {'line': b'[ 74%] Built target jetson_camera_interfaces__py\n'}
+[4.650112] (jetson_camera_interfaces) StdoutLine: {'line': b'[ 80%] Built target jetson_camera_interfaces__python\n'}
+[4.650623] (jetson_camera_interfaces) StdoutLine: {'line': b'[ 87%] Built target jetson_camera_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[4.651386] (jetson_camera_interfaces) StdoutLine: {'line': b'[ 93%] Built target jetson_camera_interfaces__rosidl_typesupport_c__pyext\n'}
+[4.655172] (jetson_camera_interfaces) StdoutLine: {'line': b'[100%] Built target jetson_camera_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.656204] (jetson_camera_interfaces) StderrLine: {'line': b'CMake Error: The current CMakeCache.txt directory /home/jetson/EVC/workshops/final_project_v4/build/jetson_camera_interfaces/CMakeCache.txt is different than the directory /home/jetson/EVC/workshops/final_project_v3/build/jetson_camera_interfaces where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt\n'}
+[4.656879] (jetson_camera_interfaces) CommandEnded: {'returncode': 0}
+[4.658955] (jetson_camera_interfaces) JobProgress: {'identifier': 'jetson_camera_interfaces', 'progress': 'install'}
+[4.693403] (jetson_camera_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jetson/EVC/workshops/final_project_v4/build/jetson_camera_interfaces'], 'cwd': '/home/jetson/EVC/workshops/final_project_v4/build/jetson_camera_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jetson'), ('SSH_CLIENT', '192.168.8.130 34724 22'), ('LC_TIME', 'nl_NL.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib::/usr/local/cuda/lib64'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson'), ('SSH_TTY', '/dev/pts/7'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Nano Developer Kit'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1654424002069'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Porg'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '17'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda/bin'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:15.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', 'p3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/EVC/workshops/final_project_v4/build/jetson_camera_interfaces'), ('SSH_CONNECTION', '192.168.8.130 34724 192.168.8.208 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '4.6'), ('JETSON_P_NUMBER', 'pread-moto'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[4.730116] (Adafruit_SSD1306) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/Adafruit_SSD1306', 'build', '--build-base', '/home/jetson/EVC/workshops/final_project_v4/build/Adafruit_SSD1306/build', 'install', '--record', '/home/jetson/EVC/workshops/final_project_v4/build/Adafruit_SSD1306/install.log', '--single-version-externally-managed'], 'cwd': '/home/jetson/EVC/workshops/final_project_v4/drivers/display/Adafruit_Python_SSD1306', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'SSH_CLIENT': '192.168.8.130 34724 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib::/usr/local/cuda/lib64', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson', 'SSH_TTY': '/dev/pts/7', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': '', 'JETSON_SERIAL_NUMBER': '1654424002069', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '17', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:15.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'ROS_DOMAIN_ID': '5', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/EVC/workshops/final_project_v4/build/Adafruit_SSD1306', 'SSH_CONNECTION': '192.168.8.130 34724 192.168.8.208 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/EVC/workshops/final_project_v4/build/Adafruit_SSD1306/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v4/install/Adafruit_SSD1306/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '4.6', 'JETSON_P_NUMBER': 'pread-moto'}, 'shell': False}
+[4.741956] (-) TimerEvent: {}
+[4.743959] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.745864] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/ament_index/resource_index/rosidl_interfaces/jetson_camera_interfaces\n'}
+[4.746783] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces\n'}
+[4.748324] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg\n'}
+[4.749907] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail\n'}
+[4.755622] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__functions.h\n'}
+[4.756161] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__struct.h\n'}
+[4.756628] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__type_support.h\n'}
+[4.757234] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__functions.c\n'}
+[4.757686] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.758156] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/processed_image_pair.h\n'}
+[4.758608] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/environment/library_path.sh\n'}
+[4.759049] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/environment/library_path.dsv\n'}
+[4.759590] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/libjetson_camera_interfaces__rosidl_generator_c.so\n'}
+[4.760305] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces\n'}
+[4.760835] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg\n'}
+[4.761361] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail\n'}
+[4.761946] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__rosidl_typesupport_fastrtps_c.h\n'}
+[4.764532] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.766488] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/libjetson_camera_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[4.768168] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces\n'}
+[4.768945] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg\n'}
+[4.771153] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail\n'}
+[4.772606] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.779718] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/dds_fastrtps\n'}
+[4.780314] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.780931] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/libjetson_camera_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.781428] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces\n'}
+[4.781898] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg\n'}
+[4.782378] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail\n'}
+[4.782847] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__rosidl_typesupport_introspection_c.h\n'}
+[4.783302] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__type_support.c\n'}
+[4.783730] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.784169] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/libjetson_camera_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[4.784604] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/libjetson_camera_interfaces__rosidl_typesupport_c.so\n'}
+[4.785162] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces\n'}
+[4.785661] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg\n'}
+[4.793828] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail\n'}
+[4.794530] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__traits.hpp\n'}
+[4.794976] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__builder.hpp\n'}
+[4.795480] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__struct.hpp\n'}
+[4.796018] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__type_support.hpp\n'}
+[4.796615] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[4.804162] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/processed_image_pair.hpp\n'}
+[4.804696] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces\n'}
+[4.813534] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg\n'}
+[4.813980] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail\n'}
+[4.814374] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.814779] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/include/jetson_camera_interfaces/msg/detail/processed_image_pair__type_support.cpp\n'}
+[4.831198] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/libjetson_camera_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[4.837120] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/libjetson_camera_interfaces__rosidl_typesupport_cpp.so\n'}
+[4.837773] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/environment/pythonpath.sh\n'}
+[4.838227] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/environment/pythonpath.dsv\n'}
+[4.838641] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/python3.8/site-packages/jetson_camera_interfaces/__init__.py\n'}
+[4.842168] (-) TimerEvent: {}
+[4.943363] (-) TimerEvent: {}
+[5.044076] (-) TimerEvent: {}
+[5.076635] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/python3.8/site-packages/jetson_camera_interfaces/msg\n'}
+[5.078746] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/python3.8/site-packages/jetson_camera_interfaces/msg/_processed_image_pair_s.c\n'}
+[5.080814] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/python3.8/site-packages/jetson_camera_interfaces/msg/_processed_image_pair.py\n'}
+[5.081459] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/python3.8/site-packages/jetson_camera_interfaces/msg/__init__.py\n'}
+[5.086009] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/python3.8/site-packages/jetson_camera_interfaces/jetson_camera_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[5.093545] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/python3.8/site-packages/jetson_camera_interfaces/jetson_camera_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[5.101605] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/python3.8/site-packages/jetson_camera_interfaces/jetson_camera_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[5.108459] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/libjetson_camera_interfaces__python.so\n'}
+[5.114541] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/msg/ProcessedImagePair.idl\n'}
+[5.115161] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/msg/ProcessedImagePair.msg\n'}
+[5.115604] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/ament_index/resource_index/package_run_dependencies/jetson_camera_interfaces\n'}
+[5.115993] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/ament_index/resource_index/parent_prefix_path/jetson_camera_interfaces\n'}
+[5.116417] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/environment/ament_prefix_path.sh\n'}
+[5.116865] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/environment/ament_prefix_path.dsv\n'}
+[5.117344] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/environment/path.sh\n'}
+[5.117867] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/environment/path.dsv\n'}
+[5.122916] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/local_setup.bash\n'}
+[5.126114] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/local_setup.sh\n'}
+[5.127981] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/local_setup.zsh\n'}
+[5.129945] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/local_setup.dsv\n'}
+[5.132157] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/package.dsv\n'}
+[5.135706] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/ament_index/resource_index/packages/jetson_camera_interfaces\n'}
+[5.139378] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_generator_cExport.cmake\n'}
+[5.146641] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.147213] (-) TimerEvent: {}
+[5.147683] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.148153] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.148538] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[5.148964] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.149355] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_generator_cppExport.cmake\n'}
+[5.149722] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.150071] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.150470] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[5.150816] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.156630] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[5.157412] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.157946] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.158450] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.158893] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.159418] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.159923] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.160354] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfacesConfig.cmake\n'}
+[5.168904] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/cmake/jetson_camera_interfacesConfig-version.cmake\n'}
+[5.174431] (jetson_camera_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/share/jetson_camera_interfaces/package.xml\n'}
+[5.175088] (jetson_camera_interfaces) CommandEnded: {'returncode': 0}
+[5.247402] (-) TimerEvent: {}
+[5.348373] (-) TimerEvent: {}
+[5.449388] (-) TimerEvent: {}
+[5.550120] (-) TimerEvent: {}
+[5.574310] (jetson_camera_interfaces) JobEnded: {'identifier': 'jetson_camera_interfaces', 'rc': 0}
+[5.577714] (jetson_camera) JobStarted: {'identifier': 'jetson_camera'}
+[5.650484] (-) TimerEvent: {}
+[5.751431] (-) TimerEvent: {}
+[5.853187] (-) TimerEvent: {}
+[5.954342] (-) TimerEvent: {}
+[6.055185] (-) TimerEvent: {}
+[6.156202] (-) TimerEvent: {}
+[6.257396] (-) TimerEvent: {}
+[6.358419] (-) TimerEvent: {}
+[6.459128] (-) TimerEvent: {}
+[6.559858] (-) TimerEvent: {}
+[6.660842] (-) TimerEvent: {}
+[6.712558] (Adafruit_SSD1306) StdoutLine: {'line': b'running egg_info\n'}
+[6.718939] (Adafruit_SSD1306) StdoutLine: {'line': b'writing ../../../build/Adafruit_SSD1306/Adafruit_SSD1306.egg-info/PKG-INFO\n'}
+[6.720841] (Adafruit_SSD1306) StdoutLine: {'line': b'writing dependency_links to ../../../build/Adafruit_SSD1306/Adafruit_SSD1306.egg-info/dependency_links.txt\n'}
+[6.721330] (Adafruit_SSD1306) StdoutLine: {'line': b'writing requirements to ../../../build/Adafruit_SSD1306/Adafruit_SSD1306.egg-info/requires.txt\n'}
+[6.721860] (Adafruit_SSD1306) StdoutLine: {'line': b'writing top-level names to ../../../build/Adafruit_SSD1306/Adafruit_SSD1306.egg-info/top_level.txt\n'}
+[6.760987] (-) TimerEvent: {}
+[6.818162] (Adafruit_SSD1306) StdoutLine: {'line': b"reading manifest file '../../../build/Adafruit_SSD1306/Adafruit_SSD1306.egg-info/SOURCES.txt'\n"}
+[6.827138] (Adafruit_SSD1306) StdoutLine: {'line': b"writing manifest file '../../../build/Adafruit_SSD1306/Adafruit_SSD1306.egg-info/SOURCES.txt'\n"}
+[6.832244] (Adafruit_SSD1306) StdoutLine: {'line': b'running build\n'}
+[6.845094] (Adafruit_SSD1306) StdoutLine: {'line': b'running build_py\n'}
+[6.846538] (Adafruit_SSD1306) StdoutLine: {'line': b'running install\n'}
+[6.849934] (Adafruit_SSD1306) StdoutLine: {'line': b'running install_lib\n'}
+[6.861146] (-) TimerEvent: {}
+[6.862983] (Adafruit_SSD1306) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.874058] (Adafruit_SSD1306) StdoutLine: {'line': b"removing '/home/jetson/EVC/workshops/final_project_v4/install/Adafruit_SSD1306/lib/python3.8/site-packages/Adafruit_SSD1306-1.6.2-py3.8.egg-info' (and everything under it)\n"}
+[6.875435] (Adafruit_SSD1306) StdoutLine: {'line': b'Copying ../../../build/Adafruit_SSD1306/Adafruit_SSD1306.egg-info to /home/jetson/EVC/workshops/final_project_v4/install/Adafruit_SSD1306/lib/python3.8/site-packages/Adafruit_SSD1306-1.6.2-py3.8.egg-info\n'}
+[6.878889] (Adafruit_SSD1306) StdoutLine: {'line': b'running install_scripts\n'}
+[6.961312] (-) TimerEvent: {}
+[7.038293] (Adafruit_SSD1306) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/EVC/workshops/final_project_v4/build/Adafruit_SSD1306/install.log'\n"}
+[7.061486] (-) TimerEvent: {}
+[7.162269] (-) TimerEvent: {}
+[7.263058] (-) TimerEvent: {}
+[7.364182] (-) TimerEvent: {}
+[7.465086] (-) TimerEvent: {}
+[7.565947] (-) TimerEvent: {}
+[7.640343] (Adafruit_SSD1306) CommandEnded: {'returncode': 0}
+[7.667126] (Adafruit_SSD1306) JobEnded: {'identifier': 'Adafruit_SSD1306', 'rc': 0}
+[7.669661] (-) TimerEvent: {}
+[7.676213] (aruco_parking) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/aruco_parking', 'build', '--build-base', '/home/jetson/EVC/workshops/final_project_v4/build/aruco_parking/build', 'install', '--record', '/home/jetson/EVC/workshops/final_project_v4/build/aruco_parking/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jetson/EVC/workshops/final_project_v4/behaviors/aruco_parking/aruco_parking', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'SSH_CLIENT': '192.168.8.130 34724 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib::/usr/local/cuda/lib64', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson', 'SSH_TTY': '/dev/pts/7', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': '', 'JETSON_SERIAL_NUMBER': '1654424002069', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '17', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:15.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'ROS_DOMAIN_ID': '5', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/EVC/workshops/final_project_v4/build/aruco_parking', 'SSH_CONNECTION': '192.168.8.130 34724 192.168.8.208 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/EVC/workshops/final_project_v4/build/aruco_parking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v4/install/aruco_parking/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '4.6', 'JETSON_P_NUMBER': 'pread-moto'}, 'shell': False}
+[7.692097] (goal_navigation) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/goal_navigation', 'build', '--build-base', '/home/jetson/EVC/workshops/final_project_v4/build/goal_navigation/build', 'install', '--record', '/home/jetson/EVC/workshops/final_project_v4/build/goal_navigation/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jetson/EVC/workshops/final_project_v4/behaviors/goal_navigation/goal_navigation', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'SSH_CLIENT': '192.168.8.130 34724 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib::/usr/local/cuda/lib64', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson', 'SSH_TTY': '/dev/pts/7', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': '', 'JETSON_SERIAL_NUMBER': '1654424002069', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '17', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:15.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'ROS_DOMAIN_ID': '5', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/EVC/workshops/final_project_v4/build/goal_navigation', 'SSH_CONNECTION': '192.168.8.130 34724 192.168.8.208 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/EVC/workshops/final_project_v4/build/goal_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v4/install/goal_navigation/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '4.6', 'JETSON_P_NUMBER': 'pread-moto'}, 'shell': False}
+[7.714334] (line_following) JobStarted: {'identifier': 'line_following'}
+[7.769930] (-) TimerEvent: {}
+[7.874361] (-) TimerEvent: {}
+[7.975574] (-) TimerEvent: {}
+[8.076301] (-) TimerEvent: {}
+[8.177028] (-) TimerEvent: {}
+[8.277768] (-) TimerEvent: {}
+[8.381003] (-) TimerEvent: {}
+[8.488858] (-) TimerEvent: {}
+[8.590463] (-) TimerEvent: {}
+[8.691463] (-) TimerEvent: {}
+[8.792463] (-) TimerEvent: {}
+[8.893514] (-) TimerEvent: {}
+[8.995076] (-) TimerEvent: {}
+[9.101888] (-) TimerEvent: {}
+[9.202587] (-) TimerEvent: {}
+[9.303318] (-) TimerEvent: {}
+[9.408865] (-) TimerEvent: {}
+[9.510835] (-) TimerEvent: {}
+[9.611849] (-) TimerEvent: {}
+[9.672241] (goal_navigation) StdoutLine: {'line': b'running egg_info\n'}
+[9.677963] (goal_navigation) StdoutLine: {'line': b'writing ../../../build/goal_navigation/goal_navigation.egg-info/PKG-INFO\n'}
+[9.681727] (goal_navigation) StdoutLine: {'line': b'writing dependency_links to ../../../build/goal_navigation/goal_navigation.egg-info/dependency_links.txt\n'}
+[9.706800] (goal_navigation) StdoutLine: {'line': b'writing entry points to ../../../build/goal_navigation/goal_navigation.egg-info/entry_points.txt\n'}
+[9.707590] (goal_navigation) StdoutLine: {'line': b'writing requirements to ../../../build/goal_navigation/goal_navigation.egg-info/requires.txt\n'}
+[9.708198] (goal_navigation) StdoutLine: {'line': b'writing top-level names to ../../../build/goal_navigation/goal_navigation.egg-info/top_level.txt\n'}
+[9.712022] (-) TimerEvent: {}
+[9.732811] (goal_navigation) StdoutLine: {'line': b"reading manifest file '../../../build/goal_navigation/goal_navigation.egg-info/SOURCES.txt'\n"}
+[9.744758] (goal_navigation) StdoutLine: {'line': b"writing manifest file '../../../build/goal_navigation/goal_navigation.egg-info/SOURCES.txt'\n"}
+[9.745542] (goal_navigation) StdoutLine: {'line': b'running build\n'}
+[9.745946] (goal_navigation) StdoutLine: {'line': b'running build_py\n'}
+[9.746654] (goal_navigation) StdoutLine: {'line': b'running install\n'}
+[9.749806] (goal_navigation) StdoutLine: {'line': b'running install_lib\n'}
+[9.756349] (goal_navigation) StdoutLine: {'line': b'running install_data\n'}
+[9.760145] (goal_navigation) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.767753] (goal_navigation) StdoutLine: {'line': b"removing '/home/jetson/EVC/workshops/final_project_v4/install/goal_navigation/lib/python3.8/site-packages/goal_navigation-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[9.768980] (goal_navigation) StdoutLine: {'line': b'Copying ../../../build/goal_navigation/goal_navigation.egg-info to /home/jetson/EVC/workshops/final_project_v4/install/goal_navigation/lib/python3.8/site-packages/goal_navigation-0.0.0-py3.8.egg-info\n'}
+[9.778948] (aruco_parking) StdoutLine: {'line': b'running egg_info\n'}
+[9.781885] (aruco_parking) StdoutLine: {'line': b'writing ../../../build/aruco_parking/aruco_parking.egg-info/PKG-INFO\n'}
+[9.783810] (aruco_parking) StdoutLine: {'line': b'writing dependency_links to ../../../build/aruco_parking/aruco_parking.egg-info/dependency_links.txt\n'}
+[9.785328] (aruco_parking) StdoutLine: {'line': b'writing entry points to ../../../build/aruco_parking/aruco_parking.egg-info/entry_points.txt\n'}
+[9.786774] (aruco_parking) StdoutLine: {'line': b'writing requirements to ../../../build/aruco_parking/aruco_parking.egg-info/requires.txt\n'}
+[9.787415] (aruco_parking) StdoutLine: {'line': b'writing top-level names to ../../../build/aruco_parking/aruco_parking.egg-info/top_level.txt\n'}
+[9.791533] (goal_navigation) StdoutLine: {'line': b'running install_scripts\n'}
+[9.812203] (-) TimerEvent: {}
+[9.813837] (aruco_parking) StdoutLine: {'line': b"reading manifest file '../../../build/aruco_parking/aruco_parking.egg-info/SOURCES.txt'\n"}
+[9.824039] (aruco_parking) StdoutLine: {'line': b"writing manifest file '../../../build/aruco_parking/aruco_parking.egg-info/SOURCES.txt'\n"}
+[9.837151] (aruco_parking) StdoutLine: {'line': b'running build\n'}
+[9.837953] (aruco_parking) StdoutLine: {'line': b'running build_py\n'}
+[9.838847] (aruco_parking) StdoutLine: {'line': b'running install\n'}
+[9.842227] (aruco_parking) StdoutLine: {'line': b'running install_lib\n'}
+[9.855452] (aruco_parking) StdoutLine: {'line': b'running install_data\n'}
+[9.856822] (aruco_parking) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.870025] (aruco_parking) StdoutLine: {'line': b"removing '/home/jetson/EVC/workshops/final_project_v4/install/aruco_parking/lib/python3.8/site-packages/aruco_parking-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[9.889651] (aruco_parking) StdoutLine: {'line': b'Copying ../../../build/aruco_parking/aruco_parking.egg-info to /home/jetson/EVC/workshops/final_project_v4/install/aruco_parking/lib/python3.8/site-packages/aruco_parking-0.0.0-py3.8.egg-info\n'}
+[9.912403] (-) TimerEvent: {}
+[9.916410] (goal_navigation) StdoutLine: {'line': b'Installing goal_publisher_node script to /home/jetson/EVC/workshops/final_project_v4/install/goal_navigation/lib/goal_navigation\n'}
+[9.917743] (aruco_parking) StdoutLine: {'line': b'running install_scripts\n'}
+[9.929089] (goal_navigation) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/EVC/workshops/final_project_v4/build/goal_navigation/install.log'\n"}
+[10.012594] (-) TimerEvent: {}
+[10.113360] (-) TimerEvent: {}
+[10.128829] (goal_navigation) CommandEnded: {'returncode': 0}
+[10.132317] (aruco_parking) StdoutLine: {'line': b'Installing aruco_detector_node script to /home/jetson/EVC/workshops/final_project_v4/install/aruco_parking/lib/aruco_parking\n'}
+[10.144502] (aruco_parking) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/EVC/workshops/final_project_v4/build/aruco_parking/install.log'\n"}
+[10.164054] (goal_navigation) JobEnded: {'identifier': 'goal_navigation', 'rc': 0}
+[10.166633] (motor_control) JobStarted: {'identifier': 'motor_control'}
+[10.214063] (-) TimerEvent: {}
+[10.315650] (-) TimerEvent: {}
+[10.418164] (-) TimerEvent: {}
+[10.521114] (-) TimerEvent: {}
+[10.621845] (-) TimerEvent: {}
+[10.722542] (-) TimerEvent: {}
+[10.825719] (-) TimerEvent: {}
+[10.926706] (-) TimerEvent: {}
+[11.027684] (-) TimerEvent: {}
+[11.128784] (-) TimerEvent: {}
+[11.229852] (-) TimerEvent: {}
+[11.330507] (-) TimerEvent: {}
+[11.431645] (-) TimerEvent: {}
+[11.532676] (-) TimerEvent: {}
+[11.634677] (-) TimerEvent: {}
+[11.741045] (-) TimerEvent: {}
+[11.764909] (aruco_parking) CommandEnded: {'returncode': 0}
+[11.806635] (aruco_parking) JobEnded: {'identifier': 'aruco_parking', 'rc': 0}
+[11.813323] (jetson_camera) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/jetson_camera', 'build', '--build-base', '/home/jetson/EVC/workshops/final_project_v4/build/jetson_camera/build', 'install', '--record', '/home/jetson/EVC/workshops/final_project_v4/build/jetson_camera/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jetson/EVC/workshops/final_project_v4/vision/camera/jetson_camera', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'SSH_CLIENT': '192.168.8.130 34724 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib::/usr/local/cuda/lib64', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson', 'SSH_TTY': '/dev/pts/7', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': '', 'JETSON_SERIAL_NUMBER': '1654424002069', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '17', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:15.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'ROS_DOMAIN_ID': '5', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/EVC/workshops/final_project_v4/build/jetson_camera', 'SSH_CONNECTION': '192.168.8.130 34724 192.168.8.208 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/EVC/workshops/final_project_v4/build/jetson_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v4/install/jetson_camera/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '4.6', 'JETSON_P_NUMBER': 'pread-moto'}, 'shell': False}
+[11.840901] (color_detection_mode) JobStarted: {'identifier': 'color_detection_mode'}
+[11.841826] (-) TimerEvent: {}
+[11.895530] (line_following) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/line_following', 'build', '--build-base', '/home/jetson/EVC/workshops/final_project_v4/build/line_following/build', 'install', '--record', '/home/jetson/EVC/workshops/final_project_v4/build/line_following/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jetson/EVC/workshops/final_project_v4/behaviors/line_following/line_following', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'SSH_CLIENT': '192.168.8.130 34724 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib::/usr/local/cuda/lib64', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson', 'SSH_TTY': '/dev/pts/7', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': '', 'JETSON_SERIAL_NUMBER': '1654424002069', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '17', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:15.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'ROS_DOMAIN_ID': '5', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/EVC/workshops/final_project_v4/build/line_following', 'SSH_CONNECTION': '192.168.8.130 34724 192.168.8.208 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/EVC/workshops/final_project_v4/build/line_following/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v4/install/line_following/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '4.6', 'JETSON_P_NUMBER': 'pread-moto'}, 'shell': False}
+[11.942037] (-) TimerEvent: {}
+[12.042977] (-) TimerEvent: {}
+[12.144245] (-) TimerEvent: {}
+[12.245285] (-) TimerEvent: {}
+[12.346297] (-) TimerEvent: {}
+[12.447249] (-) TimerEvent: {}
+[12.548263] (-) TimerEvent: {}
+[12.649259] (-) TimerEvent: {}
+[12.750209] (-) TimerEvent: {}
+[12.851193] (-) TimerEvent: {}
+[12.951886] (-) TimerEvent: {}
+[13.052830] (-) TimerEvent: {}
+[13.153909] (-) TimerEvent: {}
+[13.254877] (-) TimerEvent: {}
+[13.355584] (-) TimerEvent: {}
+[13.456276] (-) TimerEvent: {}
+[13.559741] (-) TimerEvent: {}
+[13.660467] (-) TimerEvent: {}
+[13.761511] (-) TimerEvent: {}
+[13.775438] (jetson_camera) StdoutLine: {'line': b'running egg_info\n'}
+[13.778134] (jetson_camera) StdoutLine: {'line': b'writing ../../../build/jetson_camera/jetson_camera.egg-info/PKG-INFO\n'}
+[13.779694] (jetson_camera) StdoutLine: {'line': b'writing dependency_links to ../../../build/jetson_camera/jetson_camera.egg-info/dependency_links.txt\n'}
+[13.781861] (jetson_camera) StdoutLine: {'line': b'writing entry points to ../../../build/jetson_camera/jetson_camera.egg-info/entry_points.txt\n'}
+[13.788954] (jetson_camera) StdoutLine: {'line': b'writing requirements to ../../../build/jetson_camera/jetson_camera.egg-info/requires.txt\n'}
+[13.789537] (jetson_camera) StdoutLine: {'line': b'writing top-level names to ../../../build/jetson_camera/jetson_camera.egg-info/top_level.txt\n'}
+[13.801839] (jetson_camera) StdoutLine: {'line': b"reading manifest file '../../../build/jetson_camera/jetson_camera.egg-info/SOURCES.txt'\n"}
+[13.816318] (jetson_camera) StdoutLine: {'line': b"writing manifest file '../../../build/jetson_camera/jetson_camera.egg-info/SOURCES.txt'\n"}
+[13.817225] (jetson_camera) StdoutLine: {'line': b'running build\n'}
+[13.817687] (jetson_camera) StdoutLine: {'line': b'running build_py\n'}
+[13.819625] (jetson_camera) StdoutLine: {'line': b'running install\n'}
+[13.834993] (jetson_camera) StdoutLine: {'line': b'running install_lib\n'}
+[13.842313] (jetson_camera) StdoutLine: {'line': b'running install_data\n'}
+[13.843973] (jetson_camera) StdoutLine: {'line': b'running install_egg_info\n'}
+[13.861680] (-) TimerEvent: {}
+[13.865915] (jetson_camera) StdoutLine: {'line': b"removing '/home/jetson/EVC/workshops/final_project_v4/install/jetson_camera/lib/python3.8/site-packages/jetson_camera-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[13.869175] (jetson_camera) StdoutLine: {'line': b'Copying ../../../build/jetson_camera/jetson_camera.egg-info to /home/jetson/EVC/workshops/final_project_v4/install/jetson_camera/lib/python3.8/site-packages/jetson_camera-0.0.0-py3.8.egg-info\n'}
+[13.895560] (jetson_camera) StdoutLine: {'line': b'running install_scripts\n'}
+[13.961844] (-) TimerEvent: {}
+[14.021002] (jetson_camera) StdoutLine: {'line': b'Installing calibrate_camera script to /home/jetson/EVC/workshops/final_project_v4/install/jetson_camera/lib/jetson_camera\n'}
+[14.022994] (jetson_camera) StdoutLine: {'line': b'Installing pair_subscriber_node script to /home/jetson/EVC/workshops/final_project_v4/install/jetson_camera/lib/jetson_camera\n'}
+[14.028526] (jetson_camera) StdoutLine: {'line': b'Installing processing_node script to /home/jetson/EVC/workshops/final_project_v4/install/jetson_camera/lib/jetson_camera\n'}
+[14.029560] (jetson_camera) StdoutLine: {'line': b'Installing publisher_node script to /home/jetson/EVC/workshops/final_project_v4/install/jetson_camera/lib/jetson_camera\n'}
+[14.030574] (jetson_camera) StdoutLine: {'line': b'Installing subscriber_node script to /home/jetson/EVC/workshops/final_project_v4/install/jetson_camera/lib/jetson_camera\n'}
+[14.033767] (jetson_camera) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/EVC/workshops/final_project_v4/build/jetson_camera/install.log'\n"}
+[14.046820] (line_following) StdoutLine: {'line': b'running egg_info\n'}
+[14.051294] (line_following) StdoutLine: {'line': b'writing ../../../build/line_following/line_following.egg-info/PKG-INFO\n'}
+[14.053396] (line_following) StdoutLine: {'line': b'writing dependency_links to ../../../build/line_following/line_following.egg-info/dependency_links.txt\n'}
+[14.055029] (line_following) StdoutLine: {'line': b'writing entry points to ../../../build/line_following/line_following.egg-info/entry_points.txt\n'}
+[14.056655] (line_following) StdoutLine: {'line': b'writing requirements to ../../../build/line_following/line_following.egg-info/requires.txt\n'}
+[14.060920] (line_following) StdoutLine: {'line': b'writing top-level names to ../../../build/line_following/line_following.egg-info/top_level.txt\n'}
+[14.061990] (-) TimerEvent: {}
+[14.158407] (line_following) StdoutLine: {'line': b"reading manifest file '../../../build/line_following/line_following.egg-info/SOURCES.txt'\n"}
+[14.162274] (-) TimerEvent: {}
+[14.163869] (line_following) StdoutLine: {'line': b"writing manifest file '../../../build/line_following/line_following.egg-info/SOURCES.txt'\n"}
+[14.165050] (line_following) StdoutLine: {'line': b'running build\n'}
+[14.165737] (line_following) StdoutLine: {'line': b'running build_py\n'}
+[14.166398] (line_following) StdoutLine: {'line': b'running install\n'}
+[14.181911] (line_following) StdoutLine: {'line': b'running install_lib\n'}
+[14.189115] (line_following) StdoutLine: {'line': b'running install_data\n'}
+[14.189771] (line_following) StdoutLine: {'line': b'running install_egg_info\n'}
+[14.198171] (line_following) StdoutLine: {'line': b"removing '/home/jetson/EVC/workshops/final_project_v4/install/line_following/lib/python3.8/site-packages/line_following-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[14.198693] (line_following) StdoutLine: {'line': b'Copying ../../../build/line_following/line_following.egg-info to /home/jetson/EVC/workshops/final_project_v4/install/line_following/lib/python3.8/site-packages/line_following-0.0.0-py3.8.egg-info\n'}
+[14.199349] (line_following) StdoutLine: {'line': b'running install_scripts\n'}
+[14.227731] (jetson_camera) CommandEnded: {'returncode': 0}
+[14.262592] (-) TimerEvent: {}
+[14.269604] (jetson_camera) JobEnded: {'identifier': 'jetson_camera', 'rc': 0}
+[14.294394] (line_following) StdoutLine: {'line': b'Installing angular_tracker script to /home/jetson/EVC/workshops/final_project_v4/install/line_following/lib/line_following\n'}
+[14.295906] (line_following) StdoutLine: {'line': b'Installing line_tracker script to /home/jetson/EVC/workshops/final_project_v4/install/line_following/lib/line_following\n'}
+[14.296472] (line_following) StdoutLine: {'line': b'Installing navigator script to /home/jetson/EVC/workshops/final_project_v4/install/line_following/lib/line_following\n'}
+[14.302747] (line_following) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/EVC/workshops/final_project_v4/build/line_following/install.log'\n"}
+[14.362796] (-) TimerEvent: {}
+[14.416768] (line_following) CommandEnded: {'returncode': 0}
+[14.463061] (-) TimerEvent: {}
+[14.470695] (line_following) JobEnded: {'identifier': 'line_following', 'rc': 0}
+[14.479529] (motor_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/motor_control', 'build', '--build-base', '/home/jetson/EVC/workshops/final_project_v4/build/motor_control/build', 'install', '--record', '/home/jetson/EVC/workshops/final_project_v4/build/motor_control/install.log', '--install-scripts', '$base/lib/motor_control', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jetson/EVC/workshops/final_project_v4/motion/control/motor_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'SSH_CLIENT': '192.168.8.130 34724 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib::/usr/local/cuda/lib64', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson', 'SSH_TTY': '/dev/pts/7', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': '', 'JETSON_SERIAL_NUMBER': '1654424002069', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '17', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:15.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'ROS_DOMAIN_ID': '5', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/EVC/workshops/final_project_v4/build/motor_control', 'SSH_CONNECTION': '192.168.8.130 34724 192.168.8.208 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/EVC/workshops/final_project_v4/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v4/install/motor_control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '4.6', 'JETSON_P_NUMBER': 'pread-moto'}, 'shell': False}
+[14.563331] (-) TimerEvent: {}
+[14.664175] (-) TimerEvent: {}
+[14.764845] (-) TimerEvent: {}
+[14.865467] (-) TimerEvent: {}
+[14.966074] (-) TimerEvent: {}
+[15.066682] (-) TimerEvent: {}
+[15.167282] (-) TimerEvent: {}
+[15.267914] (-) TimerEvent: {}
+[15.368637] (-) TimerEvent: {}
+[15.469363] (-) TimerEvent: {}
+[15.569964] (-) TimerEvent: {}
+[15.591690] (motor_control) StderrLine: {'line': b"/usr/local/lib/python3.8/dist-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[15.592521] (motor_control) StderrLine: {'line': b'  warnings.warn(\n'}
+[15.670134] (-) TimerEvent: {}
+[15.742929] (motor_control) StdoutLine: {'line': b'running egg_info\n'}
+[15.746297] (motor_control) StdoutLine: {'line': b'writing ../../../build/motor_control/motor_control.egg-info/PKG-INFO\n'}
+[15.747136] (motor_control) StdoutLine: {'line': b'writing dependency_links to ../../../build/motor_control/motor_control.egg-info/dependency_links.txt\n'}
+[15.747802] (motor_control) StdoutLine: {'line': b'writing entry points to ../../../build/motor_control/motor_control.egg-info/entry_points.txt\n'}
+[15.748467] (motor_control) StdoutLine: {'line': b'writing requirements to ../../../build/motor_control/motor_control.egg-info/requires.txt\n'}
+[15.749131] (motor_control) StdoutLine: {'line': b'writing top-level names to ../../../build/motor_control/motor_control.egg-info/top_level.txt\n'}
+[15.761746] (motor_control) StdoutLine: {'line': b"reading manifest file '../../../build/motor_control/motor_control.egg-info/SOURCES.txt'\n"}
+[15.770229] (-) TimerEvent: {}
+[15.812119] (motor_control) StdoutLine: {'line': b"writing manifest file '../../../build/motor_control/motor_control.egg-info/SOURCES.txt'\n"}
+[15.812978] (motor_control) StdoutLine: {'line': b'running build\n'}
+[15.813469] (motor_control) StdoutLine: {'line': b'running build_py\n'}
+[15.818159] (motor_control) StdoutLine: {'line': b'running install\n'}
+[15.821512] (motor_control) StdoutLine: {'line': b'running install_lib\n'}
+[15.831829] (motor_control) StdoutLine: {'line': b'running install_data\n'}
+[15.833599] (motor_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[15.840784] (motor_control) StdoutLine: {'line': b"removing '/home/jetson/EVC/workshops/final_project_v4/install/motor_control/lib/python3.8/site-packages/motor_control-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[15.842422] (motor_control) StdoutLine: {'line': b'Copying ../../../build/motor_control/motor_control.egg-info to /home/jetson/EVC/workshops/final_project_v4/install/motor_control/lib/python3.8/site-packages/motor_control-0.0.0-py3.8.egg-info\n'}
+[15.866266] (motor_control) StdoutLine: {'line': b'running install_scripts\n'}
+[15.870378] (-) TimerEvent: {}
+[15.949302] (motor_control) StdoutLine: {'line': b'Installing hand_follower script to /home/jetson/EVC/workshops/final_project_v4/install/motor_control/lib/motor_control\n'}
+[15.950116] (motor_control) StdoutLine: {'line': b'Installing kinematics_node script to /home/jetson/EVC/workshops/final_project_v4/install/motor_control/lib/motor_control\n'}
+[15.950934] (motor_control) StdoutLine: {'line': b'Installing movement_node script to /home/jetson/EVC/workshops/final_project_v4/install/motor_control/lib/motor_control\n'}
+[15.951705] (motor_control) StdoutLine: {'line': b'Installing odometry_node script to /home/jetson/EVC/workshops/final_project_v4/install/motor_control/lib/motor_control\n'}
+[15.952153] (motor_control) StdoutLine: {'line': b'Installing pid_controller script to /home/jetson/EVC/workshops/final_project_v4/install/motor_control/lib/motor_control\n'}
+[15.954185] (motor_control) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/EVC/workshops/final_project_v4/build/motor_control/install.log'\n"}
+[15.970558] (-) TimerEvent: {}
+[16.062731] (motor_control) CommandEnded: {'returncode': 0}
+[16.078116] (-) TimerEvent: {}
+[16.109358] (motor_control) JobEnded: {'identifier': 'motor_control', 'rc': 0}
+[16.178307] (-) TimerEvent: {}
+[16.279091] (-) TimerEvent: {}
+[16.323378] (color_detection_mode) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/color_detection_mode', 'build', '--build-base', '/home/jetson/EVC/workshops/final_project_v4/build/color_detection_mode/build', 'install', '--record', '/home/jetson/EVC/workshops/final_project_v4/build/color_detection_mode/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jetson/EVC/workshops/final_project_v4/behaviors/color_detection/color_detection_mode', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'SSH_CLIENT': '192.168.8.130 34724 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib:/home/jetson/EVC/workshops/final_project_v4/install/jetson_camera_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda/lib64', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson', 'SSH_TTY': '/dev/pts/7', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': '', 'JETSON_SERIAL_NUMBER': '1654424002069', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '17', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:15.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'ROS_DOMAIN_ID': '5', 'AMENT_PREFIX_PATH': '/home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/EVC/workshops/final_project_v4/build/color_detection_mode', 'SSH_CONNECTION': '192.168.8.130 34724 192.168.8.208 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/EVC/workshops/final_project_v4/build/color_detection_mode/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v4/install/color_detection_mode/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v4/install/jetson_camera_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '4.6', 'JETSON_P_NUMBER': 'pread-moto', 'CMAKE_PREFIX_PATH': '/home/jetson/EVC/workshops/final_project_v4/install/jetson_camera_interfaces'}, 'shell': False}
+[16.379365] (-) TimerEvent: {}
+[16.480170] (-) TimerEvent: {}
+[16.580827] (-) TimerEvent: {}
+[16.681623] (-) TimerEvent: {}
+[16.782239] (-) TimerEvent: {}
+[16.882850] (-) TimerEvent: {}
+[16.983677] (-) TimerEvent: {}
+[17.084588] (-) TimerEvent: {}
+[17.185214] (-) TimerEvent: {}
+[17.285881] (-) TimerEvent: {}
+[17.386561] (-) TimerEvent: {}
+[17.487219] (-) TimerEvent: {}
+[17.542793] (color_detection_mode) StdoutLine: {'line': b'running egg_info\n'}
+[17.545324] (color_detection_mode) StdoutLine: {'line': b'writing ../../../build/color_detection_mode/color_detection_mode.egg-info/PKG-INFO\n'}
+[17.547348] (color_detection_mode) StdoutLine: {'line': b'writing dependency_links to ../../../build/color_detection_mode/color_detection_mode.egg-info/dependency_links.txt\n'}
+[17.547773] (color_detection_mode) StdoutLine: {'line': b'writing entry points to ../../../build/color_detection_mode/color_detection_mode.egg-info/entry_points.txt\n'}
+[17.548115] (color_detection_mode) StdoutLine: {'line': b'writing requirements to ../../../build/color_detection_mode/color_detection_mode.egg-info/requires.txt\n'}
+[17.548476] (color_detection_mode) StdoutLine: {'line': b'writing top-level names to ../../../build/color_detection_mode/color_detection_mode.egg-info/top_level.txt\n'}
+[17.559458] (color_detection_mode) StdoutLine: {'line': b"reading manifest file '../../../build/color_detection_mode/color_detection_mode.egg-info/SOURCES.txt'\n"}
+[17.587373] (-) TimerEvent: {}
+[17.592611] (color_detection_mode) StdoutLine: {'line': b"writing manifest file '../../../build/color_detection_mode/color_detection_mode.egg-info/SOURCES.txt'\n"}
+[17.596447] (color_detection_mode) StdoutLine: {'line': b'running build\n'}
+[17.605263] (color_detection_mode) StdoutLine: {'line': b'running build_py\n'}
+[17.605849] (color_detection_mode) StdoutLine: {'line': b'running install\n'}
+[17.609285] (color_detection_mode) StdoutLine: {'line': b'running install_lib\n'}
+[17.611313] (color_detection_mode) StdoutLine: {'line': b'running install_data\n'}
+[17.614212] (color_detection_mode) StdoutLine: {'line': b'running install_egg_info\n'}
+[17.614931] (color_detection_mode) StdoutLine: {'line': b"removing '/home/jetson/EVC/workshops/final_project_v4/install/color_detection_mode/lib/python3.8/site-packages/color_detection_mode-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[17.616223] (color_detection_mode) StdoutLine: {'line': b'Copying ../../../build/color_detection_mode/color_detection_mode.egg-info to /home/jetson/EVC/workshops/final_project_v4/install/color_detection_mode/lib/python3.8/site-packages/color_detection_mode-0.0.0-py3.8.egg-info\n'}
+[17.620836] (color_detection_mode) StdoutLine: {'line': b'running install_scripts\n'}
+[17.688123] (-) TimerEvent: {}
+[17.702031] (color_detection_mode) StdoutLine: {'line': b'Installing color_detection_node script to /home/jetson/EVC/workshops/final_project_v4/install/color_detection_mode/lib/color_detection_mode\n'}
+[17.703663] (color_detection_mode) StdoutLine: {'line': b'Installing go_stop_node script to /home/jetson/EVC/workshops/final_project_v4/install/color_detection_mode/lib/color_detection_mode\n'}
+[17.707148] (color_detection_mode) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/EVC/workshops/final_project_v4/build/color_detection_mode/install.log'\n"}
+[17.788510] (-) TimerEvent: {}
+[17.811797] (color_detection_mode) CommandEnded: {'returncode': 0}
+[17.840656] (color_detection_mode) JobEnded: {'identifier': 'color_detection_mode', 'rc': 0}
+[17.843572] (-) EventReactorShutdown: {}

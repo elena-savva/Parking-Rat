@@ -1,0 +1,41 @@
+[6.118s] Invoking command in '/home/jetson/EVC/workshops/final_project_v3/behaviors/goal_navigation/goal_navigation': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v3/build/goal_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v3/install/goal_navigation/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/goal_navigation build --build-base /home/jetson/EVC/workshops/final_project_v3/build/goal_navigation/build install --record /home/jetson/EVC/workshops/final_project_v3/build/goal_navigation/install.log --single-version-externally-managed install_data
+[7.514s] running egg_info
+[7.516s] creating ../../../build/goal_navigation/goal_navigation.egg-info
+[7.517s] writing ../../../build/goal_navigation/goal_navigation.egg-info/PKG-INFO
+[7.519s] writing dependency_links to ../../../build/goal_navigation/goal_navigation.egg-info/dependency_links.txt
+[7.520s] writing entry points to ../../../build/goal_navigation/goal_navigation.egg-info/entry_points.txt
+[7.520s] writing requirements to ../../../build/goal_navigation/goal_navigation.egg-info/requires.txt
+[7.521s] writing top-level names to ../../../build/goal_navigation/goal_navigation.egg-info/top_level.txt
+[7.527s] writing manifest file '../../../build/goal_navigation/goal_navigation.egg-info/SOURCES.txt'
+[7.535s] reading manifest file '../../../build/goal_navigation/goal_navigation.egg-info/SOURCES.txt'
+[7.540s] writing manifest file '../../../build/goal_navigation/goal_navigation.egg-info/SOURCES.txt'
+[7.541s] running build
+[7.541s] running build_py
+[7.542s] creating /home/jetson/EVC/workshops/final_project_v3/build/goal_navigation/build
+[7.543s] creating /home/jetson/EVC/workshops/final_project_v3/build/goal_navigation/build/lib
+[7.543s] creating /home/jetson/EVC/workshops/final_project_v3/build/goal_navigation/build/lib/goal_navigation
+[7.544s] copying goal_navigation/goal_publisher_node.py -> /home/jetson/EVC/workshops/final_project_v3/build/goal_navigation/build/lib/goal_navigation
+[7.544s] copying goal_navigation/__init__.py -> /home/jetson/EVC/workshops/final_project_v3/build/goal_navigation/build/lib/goal_navigation
+[7.545s] running install
+[7.549s] running install_lib
+[7.554s] creating /home/jetson/EVC/workshops/final_project_v3/install/goal_navigation/lib/python3.8/site-packages/goal_navigation
+[7.555s] copying /home/jetson/EVC/workshops/final_project_v3/build/goal_navigation/build/lib/goal_navigation/goal_publisher_node.py -> /home/jetson/EVC/workshops/final_project_v3/install/goal_navigation/lib/python3.8/site-packages/goal_navigation
+[7.555s] copying /home/jetson/EVC/workshops/final_project_v3/build/goal_navigation/build/lib/goal_navigation/__init__.py -> /home/jetson/EVC/workshops/final_project_v3/install/goal_navigation/lib/python3.8/site-packages/goal_navigation
+[7.558s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/goal_navigation/lib/python3.8/site-packages/goal_navigation/goal_publisher_node.py to goal_publisher_node.cpython-38.pyc
+[7.561s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/goal_navigation/lib/python3.8/site-packages/goal_navigation/__init__.py to __init__.cpython-38.pyc
+[7.562s] running install_data
+[7.563s] creating /home/jetson/EVC/workshops/final_project_v3/install/goal_navigation/share/ament_index
+[7.563s] creating /home/jetson/EVC/workshops/final_project_v3/install/goal_navigation/share/ament_index/resource_index
+[7.563s] creating /home/jetson/EVC/workshops/final_project_v3/install/goal_navigation/share/ament_index/resource_index/packages
+[7.564s] copying resource/goal_navigation -> /home/jetson/EVC/workshops/final_project_v3/install/goal_navigation/share/ament_index/resource_index/packages
+[7.569s] copying package.xml -> /home/jetson/EVC/workshops/final_project_v3/install/goal_navigation/share/goal_navigation
+[7.570s] creating /home/jetson/EVC/workshops/final_project_v3/install/goal_navigation/share/goal_navigation/config
+[7.570s] copying config/goal_navigation.yaml -> /home/jetson/EVC/workshops/final_project_v3/install/goal_navigation/share/goal_navigation/config
+[7.575s] creating /home/jetson/EVC/workshops/final_project_v3/install/goal_navigation/share/goal_navigation/launch
+[7.575s] copying launch/goal_navigation.launch.py -> /home/jetson/EVC/workshops/final_project_v3/install/goal_navigation/share/goal_navigation/launch
+[7.582s] running install_egg_info
+[7.582s] Copying ../../../build/goal_navigation/goal_navigation.egg-info to /home/jetson/EVC/workshops/final_project_v3/install/goal_navigation/lib/python3.8/site-packages/goal_navigation-0.0.0-py3.8.egg-info
+[7.583s] running install_scripts
+[7.679s] Installing goal_publisher_node script to /home/jetson/EVC/workshops/final_project_v3/install/goal_navigation/lib/goal_navigation
+[7.680s] writing list of installed files to '/home/jetson/EVC/workshops/final_project_v3/build/goal_navigation/install.log'
+[9.133s] Invoked command in '/home/jetson/EVC/workshops/final_project_v3/behaviors/goal_navigation/goal_navigation' returned '0': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v3/build/goal_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v3/install/goal_navigation/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/goal_navigation build --build-base /home/jetson/EVC/workshops/final_project_v3/build/goal_navigation/build install --record /home/jetson/EVC/workshops/final_project_v3/build/goal_navigation/install.log --single-version-externally-managed install_data

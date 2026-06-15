@@ -1,0 +1,62 @@
+[6.484s] Invoking command in '/home/jetson/EVC/workshops/final_project_v5/vision/camera/jetson_camera': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/jetson_camera build --build-base /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/build install --record /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/install.log --single-version-externally-managed install_data
+[8.221s] running egg_info
+[8.223s] creating ../../../build/jetson_camera/jetson_camera.egg-info
+[8.228s] writing ../../../build/jetson_camera/jetson_camera.egg-info/PKG-INFO
+[8.230s] writing dependency_links to ../../../build/jetson_camera/jetson_camera.egg-info/dependency_links.txt
+[8.232s] writing entry points to ../../../build/jetson_camera/jetson_camera.egg-info/entry_points.txt
+[8.233s] writing requirements to ../../../build/jetson_camera/jetson_camera.egg-info/requires.txt
+[8.235s] writing top-level names to ../../../build/jetson_camera/jetson_camera.egg-info/top_level.txt
+[8.257s] writing manifest file '../../../build/jetson_camera/jetson_camera.egg-info/SOURCES.txt'
+[8.271s] reading manifest file '../../../build/jetson_camera/jetson_camera.egg-info/SOURCES.txt'
+[8.277s] writing manifest file '../../../build/jetson_camera/jetson_camera.egg-info/SOURCES.txt'
+[8.280s] running build
+[8.280s] running build_py
+[8.281s] creating /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/build
+[8.282s] creating /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/build/lib
+[8.283s] creating /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/build/lib/jetson_camera
+[8.289s] copying jetson_camera/processing_node.py -> /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/build/lib/jetson_camera
+[8.294s] copying jetson_camera/pair_subscriber_node.py -> /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/build/lib/jetson_camera
+[8.294s] copying jetson_camera/camera_calibration.py -> /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/build/lib/jetson_camera
+[8.298s] copying jetson_camera/subscriber_node.py -> /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/build/lib/jetson_camera
+[8.299s] copying jetson_camera/__init__.py -> /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/build/lib/jetson_camera
+[8.299s] copying jetson_camera/publisher_node.py -> /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/build/lib/jetson_camera
+[8.300s] running install
+[8.301s] running install_lib
+[8.306s] creating /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages/jetson_camera
+[8.307s] copying /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/build/lib/jetson_camera/processing_node.py -> /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages/jetson_camera
+[8.309s] copying /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/build/lib/jetson_camera/pair_subscriber_node.py -> /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages/jetson_camera
+[8.312s] copying /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/build/lib/jetson_camera/camera_calibration.py -> /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages/jetson_camera
+[8.316s] copying /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/build/lib/jetson_camera/subscriber_node.py -> /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages/jetson_camera
+[8.318s] copying /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/build/lib/jetson_camera/__init__.py -> /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages/jetson_camera
+[8.319s] copying /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/build/lib/jetson_camera/publisher_node.py -> /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages/jetson_camera
+[8.320s] byte-compiling /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages/jetson_camera/processing_node.py to processing_node.cpython-38.pyc
+[8.324s] byte-compiling /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages/jetson_camera/pair_subscriber_node.py to pair_subscriber_node.cpython-38.pyc
+[8.329s] byte-compiling /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages/jetson_camera/camera_calibration.py to camera_calibration.cpython-38.pyc
+[8.339s] byte-compiling /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages/jetson_camera/subscriber_node.py to subscriber_node.cpython-38.pyc
+[8.344s] byte-compiling /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages/jetson_camera/__init__.py to __init__.cpython-38.pyc
+[8.346s] byte-compiling /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages/jetson_camera/publisher_node.py to publisher_node.cpython-38.pyc
+[8.348s] running install_data
+[8.350s] creating /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/ament_index
+[8.351s] creating /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/ament_index/resource_index
+[8.351s] creating /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/ament_index/resource_index/packages
+[8.351s] copying resource/jetson_camera -> /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/ament_index/resource_index/packages
+[8.352s] copying package.xml -> /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera
+[8.352s] creating /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera/launch
+[8.353s] copying launch/camera_processor.launch.py -> /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera/launch
+[8.364s] copying launch/camera_publisher.launch.py -> /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera/launch
+[8.371s] copying launch/camera_pair_view.launch.py -> /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera/launch
+[8.377s] copying launch/camera_subscriber.launch.py -> /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera/launch
+[8.377s] copying launch/camera_pipeline.launch.py -> /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera/launch
+[8.379s] creating /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera/config
+[8.381s] copying config/camera_calibration.yaml -> /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera/config
+[8.392s] copying config/parameters.yaml -> /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera/config
+[8.411s] running install_egg_info
+[8.412s] Copying ../../../build/jetson_camera/jetson_camera.egg-info to /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages/jetson_camera-0.0.0-py3.8.egg-info
+[8.412s] running install_scripts
+[8.546s] Installing calibrate_camera script to /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/jetson_camera
+[8.547s] Installing pair_subscriber_node script to /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/jetson_camera
+[8.548s] Installing processing_node script to /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/jetson_camera
+[8.549s] Installing publisher_node script to /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/jetson_camera
+[8.550s] Installing subscriber_node script to /home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/jetson_camera
+[8.551s] writing list of installed files to '/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/install.log'
+[9.989s] Invoked command in '/home/jetson/EVC/workshops/final_project_v5/vision/camera/jetson_camera' returned '0': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/jetson_camera build --build-base /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/build install --record /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/install.log --single-version-externally-managed install_data

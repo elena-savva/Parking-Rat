@@ -1,0 +1,7 @@
+[console_scripts]
+hand_follower = motor_control.hand_follower_node:main
+kinematics_node = motor_control.kinematics_node:main
+movement_node = motor_control.movement_node:main
+odometry_node = motor_control.odometry_node:main
+pid_controller = motor_control.pid_controller_node:main
+

@@ -1,0 +1,4 @@
+[console_scripts]
+go_to_goal_node = goal_navigation.go_to_goal_node:main
+telemetry_overlay_node = goal_navigation.telemetry_overlay_node:main
+

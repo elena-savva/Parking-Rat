@@ -1,0 +1,19 @@
+camera_publisher:
+  ros__parameters:
+    sensor_id: 0
+    width: 640
+    height: 480
+    fps: 10
+
+image_processor:
+  ros__parameters:
+    input_topic: /camera/image_raw
+    output_topic: /camera/image_pair
+    frame_id: camera
+    calibration_file: ''
+    jpeg_quality: 95
+
+image_pair_subscriber:
+  ros__parameters:
+    image_pair_topic: /camera/image_pair
+    window_name: Raw vs Undistorted

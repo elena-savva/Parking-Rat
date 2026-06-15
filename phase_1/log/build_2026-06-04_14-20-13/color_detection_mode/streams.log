@@ -1,0 +1,47 @@
+[3.379s] Invoking command in '/home/jetson/EVC/workshops/final_project_v3/behaviors/color_detection/color_detection_mode': AMENT_PREFIX_PATH=/home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib:/home/jetson/EVC/workshops/final_project_copy/install/jetson_camera_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/jetson/EVC/workshops/final_project_v3/build/color_detection_mode/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/color_detection_mode build --build-base /home/jetson/EVC/workshops/final_project_v3/build/color_detection_mode/build install --record /home/jetson/EVC/workshops/final_project_v3/build/color_detection_mode/install.log --single-version-externally-managed install_data
+[4.512s] running egg_info
+[4.514s] creating ../../../build/color_detection_mode/color_detection_mode.egg-info
+[4.515s] writing ../../../build/color_detection_mode/color_detection_mode.egg-info/PKG-INFO
+[4.515s] writing dependency_links to ../../../build/color_detection_mode/color_detection_mode.egg-info/dependency_links.txt
+[4.516s] writing entry points to ../../../build/color_detection_mode/color_detection_mode.egg-info/entry_points.txt
+[4.516s] writing requirements to ../../../build/color_detection_mode/color_detection_mode.egg-info/requires.txt
+[4.517s] writing top-level names to ../../../build/color_detection_mode/color_detection_mode.egg-info/top_level.txt
+[4.522s] writing manifest file '../../../build/color_detection_mode/color_detection_mode.egg-info/SOURCES.txt'
+[4.529s] reading manifest file '../../../build/color_detection_mode/color_detection_mode.egg-info/SOURCES.txt'
+[4.532s] writing manifest file '../../../build/color_detection_mode/color_detection_mode.egg-info/SOURCES.txt'
+[4.534s] running build
+[4.534s] running build_py
+[4.534s] creating /home/jetson/EVC/workshops/final_project_v3/build/color_detection_mode/build
+[4.535s] creating /home/jetson/EVC/workshops/final_project_v3/build/color_detection_mode/build/lib
+[4.535s] creating /home/jetson/EVC/workshops/final_project_v3/build/color_detection_mode/build/lib/color_detection_mode
+[4.535s] copying color_detection_mode/color_detection_node.py -> /home/jetson/EVC/workshops/final_project_v3/build/color_detection_mode/build/lib/color_detection_mode
+[4.537s] copying color_detection_mode/go_stop_node.py -> /home/jetson/EVC/workshops/final_project_v3/build/color_detection_mode/build/lib/color_detection_mode
+[4.539s] copying color_detection_mode/__init__.py -> /home/jetson/EVC/workshops/final_project_v3/build/color_detection_mode/build/lib/color_detection_mode
+[4.540s] running install
+[4.543s] running install_lib
+[4.547s] creating /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/lib/python3.8/site-packages/color_detection_mode
+[4.548s] copying /home/jetson/EVC/workshops/final_project_v3/build/color_detection_mode/build/lib/color_detection_mode/color_detection_node.py -> /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/lib/python3.8/site-packages/color_detection_mode
+[4.548s] copying /home/jetson/EVC/workshops/final_project_v3/build/color_detection_mode/build/lib/color_detection_mode/go_stop_node.py -> /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/lib/python3.8/site-packages/color_detection_mode
+[4.548s] copying /home/jetson/EVC/workshops/final_project_v3/build/color_detection_mode/build/lib/color_detection_mode/__init__.py -> /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/lib/python3.8/site-packages/color_detection_mode
+[4.551s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/lib/python3.8/site-packages/color_detection_mode/color_detection_node.py to color_detection_node.cpython-38.pyc
+[4.557s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/lib/python3.8/site-packages/color_detection_mode/go_stop_node.py to go_stop_node.cpython-38.pyc
+[4.562s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/lib/python3.8/site-packages/color_detection_mode/__init__.py to __init__.cpython-38.pyc
+[4.563s] running install_data
+[4.563s] creating /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/share/ament_index
+[4.564s] creating /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/share/ament_index/resource_index
+[4.564s] creating /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/share/ament_index/resource_index/packages
+[4.565s] copying resource/color_detection_mode -> /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/share/ament_index/resource_index/packages
+[4.565s] copying package.xml -> /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/share/color_detection_mode
+[4.566s] creating /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/share/color_detection_mode/config
+[4.566s] copying config/color_detection.yaml -> /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/share/color_detection_mode/config
+[4.567s] copying config/go_stop.yaml -> /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/share/color_detection_mode/config
+[4.568s] creating /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/share/color_detection_mode/launch
+[4.568s] copying launch/go_stop.launch.py -> /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/share/color_detection_mode/launch
+[4.569s] copying launch/color_detection_mode.launch.py -> /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/share/color_detection_mode/launch
+[4.570s] running install_egg_info
+[4.577s] Copying ../../../build/color_detection_mode/color_detection_mode.egg-info to /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/lib/python3.8/site-packages/color_detection_mode-0.0.0-py3.8.egg-info
+[4.580s] running install_scripts
+[4.655s] Installing color_detection_node script to /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/lib/color_detection_mode
+[4.656s] Installing go_stop_node script to /home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/lib/color_detection_mode
+[4.656s] writing list of installed files to '/home/jetson/EVC/workshops/final_project_v3/build/color_detection_mode/install.log'
+[4.751s] Invoked command in '/home/jetson/EVC/workshops/final_project_v3/behaviors/color_detection/color_detection_mode' returned '0': AMENT_PREFIX_PATH=/home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib:/home/jetson/EVC/workshops/final_project_copy/install/jetson_camera_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/jetson/EVC/workshops/final_project_v3/build/color_detection_mode/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v3/install/color_detection_mode/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v3/install/jetson_camera_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/color_detection_mode build --build-base /home/jetson/EVC/workshops/final_project_v3/build/color_detection_mode/build install --record /home/jetson/EVC/workshops/final_project_v3/build/color_detection_mode/install.log --single-version-externally-managed install_data

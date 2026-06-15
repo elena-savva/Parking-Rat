@@ -1,0 +1,1052 @@
+[0.906s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.907s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f83d3a070>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f83d3a070>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f83cc47c0>)
+[1.788s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.788s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.788s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.788s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.788s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.789s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.789s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jetson/EVC/workshops/final_project_v5'
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.790s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.790s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.790s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.790s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.791s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.791s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.791s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.791s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.840s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.840s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.840s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.841s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.841s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.841s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors) by extensions ['ignore', 'ignore_ament_install']
+[1.842s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors) by extension 'ignore'
+[1.842s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors) by extension 'ignore_ament_install'
+[1.842s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors) by extensions ['colcon_pkg']
+[1.842s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors) by extension 'colcon_pkg'
+[1.842s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors) by extensions ['colcon_meta']
+[1.843s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors) by extension 'colcon_meta'
+[1.843s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors) by extensions ['ros']
+[1.843s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors) by extension 'ros'
+[1.843s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors) by extensions ['cmake', 'python']
+[1.843s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors) by extension 'cmake'
+[1.844s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors) by extension 'python'
+[1.844s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors) by extensions ['python_setup_py']
+[1.844s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors) by extension 'python_setup_py'
+[1.844s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking) by extensions ['ignore', 'ignore_ament_install']
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking) by extension 'ignore'
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking) by extension 'ignore_ament_install'
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking) by extensions ['colcon_pkg']
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking) by extension 'colcon_pkg'
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking) by extensions ['colcon_meta']
+[1.846s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking) by extension 'colcon_meta'
+[1.846s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking) by extensions ['ros']
+[1.846s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking) by extension 'ros'
+[1.846s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking) by extensions ['cmake', 'python']
+[1.846s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking) by extension 'cmake'
+[1.847s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking) by extension 'python'
+[1.847s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking) by extensions ['python_setup_py']
+[1.847s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking) by extension 'python_setup_py'
+[1.847s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking/aruco_parking) by extensions ['ignore', 'ignore_ament_install']
+[1.848s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking/aruco_parking) by extension 'ignore'
+[1.848s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking/aruco_parking) by extension 'ignore_ament_install'
+[1.848s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking/aruco_parking) by extensions ['colcon_pkg']
+[1.848s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking/aruco_parking) by extension 'colcon_pkg'
+[1.848s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking/aruco_parking) by extensions ['colcon_meta']
+[1.849s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking/aruco_parking) by extension 'colcon_meta'
+[1.849s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking/aruco_parking) by extensions ['ros']
+[1.849s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/aruco_parking/aruco_parking) by extension 'ros'
+[1.897s] DEBUG:colcon.colcon_core.package_identification:Package 'behaviors/aruco_parking/aruco_parking' with type 'ros.ament_python' and name 'aruco_parking'
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection) by extensions ['ignore', 'ignore_ament_install']
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection) by extension 'ignore'
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection) by extension 'ignore_ament_install'
+[1.899s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection) by extensions ['colcon_pkg']
+[1.899s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection) by extension 'colcon_pkg'
+[1.899s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection) by extensions ['colcon_meta']
+[1.899s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection) by extension 'colcon_meta'
+[1.899s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection) by extensions ['ros']
+[1.899s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection) by extension 'ros'
+[1.900s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection) by extensions ['cmake', 'python']
+[1.900s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection) by extension 'cmake'
+[1.900s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection) by extension 'python'
+[1.900s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection) by extensions ['python_setup_py']
+[1.900s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection) by extension 'python_setup_py'
+[1.901s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection/color_detection_mode) by extensions ['ignore', 'ignore_ament_install']
+[1.901s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection/color_detection_mode) by extension 'ignore'
+[1.901s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection/color_detection_mode) by extension 'ignore_ament_install'
+[1.902s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection/color_detection_mode) by extensions ['colcon_pkg']
+[1.902s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection/color_detection_mode) by extension 'colcon_pkg'
+[1.902s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection/color_detection_mode) by extensions ['colcon_meta']
+[1.902s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection/color_detection_mode) by extension 'colcon_meta'
+[1.902s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection/color_detection_mode) by extensions ['ros']
+[1.903s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/color_detection/color_detection_mode) by extension 'ros'
+[1.907s] DEBUG:colcon.colcon_core.package_identification:Package 'behaviors/color_detection/color_detection_mode' with type 'ros.ament_python' and name 'color_detection_mode'
+[1.907s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation) by extensions ['ignore', 'ignore_ament_install']
+[1.908s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation) by extension 'ignore'
+[1.908s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation) by extension 'ignore_ament_install'
+[1.908s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation) by extensions ['colcon_pkg']
+[1.908s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation) by extension 'colcon_pkg'
+[1.909s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation) by extensions ['colcon_meta']
+[1.909s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation) by extension 'colcon_meta'
+[1.909s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation) by extensions ['ros']
+[1.909s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation) by extension 'ros'
+[1.910s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation) by extensions ['cmake', 'python']
+[1.910s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation) by extension 'cmake'
+[1.910s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation) by extension 'python'
+[1.910s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation) by extensions ['python_setup_py']
+[1.910s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation) by extension 'python_setup_py'
+[1.911s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation/goal_navigation) by extensions ['ignore', 'ignore_ament_install']
+[1.911s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation/goal_navigation) by extension 'ignore'
+[1.911s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation/goal_navigation) by extension 'ignore_ament_install'
+[1.911s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation/goal_navigation) by extensions ['colcon_pkg']
+[1.912s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation/goal_navigation) by extension 'colcon_pkg'
+[1.912s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation/goal_navigation) by extensions ['colcon_meta']
+[1.912s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation/goal_navigation) by extension 'colcon_meta'
+[1.912s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation/goal_navigation) by extensions ['ros']
+[1.912s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/goal_navigation/goal_navigation) by extension 'ros'
+[1.915s] DEBUG:colcon.colcon_core.package_identification:Package 'behaviors/goal_navigation/goal_navigation' with type 'ros.ament_python' and name 'goal_navigation'
+[1.915s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following) by extensions ['ignore', 'ignore_ament_install']
+[1.916s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following) by extension 'ignore'
+[1.916s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following) by extension 'ignore_ament_install'
+[1.916s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following) by extensions ['colcon_pkg']
+[1.916s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following) by extension 'colcon_pkg'
+[1.917s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following) by extensions ['colcon_meta']
+[1.917s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following) by extension 'colcon_meta'
+[1.917s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following) by extensions ['ros']
+[1.917s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following) by extension 'ros'
+[1.917s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following) by extensions ['cmake', 'python']
+[1.918s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following) by extension 'cmake'
+[1.918s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following) by extension 'python'
+[1.918s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following) by extensions ['python_setup_py']
+[1.918s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following) by extension 'python_setup_py'
+[1.919s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following/line_following) by extensions ['ignore', 'ignore_ament_install']
+[1.919s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following/line_following) by extension 'ignore'
+[1.919s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following/line_following) by extension 'ignore_ament_install'
+[1.919s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following/line_following) by extensions ['colcon_pkg']
+[1.919s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following/line_following) by extension 'colcon_pkg'
+[1.920s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following/line_following) by extensions ['colcon_meta']
+[1.920s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following/line_following) by extension 'colcon_meta'
+[1.920s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following/line_following) by extensions ['ros']
+[1.920s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/line_following/line_following) by extension 'ros'
+[1.924s] DEBUG:colcon.colcon_core.package_identification:Package 'behaviors/line_following/line_following' with type 'ros.ament_python' and name 'line_following'
+[1.924s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/obstacle_avoidance) by extensions ['ignore', 'ignore_ament_install']
+[1.925s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/obstacle_avoidance) by extension 'ignore'
+[1.925s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/obstacle_avoidance) by extension 'ignore_ament_install'
+[1.925s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/obstacle_avoidance) by extensions ['colcon_pkg']
+[1.925s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/obstacle_avoidance) by extension 'colcon_pkg'
+[1.926s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/obstacle_avoidance) by extensions ['colcon_meta']
+[1.926s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/obstacle_avoidance) by extension 'colcon_meta'
+[1.926s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/obstacle_avoidance) by extensions ['ros']
+[1.926s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/obstacle_avoidance) by extension 'ros'
+[1.926s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/obstacle_avoidance) by extensions ['cmake', 'python']
+[1.927s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/obstacle_avoidance) by extension 'cmake'
+[1.927s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/obstacle_avoidance) by extension 'python'
+[1.927s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/obstacle_avoidance) by extensions ['python_setup_py']
+[1.927s] Level 1:colcon.colcon_core.package_identification:_identify(behaviors/obstacle_avoidance) by extension 'python_setup_py'
+[1.927s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.928s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.928s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.928s] Level 1:colcon.colcon_core.package_identification:_identify(calibration) by extensions ['ignore', 'ignore_ament_install']
+[1.929s] Level 1:colcon.colcon_core.package_identification:_identify(calibration) by extension 'ignore'
+[1.929s] Level 1:colcon.colcon_core.package_identification:_identify(calibration) by extension 'ignore_ament_install'
+[1.929s] Level 1:colcon.colcon_core.package_identification:_identify(calibration) by extensions ['colcon_pkg']
+[1.929s] Level 1:colcon.colcon_core.package_identification:_identify(calibration) by extension 'colcon_pkg'
+[1.930s] Level 1:colcon.colcon_core.package_identification:_identify(calibration) by extensions ['colcon_meta']
+[1.930s] Level 1:colcon.colcon_core.package_identification:_identify(calibration) by extension 'colcon_meta'
+[1.930s] Level 1:colcon.colcon_core.package_identification:_identify(calibration) by extensions ['ros']
+[1.930s] Level 1:colcon.colcon_core.package_identification:_identify(calibration) by extension 'ros'
+[1.930s] Level 1:colcon.colcon_core.package_identification:_identify(calibration) by extensions ['cmake', 'python']
+[1.930s] Level 1:colcon.colcon_core.package_identification:_identify(calibration) by extension 'cmake'
+[1.931s] Level 1:colcon.colcon_core.package_identification:_identify(calibration) by extension 'python'
+[1.931s] Level 1:colcon.colcon_core.package_identification:_identify(calibration) by extensions ['python_setup_py']
+[1.931s] Level 1:colcon.colcon_core.package_identification:_identify(calibration) by extension 'python_setup_py'
+[1.931s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera) by extensions ['ignore', 'ignore_ament_install']
+[1.932s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera) by extension 'ignore'
+[1.932s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera) by extension 'ignore_ament_install'
+[1.932s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera) by extensions ['colcon_pkg']
+[1.932s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera) by extension 'colcon_pkg'
+[1.932s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera) by extensions ['colcon_meta']
+[1.933s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera) by extension 'colcon_meta'
+[1.933s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera) by extensions ['ros']
+[1.933s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera) by extension 'ros'
+[1.933s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera) by extensions ['cmake', 'python']
+[1.933s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera) by extension 'cmake'
+[1.934s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera) by extension 'python'
+[1.934s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera) by extensions ['python_setup_py']
+[1.934s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera) by extension 'python_setup_py'
+[1.934s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/images) by extensions ['ignore', 'ignore_ament_install']
+[1.935s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/images) by extension 'ignore'
+[1.935s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/images) by extension 'ignore_ament_install'
+[1.935s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/images) by extensions ['colcon_pkg']
+[1.935s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/images) by extension 'colcon_pkg'
+[1.936s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/images) by extensions ['colcon_meta']
+[1.936s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/images) by extension 'colcon_meta'
+[1.936s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/images) by extensions ['ros']
+[1.936s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/images) by extension 'ros'
+[1.936s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/images) by extensions ['cmake', 'python']
+[1.937s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/images) by extension 'cmake'
+[1.937s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/images) by extension 'python'
+[1.937s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/images) by extensions ['python_setup_py']
+[1.937s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/images) by extension 'python_setup_py'
+[1.937s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/output) by extensions ['ignore', 'ignore_ament_install']
+[1.938s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/output) by extension 'ignore'
+[1.938s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/output) by extension 'ignore_ament_install'
+[1.938s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/output) by extensions ['colcon_pkg']
+[1.938s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/output) by extension 'colcon_pkg'
+[1.939s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/output) by extensions ['colcon_meta']
+[1.939s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/output) by extension 'colcon_meta'
+[1.939s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/output) by extensions ['ros']
+[1.939s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/output) by extension 'ros'
+[1.939s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/output) by extensions ['cmake', 'python']
+[1.940s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/output) by extension 'cmake'
+[1.940s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/output) by extension 'python'
+[1.940s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/output) by extensions ['python_setup_py']
+[1.940s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/output) by extension 'python_setup_py'
+[1.940s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/scripts) by extensions ['ignore', 'ignore_ament_install']
+[1.941s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/scripts) by extension 'ignore'
+[1.941s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/scripts) by extension 'ignore_ament_install'
+[1.941s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/scripts) by extensions ['colcon_pkg']
+[1.941s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/scripts) by extension 'colcon_pkg'
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/scripts) by extensions ['colcon_meta']
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/scripts) by extension 'colcon_meta'
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/scripts) by extensions ['ros']
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/scripts) by extension 'ros'
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/scripts) by extensions ['cmake', 'python']
+[1.943s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/scripts) by extension 'cmake'
+[1.943s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/scripts) by extension 'python'
+[1.943s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/scripts) by extensions ['python_setup_py']
+[1.943s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/camera/scripts) by extension 'python_setup_py'
+[1.944s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/wheel) by extensions ['ignore', 'ignore_ament_install']
+[1.944s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/wheel) by extension 'ignore'
+[1.944s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/wheel) by extension 'ignore_ament_install'
+[1.944s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/wheel) by extensions ['colcon_pkg']
+[1.944s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/wheel) by extension 'colcon_pkg'
+[1.945s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/wheel) by extensions ['colcon_meta']
+[1.945s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/wheel) by extension 'colcon_meta'
+[1.945s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/wheel) by extensions ['ros']
+[1.945s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/wheel) by extension 'ros'
+[1.945s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/wheel) by extensions ['cmake', 'python']
+[1.946s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/wheel) by extension 'cmake'
+[1.946s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/wheel) by extension 'python'
+[1.946s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/wheel) by extensions ['python_setup_py']
+[1.946s] Level 1:colcon.colcon_core.package_identification:_identify(calibration/wheel) by extension 'python_setup_py'
+[1.946s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['ignore', 'ignore_ament_install']
+[1.947s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ignore'
+[1.947s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ignore_ament_install'
+[1.947s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['colcon_pkg']
+[1.947s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'colcon_pkg'
+[1.948s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['colcon_meta']
+[1.948s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'colcon_meta'
+[1.948s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['ros']
+[1.948s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ros'
+[1.948s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['cmake', 'python']
+[1.949s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'cmake'
+[1.949s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'python'
+[1.949s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['python_setup_py']
+[1.949s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'python_setup_py'
+[1.950s] Level 1:colcon.colcon_core.package_identification:_identify(config/motion) by extensions ['ignore', 'ignore_ament_install']
+[1.950s] Level 1:colcon.colcon_core.package_identification:_identify(config/motion) by extension 'ignore'
+[1.950s] Level 1:colcon.colcon_core.package_identification:_identify(config/motion) by extension 'ignore_ament_install'
+[1.950s] Level 1:colcon.colcon_core.package_identification:_identify(config/motion) by extensions ['colcon_pkg']
+[1.950s] Level 1:colcon.colcon_core.package_identification:_identify(config/motion) by extension 'colcon_pkg'
+[1.951s] Level 1:colcon.colcon_core.package_identification:_identify(config/motion) by extensions ['colcon_meta']
+[1.951s] Level 1:colcon.colcon_core.package_identification:_identify(config/motion) by extension 'colcon_meta'
+[1.951s] Level 1:colcon.colcon_core.package_identification:_identify(config/motion) by extensions ['ros']
+[1.951s] Level 1:colcon.colcon_core.package_identification:_identify(config/motion) by extension 'ros'
+[1.951s] Level 1:colcon.colcon_core.package_identification:_identify(config/motion) by extensions ['cmake', 'python']
+[1.952s] Level 1:colcon.colcon_core.package_identification:_identify(config/motion) by extension 'cmake'
+[1.952s] Level 1:colcon.colcon_core.package_identification:_identify(config/motion) by extension 'python'
+[1.952s] Level 1:colcon.colcon_core.package_identification:_identify(config/motion) by extensions ['python_setup_py']
+[1.952s] Level 1:colcon.colcon_core.package_identification:_identify(config/motion) by extension 'python_setup_py'
+[1.953s] Level 1:colcon.colcon_core.package_identification:_identify(config/vision) by extensions ['ignore', 'ignore_ament_install']
+[1.953s] Level 1:colcon.colcon_core.package_identification:_identify(config/vision) by extension 'ignore'
+[1.953s] Level 1:colcon.colcon_core.package_identification:_identify(config/vision) by extension 'ignore_ament_install'
+[1.953s] Level 1:colcon.colcon_core.package_identification:_identify(config/vision) by extensions ['colcon_pkg']
+[1.953s] Level 1:colcon.colcon_core.package_identification:_identify(config/vision) by extension 'colcon_pkg'
+[1.954s] Level 1:colcon.colcon_core.package_identification:_identify(config/vision) by extensions ['colcon_meta']
+[1.954s] Level 1:colcon.colcon_core.package_identification:_identify(config/vision) by extension 'colcon_meta'
+[1.954s] Level 1:colcon.colcon_core.package_identification:_identify(config/vision) by extensions ['ros']
+[1.954s] Level 1:colcon.colcon_core.package_identification:_identify(config/vision) by extension 'ros'
+[1.954s] Level 1:colcon.colcon_core.package_identification:_identify(config/vision) by extensions ['cmake', 'python']
+[1.955s] Level 1:colcon.colcon_core.package_identification:_identify(config/vision) by extension 'cmake'
+[1.955s] Level 1:colcon.colcon_core.package_identification:_identify(config/vision) by extension 'python'
+[1.955s] Level 1:colcon.colcon_core.package_identification:_identify(config/vision) by extensions ['python_setup_py']
+[1.955s] Level 1:colcon.colcon_core.package_identification:_identify(config/vision) by extension 'python_setup_py'
+[1.955s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ignore', 'ignore_ament_install']
+[1.956s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore'
+[1.956s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore_ament_install'
+[1.956s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_pkg']
+[1.956s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_pkg'
+[1.957s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_meta']
+[1.957s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_meta'
+[1.957s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ros']
+[1.957s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ros'
+[1.957s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['cmake', 'python']
+[1.957s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'cmake'
+[1.958s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python'
+[1.958s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['python_setup_py']
+[1.958s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python_setup_py'
+[1.958s] Level 1:colcon.colcon_core.package_identification:_identify(drivers) by extensions ['ignore', 'ignore_ament_install']
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(drivers) by extension 'ignore'
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(drivers) by extension 'ignore_ament_install'
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(drivers) by extensions ['colcon_pkg']
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(drivers) by extension 'colcon_pkg'
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(drivers) by extensions ['colcon_meta']
+[1.960s] Level 1:colcon.colcon_core.package_identification:_identify(drivers) by extension 'colcon_meta'
+[1.960s] Level 1:colcon.colcon_core.package_identification:_identify(drivers) by extensions ['ros']
+[1.960s] Level 1:colcon.colcon_core.package_identification:_identify(drivers) by extension 'ros'
+[1.960s] Level 1:colcon.colcon_core.package_identification:_identify(drivers) by extensions ['cmake', 'python']
+[1.960s] Level 1:colcon.colcon_core.package_identification:_identify(drivers) by extension 'cmake'
+[1.961s] Level 1:colcon.colcon_core.package_identification:_identify(drivers) by extension 'python'
+[1.961s] Level 1:colcon.colcon_core.package_identification:_identify(drivers) by extensions ['python_setup_py']
+[1.961s] Level 1:colcon.colcon_core.package_identification:_identify(drivers) by extension 'python_setup_py'
+[1.961s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/button) by extensions ['ignore', 'ignore_ament_install']
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/button) by extension 'ignore'
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/button) by extension 'ignore_ament_install'
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/button) by extensions ['colcon_pkg']
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/button) by extension 'colcon_pkg'
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/button) by extensions ['colcon_meta']
+[1.963s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/button) by extension 'colcon_meta'
+[1.963s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/button) by extensions ['ros']
+[1.963s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/button) by extension 'ros'
+[1.963s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/button) by extensions ['cmake', 'python']
+[1.963s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/button) by extension 'cmake'
+[1.964s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/button) by extension 'python'
+[1.964s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/button) by extensions ['python_setup_py']
+[1.964s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/button) by extension 'python_setup_py'
+[1.964s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display) by extensions ['ignore', 'ignore_ament_install']
+[1.965s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display) by extension 'ignore'
+[1.965s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display) by extension 'ignore_ament_install'
+[1.965s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display) by extensions ['colcon_pkg']
+[1.965s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display) by extension 'colcon_pkg'
+[1.965s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display) by extensions ['colcon_meta']
+[1.966s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display) by extension 'colcon_meta'
+[1.966s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display) by extensions ['ros']
+[1.966s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display) by extension 'ros'
+[1.966s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display) by extensions ['cmake', 'python']
+[1.966s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display) by extension 'cmake'
+[1.967s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display) by extension 'python'
+[1.967s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display) by extensions ['python_setup_py']
+[1.967s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display) by extension 'python_setup_py'
+[1.967s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_GPIO) by extensions ['ignore', 'ignore_ament_install']
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_GPIO) by extension 'ignore'
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_GPIO) by extension 'ignore_ament_install'
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_GPIO) by extensions ['colcon_pkg']
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_GPIO) by extension 'colcon_pkg'
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_GPIO) by extensions ['colcon_meta']
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_GPIO) by extension 'colcon_meta'
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_GPIO) by extensions ['ros']
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_GPIO) by extension 'ros'
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_GPIO) by extensions ['cmake', 'python']
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_GPIO) by extension 'cmake'
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_GPIO) by extension 'python'
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_GPIO) by extensions ['python_setup_py']
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_GPIO) by extension 'python_setup_py'
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_Python_SSD1306) by extensions ['ignore', 'ignore_ament_install']
+[1.971s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_Python_SSD1306) by extension 'ignore'
+[1.971s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_Python_SSD1306) by extension 'ignore_ament_install'
+[1.971s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_Python_SSD1306) by extensions ['colcon_pkg']
+[1.971s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_Python_SSD1306) by extension 'colcon_pkg'
+[1.971s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_Python_SSD1306) by extensions ['colcon_meta']
+[1.972s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_Python_SSD1306) by extension 'colcon_meta'
+[1.972s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_Python_SSD1306) by extensions ['ros']
+[1.972s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_Python_SSD1306) by extension 'ros'
+[1.972s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_Python_SSD1306) by extensions ['cmake', 'python']
+[1.973s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_Python_SSD1306) by extension 'cmake'
+[1.973s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_Python_SSD1306) by extension 'python'
+[1.973s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_Python_SSD1306) by extensions ['python_setup_py']
+[1.973s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/display/Adafruit_Python_SSD1306) by extension 'python_setup_py'
+[3.163s] DEBUG:colcon.colcon_core.package_identification:Package 'drivers/display/Adafruit_Python_SSD1306' with type 'python' and name 'Adafruit_SSD1306'
+[3.164s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder) by extensions ['ignore', 'ignore_ament_install']
+[3.165s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder) by extension 'ignore'
+[3.165s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder) by extension 'ignore_ament_install'
+[3.165s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder) by extensions ['colcon_pkg']
+[3.166s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder) by extension 'colcon_pkg'
+[3.166s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder) by extensions ['colcon_meta']
+[3.166s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder) by extension 'colcon_meta'
+[3.166s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder) by extensions ['ros']
+[3.166s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder) by extension 'ros'
+[3.167s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder) by extensions ['cmake', 'python']
+[3.167s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder) by extension 'cmake'
+[3.167s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder) by extension 'python'
+[3.167s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder) by extensions ['python_setup_py']
+[3.167s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder) by extension 'python_setup_py'
+[3.168s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder/examples) by extensions ['ignore', 'ignore_ament_install']
+[3.168s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder/examples) by extension 'ignore'
+[3.168s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder/examples) by extension 'ignore_ament_install'
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder/examples) by extensions ['colcon_pkg']
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder/examples) by extension 'colcon_pkg'
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder/examples) by extensions ['colcon_meta']
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder/examples) by extension 'colcon_meta'
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder/examples) by extensions ['ros']
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder/examples) by extension 'ros'
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder/examples) by extensions ['cmake', 'python']
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder/examples) by extension 'cmake'
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder/examples) by extension 'python'
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder/examples) by extensions ['python_setup_py']
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/encoder/examples) by extension 'python_setup_py'
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/imu) by extensions ['ignore', 'ignore_ament_install']
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/imu) by extension 'ignore'
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/imu) by extension 'ignore_ament_install'
+[3.172s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/imu) by extensions ['colcon_pkg']
+[3.172s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/imu) by extension 'colcon_pkg'
+[3.172s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/imu) by extensions ['colcon_meta']
+[3.172s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/imu) by extension 'colcon_meta'
+[3.172s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/imu) by extensions ['ros']
+[3.173s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/imu) by extension 'ros'
+[3.173s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/imu) by extensions ['cmake', 'python']
+[3.173s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/imu) by extension 'cmake'
+[3.173s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/imu) by extension 'python'
+[3.173s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/imu) by extensions ['python_setup_py']
+[3.174s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/imu) by extension 'python_setup_py'
+[3.174s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor) by extensions ['ignore', 'ignore_ament_install']
+[3.174s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor) by extension 'ignore'
+[3.174s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor) by extension 'ignore_ament_install'
+[3.175s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor) by extensions ['colcon_pkg']
+[3.175s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor) by extension 'colcon_pkg'
+[3.175s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor) by extensions ['colcon_meta']
+[3.175s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor) by extension 'colcon_meta'
+[3.175s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor) by extensions ['ros']
+[3.176s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor) by extension 'ros'
+[3.176s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor) by extensions ['cmake', 'python']
+[3.176s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor) by extension 'cmake'
+[3.176s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor) by extension 'python'
+[3.176s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor) by extensions ['python_setup_py']
+[3.177s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor) by extension 'python_setup_py'
+[3.177s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor/examples) by extensions ['ignore', 'ignore_ament_install']
+[3.177s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor/examples) by extension 'ignore'
+[3.177s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor/examples) by extension 'ignore_ament_install'
+[3.178s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor/examples) by extensions ['colcon_pkg']
+[3.178s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor/examples) by extension 'colcon_pkg'
+[3.178s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor/examples) by extensions ['colcon_meta']
+[3.178s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor/examples) by extension 'colcon_meta'
+[3.178s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor/examples) by extensions ['ros']
+[3.178s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor/examples) by extension 'ros'
+[3.179s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor/examples) by extensions ['cmake', 'python']
+[3.179s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor/examples) by extension 'cmake'
+[3.179s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor/examples) by extension 'python'
+[3.179s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor/examples) by extensions ['python_setup_py']
+[3.179s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/motor/examples) by extension 'python_setup_py'
+[3.180s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof) by extensions ['ignore', 'ignore_ament_install']
+[3.180s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof) by extension 'ignore'
+[3.180s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof) by extension 'ignore_ament_install'
+[3.181s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof) by extensions ['colcon_pkg']
+[3.181s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof) by extension 'colcon_pkg'
+[3.181s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof) by extensions ['colcon_meta']
+[3.181s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof) by extension 'colcon_meta'
+[3.181s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof) by extensions ['ros']
+[3.181s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof) by extension 'ros'
+[3.182s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof) by extensions ['cmake', 'python']
+[3.182s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof) by extension 'cmake'
+[3.182s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof) by extension 'python'
+[3.182s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof) by extensions ['python_setup_py']
+[3.182s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof) by extension 'python_setup_py'
+[3.183s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof/assets) by extensions ['ignore', 'ignore_ament_install']
+[3.183s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof/assets) by extension 'ignore'
+[3.183s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof/assets) by extension 'ignore_ament_install'
+[3.184s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof/assets) by extensions ['colcon_pkg']
+[3.184s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof/assets) by extension 'colcon_pkg'
+[3.184s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof/assets) by extensions ['colcon_meta']
+[3.184s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof/assets) by extension 'colcon_meta'
+[3.184s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof/assets) by extensions ['ros']
+[3.184s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof/assets) by extension 'ros'
+[3.185s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof/assets) by extensions ['cmake', 'python']
+[3.185s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof/assets) by extension 'cmake'
+[3.185s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof/assets) by extension 'python'
+[3.185s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof/assets) by extensions ['python_setup_py']
+[3.185s] Level 1:colcon.colcon_core.package_identification:_identify(drivers/tof/assets) by extension 'python_setup_py'
+[3.186s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.186s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.186s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.187s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ignore', 'ignore_ament_install']
+[3.187s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore'
+[3.187s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore_ament_install'
+[3.187s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_pkg']
+[3.188s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_pkg'
+[3.188s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_meta']
+[3.188s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_meta'
+[3.188s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ros']
+[3.188s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ros'
+[3.189s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['cmake', 'python']
+[3.189s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'cmake'
+[3.189s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python'
+[3.189s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['python_setup_py']
+[3.189s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python_setup_py'
+[3.190s] Level 1:colcon.colcon_core.package_identification:_identify(launch/motion) by extensions ['ignore', 'ignore_ament_install']
+[3.190s] Level 1:colcon.colcon_core.package_identification:_identify(launch/motion) by extension 'ignore'
+[3.190s] Level 1:colcon.colcon_core.package_identification:_identify(launch/motion) by extension 'ignore_ament_install'
+[3.190s] Level 1:colcon.colcon_core.package_identification:_identify(launch/motion) by extensions ['colcon_pkg']
+[3.191s] Level 1:colcon.colcon_core.package_identification:_identify(launch/motion) by extension 'colcon_pkg'
+[3.191s] Level 1:colcon.colcon_core.package_identification:_identify(launch/motion) by extensions ['colcon_meta']
+[3.191s] Level 1:colcon.colcon_core.package_identification:_identify(launch/motion) by extension 'colcon_meta'
+[3.191s] Level 1:colcon.colcon_core.package_identification:_identify(launch/motion) by extensions ['ros']
+[3.191s] Level 1:colcon.colcon_core.package_identification:_identify(launch/motion) by extension 'ros'
+[3.192s] Level 1:colcon.colcon_core.package_identification:_identify(launch/motion) by extensions ['cmake', 'python']
+[3.192s] Level 1:colcon.colcon_core.package_identification:_identify(launch/motion) by extension 'cmake'
+[3.192s] Level 1:colcon.colcon_core.package_identification:_identify(launch/motion) by extension 'python'
+[3.192s] Level 1:colcon.colcon_core.package_identification:_identify(launch/motion) by extensions ['python_setup_py']
+[3.192s] Level 1:colcon.colcon_core.package_identification:_identify(launch/motion) by extension 'python_setup_py'
+[3.193s] Level 1:colcon.colcon_core.package_identification:_identify(launch/parking) by extensions ['ignore', 'ignore_ament_install']
+[3.193s] Level 1:colcon.colcon_core.package_identification:_identify(launch/parking) by extension 'ignore'
+[3.193s] Level 1:colcon.colcon_core.package_identification:_identify(launch/parking) by extension 'ignore_ament_install'
+[3.193s] Level 1:colcon.colcon_core.package_identification:_identify(launch/parking) by extensions ['colcon_pkg']
+[3.193s] Level 1:colcon.colcon_core.package_identification:_identify(launch/parking) by extension 'colcon_pkg'
+[3.194s] Level 1:colcon.colcon_core.package_identification:_identify(launch/parking) by extensions ['colcon_meta']
+[3.194s] Level 1:colcon.colcon_core.package_identification:_identify(launch/parking) by extension 'colcon_meta'
+[3.194s] Level 1:colcon.colcon_core.package_identification:_identify(launch/parking) by extensions ['ros']
+[3.194s] Level 1:colcon.colcon_core.package_identification:_identify(launch/parking) by extension 'ros'
+[3.194s] Level 1:colcon.colcon_core.package_identification:_identify(launch/parking) by extensions ['cmake', 'python']
+[3.195s] Level 1:colcon.colcon_core.package_identification:_identify(launch/parking) by extension 'cmake'
+[3.195s] Level 1:colcon.colcon_core.package_identification:_identify(launch/parking) by extension 'python'
+[3.195s] Level 1:colcon.colcon_core.package_identification:_identify(launch/parking) by extensions ['python_setup_py']
+[3.195s] Level 1:colcon.colcon_core.package_identification:_identify(launch/parking) by extension 'python_setup_py'
+[3.195s] Level 1:colcon.colcon_core.package_identification:_identify(launch/vision) by extensions ['ignore', 'ignore_ament_install']
+[3.196s] Level 1:colcon.colcon_core.package_identification:_identify(launch/vision) by extension 'ignore'
+[3.196s] Level 1:colcon.colcon_core.package_identification:_identify(launch/vision) by extension 'ignore_ament_install'
+[3.196s] Level 1:colcon.colcon_core.package_identification:_identify(launch/vision) by extensions ['colcon_pkg']
+[3.196s] Level 1:colcon.colcon_core.package_identification:_identify(launch/vision) by extension 'colcon_pkg'
+[3.197s] Level 1:colcon.colcon_core.package_identification:_identify(launch/vision) by extensions ['colcon_meta']
+[3.197s] Level 1:colcon.colcon_core.package_identification:_identify(launch/vision) by extension 'colcon_meta'
+[3.197s] Level 1:colcon.colcon_core.package_identification:_identify(launch/vision) by extensions ['ros']
+[3.197s] Level 1:colcon.colcon_core.package_identification:_identify(launch/vision) by extension 'ros'
+[3.197s] Level 1:colcon.colcon_core.package_identification:_identify(launch/vision) by extensions ['cmake', 'python']
+[3.197s] Level 1:colcon.colcon_core.package_identification:_identify(launch/vision) by extension 'cmake'
+[3.198s] Level 1:colcon.colcon_core.package_identification:_identify(launch/vision) by extension 'python'
+[3.198s] Level 1:colcon.colcon_core.package_identification:_identify(launch/vision) by extensions ['python_setup_py']
+[3.198s] Level 1:colcon.colcon_core.package_identification:_identify(launch/vision) by extension 'python_setup_py'
+[3.199s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.199s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.199s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.199s] Level 1:colcon.colcon_core.package_identification:_identify(motion) by extensions ['ignore', 'ignore_ament_install']
+[3.200s] Level 1:colcon.colcon_core.package_identification:_identify(motion) by extension 'ignore'
+[3.200s] Level 1:colcon.colcon_core.package_identification:_identify(motion) by extension 'ignore_ament_install'
+[3.200s] Level 1:colcon.colcon_core.package_identification:_identify(motion) by extensions ['colcon_pkg']
+[3.200s] Level 1:colcon.colcon_core.package_identification:_identify(motion) by extension 'colcon_pkg'
+[3.201s] Level 1:colcon.colcon_core.package_identification:_identify(motion) by extensions ['colcon_meta']
+[3.201s] Level 1:colcon.colcon_core.package_identification:_identify(motion) by extension 'colcon_meta'
+[3.201s] Level 1:colcon.colcon_core.package_identification:_identify(motion) by extensions ['ros']
+[3.201s] Level 1:colcon.colcon_core.package_identification:_identify(motion) by extension 'ros'
+[3.201s] Level 1:colcon.colcon_core.package_identification:_identify(motion) by extensions ['cmake', 'python']
+[3.202s] Level 1:colcon.colcon_core.package_identification:_identify(motion) by extension 'cmake'
+[3.202s] Level 1:colcon.colcon_core.package_identification:_identify(motion) by extension 'python'
+[3.202s] Level 1:colcon.colcon_core.package_identification:_identify(motion) by extensions ['python_setup_py']
+[3.202s] Level 1:colcon.colcon_core.package_identification:_identify(motion) by extension 'python_setup_py'
+[3.202s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control) by extensions ['ignore', 'ignore_ament_install']
+[3.203s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control) by extension 'ignore'
+[3.203s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control) by extension 'ignore_ament_install'
+[3.203s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control) by extensions ['colcon_pkg']
+[3.203s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control) by extension 'colcon_pkg'
+[3.203s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control) by extensions ['colcon_meta']
+[3.204s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control) by extension 'colcon_meta'
+[3.204s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control) by extensions ['ros']
+[3.204s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control) by extension 'ros'
+[3.204s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control) by extensions ['cmake', 'python']
+[3.204s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control) by extension 'cmake'
+[3.205s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control) by extension 'python'
+[3.205s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control) by extensions ['python_setup_py']
+[3.205s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control) by extension 'python_setup_py'
+[3.205s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control/motor_control) by extensions ['ignore', 'ignore_ament_install']
+[3.206s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control/motor_control) by extension 'ignore'
+[3.206s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control/motor_control) by extension 'ignore_ament_install'
+[3.206s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control/motor_control) by extensions ['colcon_pkg']
+[3.206s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control/motor_control) by extension 'colcon_pkg'
+[3.206s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control/motor_control) by extensions ['colcon_meta']
+[3.207s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control/motor_control) by extension 'colcon_meta'
+[3.207s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control/motor_control) by extensions ['ros']
+[3.207s] Level 1:colcon.colcon_core.package_identification:_identify(motion/control/motor_control) by extension 'ros'
+[3.210s] DEBUG:colcon.colcon_core.package_identification:Package 'motion/control/motor_control' with type 'ros.ament_python' and name 'motor_control'
+[3.213s] Level 1:colcon.colcon_core.package_identification:_identify(motion/turning) by extensions ['ignore', 'ignore_ament_install']
+[3.214s] Level 1:colcon.colcon_core.package_identification:_identify(motion/turning) by extension 'ignore'
+[3.214s] Level 1:colcon.colcon_core.package_identification:_identify(motion/turning) by extension 'ignore_ament_install'
+[3.214s] Level 1:colcon.colcon_core.package_identification:_identify(motion/turning) by extensions ['colcon_pkg']
+[3.214s] Level 1:colcon.colcon_core.package_identification:_identify(motion/turning) by extension 'colcon_pkg'
+[3.215s] Level 1:colcon.colcon_core.package_identification:_identify(motion/turning) by extensions ['colcon_meta']
+[3.215s] Level 1:colcon.colcon_core.package_identification:_identify(motion/turning) by extension 'colcon_meta'
+[3.215s] Level 1:colcon.colcon_core.package_identification:_identify(motion/turning) by extensions ['ros']
+[3.215s] Level 1:colcon.colcon_core.package_identification:_identify(motion/turning) by extension 'ros'
+[3.215s] Level 1:colcon.colcon_core.package_identification:_identify(motion/turning) by extensions ['cmake', 'python']
+[3.216s] Level 1:colcon.colcon_core.package_identification:_identify(motion/turning) by extension 'cmake'
+[3.216s] Level 1:colcon.colcon_core.package_identification:_identify(motion/turning) by extension 'python'
+[3.216s] Level 1:colcon.colcon_core.package_identification:_identify(motion/turning) by extensions ['python_setup_py']
+[3.216s] Level 1:colcon.colcon_core.package_identification:_identify(motion/turning) by extension 'python_setup_py'
+[3.217s] Level 1:colcon.colcon_core.package_identification:_identify(motion/visualization) by extensions ['ignore', 'ignore_ament_install']
+[3.217s] Level 1:colcon.colcon_core.package_identification:_identify(motion/visualization) by extension 'ignore'
+[3.217s] Level 1:colcon.colcon_core.package_identification:_identify(motion/visualization) by extension 'ignore_ament_install'
+[3.217s] Level 1:colcon.colcon_core.package_identification:_identify(motion/visualization) by extensions ['colcon_pkg']
+[3.217s] Level 1:colcon.colcon_core.package_identification:_identify(motion/visualization) by extension 'colcon_pkg'
+[3.218s] Level 1:colcon.colcon_core.package_identification:_identify(motion/visualization) by extensions ['colcon_meta']
+[3.218s] Level 1:colcon.colcon_core.package_identification:_identify(motion/visualization) by extension 'colcon_meta'
+[3.218s] Level 1:colcon.colcon_core.package_identification:_identify(motion/visualization) by extensions ['ros']
+[3.218s] Level 1:colcon.colcon_core.package_identification:_identify(motion/visualization) by extension 'ros'
+[3.219s] Level 1:colcon.colcon_core.package_identification:_identify(motion/visualization) by extensions ['cmake', 'python']
+[3.219s] Level 1:colcon.colcon_core.package_identification:_identify(motion/visualization) by extension 'cmake'
+[3.219s] Level 1:colcon.colcon_core.package_identification:_identify(motion/visualization) by extension 'python'
+[3.219s] Level 1:colcon.colcon_core.package_identification:_identify(motion/visualization) by extensions ['python_setup_py']
+[3.219s] Level 1:colcon.colcon_core.package_identification:_identify(motion/visualization) by extension 'python_setup_py'
+[3.220s] Level 1:colcon.colcon_core.package_identification:_identify(vision) by extensions ['ignore', 'ignore_ament_install']
+[3.220s] Level 1:colcon.colcon_core.package_identification:_identify(vision) by extension 'ignore'
+[3.220s] Level 1:colcon.colcon_core.package_identification:_identify(vision) by extension 'ignore_ament_install'
+[3.220s] Level 1:colcon.colcon_core.package_identification:_identify(vision) by extensions ['colcon_pkg']
+[3.220s] Level 1:colcon.colcon_core.package_identification:_identify(vision) by extension 'colcon_pkg'
+[3.221s] Level 1:colcon.colcon_core.package_identification:_identify(vision) by extensions ['colcon_meta']
+[3.221s] Level 1:colcon.colcon_core.package_identification:_identify(vision) by extension 'colcon_meta'
+[3.221s] Level 1:colcon.colcon_core.package_identification:_identify(vision) by extensions ['ros']
+[3.221s] Level 1:colcon.colcon_core.package_identification:_identify(vision) by extension 'ros'
+[3.221s] Level 1:colcon.colcon_core.package_identification:_identify(vision) by extensions ['cmake', 'python']
+[3.222s] Level 1:colcon.colcon_core.package_identification:_identify(vision) by extension 'cmake'
+[3.222s] Level 1:colcon.colcon_core.package_identification:_identify(vision) by extension 'python'
+[3.222s] Level 1:colcon.colcon_core.package_identification:_identify(vision) by extensions ['python_setup_py']
+[3.222s] Level 1:colcon.colcon_core.package_identification:_identify(vision) by extension 'python_setup_py'
+[3.222s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera) by extensions ['ignore', 'ignore_ament_install']
+[3.223s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera) by extension 'ignore'
+[3.223s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera) by extension 'ignore_ament_install'
+[3.223s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera) by extensions ['colcon_pkg']
+[3.223s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera) by extension 'colcon_pkg'
+[3.224s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera) by extensions ['colcon_meta']
+[3.224s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera) by extension 'colcon_meta'
+[3.224s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera) by extensions ['ros']
+[3.224s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera) by extension 'ros'
+[3.224s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera) by extensions ['cmake', 'python']
+[3.225s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera) by extension 'cmake'
+[3.225s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera) by extension 'python'
+[3.225s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera) by extensions ['python_setup_py']
+[3.225s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera) by extension 'python_setup_py'
+[3.225s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera/jetson_camera) by extensions ['ignore', 'ignore_ament_install']
+[3.226s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera/jetson_camera) by extension 'ignore'
+[3.226s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera/jetson_camera) by extension 'ignore_ament_install'
+[3.226s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera/jetson_camera) by extensions ['colcon_pkg']
+[3.226s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera/jetson_camera) by extension 'colcon_pkg'
+[3.227s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera/jetson_camera) by extensions ['colcon_meta']
+[3.227s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera/jetson_camera) by extension 'colcon_meta'
+[3.227s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera/jetson_camera) by extensions ['ros']
+[3.227s] Level 1:colcon.colcon_core.package_identification:_identify(vision/camera/jetson_camera) by extension 'ros'
+[3.230s] DEBUG:colcon.colcon_core.package_identification:Package 'vision/camera/jetson_camera' with type 'ros.ament_python' and name 'jetson_camera'
+[3.230s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection) by extensions ['ignore', 'ignore_ament_install']
+[3.231s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection) by extension 'ignore'
+[3.231s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection) by extension 'ignore_ament_install'
+[3.231s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection) by extensions ['colcon_pkg']
+[3.231s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection) by extension 'colcon_pkg'
+[3.232s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection) by extensions ['colcon_meta']
+[3.232s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection) by extension 'colcon_meta'
+[3.232s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection) by extensions ['ros']
+[3.232s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection) by extension 'ros'
+[3.233s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection) by extensions ['cmake', 'python']
+[3.233s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection) by extension 'cmake'
+[3.233s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection) by extension 'python'
+[3.233s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection) by extensions ['python_setup_py']
+[3.233s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection) by extension 'python_setup_py'
+[3.234s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection/line_tracker) by extensions ['ignore', 'ignore_ament_install']
+[3.234s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection/line_tracker) by extension 'ignore'
+[3.234s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection/line_tracker) by extension 'ignore_ament_install'
+[3.234s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection/line_tracker) by extensions ['colcon_pkg']
+[3.235s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection/line_tracker) by extension 'colcon_pkg'
+[3.235s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection/line_tracker) by extensions ['colcon_meta']
+[3.235s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection/line_tracker) by extension 'colcon_meta'
+[3.235s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection/line_tracker) by extensions ['ros']
+[3.235s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection/line_tracker) by extension 'ros'
+[3.236s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection/line_tracker) by extensions ['cmake', 'python']
+[3.236s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection/line_tracker) by extension 'cmake'
+[3.236s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection/line_tracker) by extension 'python'
+[3.236s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection/line_tracker) by extensions ['python_setup_py']
+[3.236s] Level 1:colcon.colcon_core.package_identification:_identify(vision/detection/line_tracker) by extension 'python_setup_py'
+[3.237s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces) by extensions ['ignore', 'ignore_ament_install']
+[3.237s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces) by extension 'ignore'
+[3.237s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces) by extension 'ignore_ament_install'
+[3.237s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces) by extensions ['colcon_pkg']
+[3.237s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces) by extension 'colcon_pkg'
+[3.238s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces) by extensions ['colcon_meta']
+[3.238s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces) by extension 'colcon_meta'
+[3.238s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces) by extensions ['ros']
+[3.238s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces) by extension 'ros'
+[3.238s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces) by extensions ['cmake', 'python']
+[3.239s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces) by extension 'cmake'
+[3.239s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces) by extension 'python'
+[3.239s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces) by extensions ['python_setup_py']
+[3.239s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces) by extension 'python_setup_py'
+[3.239s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces/jetson_camera_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[3.240s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces/jetson_camera_interfaces) by extension 'ignore'
+[3.240s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces/jetson_camera_interfaces) by extension 'ignore_ament_install'
+[3.240s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces/jetson_camera_interfaces) by extensions ['colcon_pkg']
+[3.240s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces/jetson_camera_interfaces) by extension 'colcon_pkg'
+[3.241s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces/jetson_camera_interfaces) by extensions ['colcon_meta']
+[3.241s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces/jetson_camera_interfaces) by extension 'colcon_meta'
+[3.241s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces/jetson_camera_interfaces) by extensions ['ros']
+[3.241s] Level 1:colcon.colcon_core.package_identification:_identify(vision/interfaces/jetson_camera_interfaces) by extension 'ros'
+[3.244s] DEBUG:colcon.colcon_core.package_identification:Package 'vision/interfaces/jetson_camera_interfaces' with type 'ros.ament_cmake' and name 'jetson_camera_interfaces'
+[3.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.336s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[3.337s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[3.345s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/jetson/EVC/workshops/final_project_v5/install
+[3.350s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 190 installed packages in /opt/ros/foxy
+[3.356s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[3.549s] Level 5:colcon.colcon_core.verb:set package 'Adafruit_SSD1306' build argument 'cmake_args' from command line to 'None'
+[3.550s] Level 5:colcon.colcon_core.verb:set package 'Adafruit_SSD1306' build argument 'cmake_target' from command line to 'None'
+[3.550s] Level 5:colcon.colcon_core.verb:set package 'Adafruit_SSD1306' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.550s] Level 5:colcon.colcon_core.verb:set package 'Adafruit_SSD1306' build argument 'cmake_clean_cache' from command line to 'False'
+[3.550s] Level 5:colcon.colcon_core.verb:set package 'Adafruit_SSD1306' build argument 'cmake_clean_first' from command line to 'False'
+[3.550s] Level 5:colcon.colcon_core.verb:set package 'Adafruit_SSD1306' build argument 'cmake_force_configure' from command line to 'False'
+[3.550s] Level 5:colcon.colcon_core.verb:set package 'Adafruit_SSD1306' build argument 'ament_cmake_args' from command line to 'None'
+[3.550s] Level 5:colcon.colcon_core.verb:set package 'Adafruit_SSD1306' build argument 'catkin_cmake_args' from command line to 'None'
+[3.551s] Level 5:colcon.colcon_core.verb:set package 'Adafruit_SSD1306' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.551s] DEBUG:colcon.colcon_core.verb:Building package 'Adafruit_SSD1306' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/EVC/workshops/final_project_v5/build/Adafruit_SSD1306', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306', 'merge_install': False, 'path': '/home/jetson/EVC/workshops/final_project_v5/drivers/display/Adafruit_Python_SSD1306', 'symlink_install': False, 'test_result_base': None}
+[3.552s] Level 5:colcon.colcon_core.verb:set package 'aruco_parking' build argument 'cmake_args' from command line to 'None'
+[3.552s] Level 5:colcon.colcon_core.verb:set package 'aruco_parking' build argument 'cmake_target' from command line to 'None'
+[3.552s] Level 5:colcon.colcon_core.verb:set package 'aruco_parking' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.552s] Level 5:colcon.colcon_core.verb:set package 'aruco_parking' build argument 'cmake_clean_cache' from command line to 'False'
+[3.553s] Level 5:colcon.colcon_core.verb:set package 'aruco_parking' build argument 'cmake_clean_first' from command line to 'False'
+[3.553s] Level 5:colcon.colcon_core.verb:set package 'aruco_parking' build argument 'cmake_force_configure' from command line to 'False'
+[3.553s] Level 5:colcon.colcon_core.verb:set package 'aruco_parking' build argument 'ament_cmake_args' from command line to 'None'
+[3.553s] Level 5:colcon.colcon_core.verb:set package 'aruco_parking' build argument 'catkin_cmake_args' from command line to 'None'
+[3.553s] Level 5:colcon.colcon_core.verb:set package 'aruco_parking' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.553s] DEBUG:colcon.colcon_core.verb:Building package 'aruco_parking' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/EVC/workshops/final_project_v5/build/aruco_parking', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking', 'merge_install': False, 'path': '/home/jetson/EVC/workshops/final_project_v5/behaviors/aruco_parking/aruco_parking', 'symlink_install': False, 'test_result_base': None}
+[3.554s] Level 5:colcon.colcon_core.verb:set package 'jetson_camera' build argument 'cmake_args' from command line to 'None'
+[3.555s] Level 5:colcon.colcon_core.verb:set package 'jetson_camera' build argument 'cmake_target' from command line to 'None'
+[3.555s] Level 5:colcon.colcon_core.verb:set package 'jetson_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.555s] Level 5:colcon.colcon_core.verb:set package 'jetson_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[3.555s] Level 5:colcon.colcon_core.verb:set package 'jetson_camera' build argument 'cmake_clean_first' from command line to 'False'
+[3.555s] Level 5:colcon.colcon_core.verb:set package 'jetson_camera' build argument 'cmake_force_configure' from command line to 'False'
+[3.555s] Level 5:colcon.colcon_core.verb:set package 'jetson_camera' build argument 'ament_cmake_args' from command line to 'None'
+[3.555s] Level 5:colcon.colcon_core.verb:set package 'jetson_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[3.555s] Level 5:colcon.colcon_core.verb:set package 'jetson_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.556s] DEBUG:colcon.colcon_core.verb:Building package 'jetson_camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera', 'merge_install': False, 'path': '/home/jetson/EVC/workshops/final_project_v5/vision/camera/jetson_camera', 'symlink_install': False, 'test_result_base': None}
+[3.557s] Level 5:colcon.colcon_core.verb:set package 'jetson_camera_interfaces' build argument 'cmake_args' from command line to 'None'
+[3.557s] Level 5:colcon.colcon_core.verb:set package 'jetson_camera_interfaces' build argument 'cmake_target' from command line to 'None'
+[3.557s] Level 5:colcon.colcon_core.verb:set package 'jetson_camera_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.557s] Level 5:colcon.colcon_core.verb:set package 'jetson_camera_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[3.557s] Level 5:colcon.colcon_core.verb:set package 'jetson_camera_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[3.557s] Level 5:colcon.colcon_core.verb:set package 'jetson_camera_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[3.557s] Level 5:colcon.colcon_core.verb:set package 'jetson_camera_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[3.558s] Level 5:colcon.colcon_core.verb:set package 'jetson_camera_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[3.558s] Level 5:colcon.colcon_core.verb:set package 'jetson_camera_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.558s] DEBUG:colcon.colcon_core.verb:Building package 'jetson_camera_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces', 'merge_install': False, 'path': '/home/jetson/EVC/workshops/final_project_v5/vision/interfaces/jetson_camera_interfaces', 'symlink_install': False, 'test_result_base': None}
+[3.559s] Level 5:colcon.colcon_core.verb:set package 'line_following' build argument 'cmake_args' from command line to 'None'
+[3.559s] Level 5:colcon.colcon_core.verb:set package 'line_following' build argument 'cmake_target' from command line to 'None'
+[3.559s] Level 5:colcon.colcon_core.verb:set package 'line_following' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.559s] Level 5:colcon.colcon_core.verb:set package 'line_following' build argument 'cmake_clean_cache' from command line to 'False'
+[3.560s] Level 5:colcon.colcon_core.verb:set package 'line_following' build argument 'cmake_clean_first' from command line to 'False'
+[3.560s] Level 5:colcon.colcon_core.verb:set package 'line_following' build argument 'cmake_force_configure' from command line to 'False'
+[3.560s] Level 5:colcon.colcon_core.verb:set package 'line_following' build argument 'ament_cmake_args' from command line to 'None'
+[3.560s] Level 5:colcon.colcon_core.verb:set package 'line_following' build argument 'catkin_cmake_args' from command line to 'None'
+[3.560s] Level 5:colcon.colcon_core.verb:set package 'line_following' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.560s] DEBUG:colcon.colcon_core.verb:Building package 'line_following' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/EVC/workshops/final_project_v5/build/line_following', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/EVC/workshops/final_project_v5/install/line_following', 'merge_install': False, 'path': '/home/jetson/EVC/workshops/final_project_v5/behaviors/line_following/line_following', 'symlink_install': False, 'test_result_base': None}
+[3.561s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_args' from command line to 'None'
+[3.562s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_target' from command line to 'None'
+[3.562s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.562s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_clean_cache' from command line to 'False'
+[3.562s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_clean_first' from command line to 'False'
+[3.562s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_force_configure' from command line to 'False'
+[3.562s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'ament_cmake_args' from command line to 'None'
+[3.562s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'catkin_cmake_args' from command line to 'None'
+[3.562s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.562s] DEBUG:colcon.colcon_core.verb:Building package 'motor_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/EVC/workshops/final_project_v5/build/motor_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/EVC/workshops/final_project_v5/install/motor_control', 'merge_install': False, 'path': '/home/jetson/EVC/workshops/final_project_v5/motion/control/motor_control', 'symlink_install': False, 'test_result_base': None}
+[3.564s] Level 5:colcon.colcon_core.verb:set package 'color_detection_mode' build argument 'cmake_args' from command line to 'None'
+[3.564s] Level 5:colcon.colcon_core.verb:set package 'color_detection_mode' build argument 'cmake_target' from command line to 'None'
+[3.564s] Level 5:colcon.colcon_core.verb:set package 'color_detection_mode' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.564s] Level 5:colcon.colcon_core.verb:set package 'color_detection_mode' build argument 'cmake_clean_cache' from command line to 'False'
+[3.564s] Level 5:colcon.colcon_core.verb:set package 'color_detection_mode' build argument 'cmake_clean_first' from command line to 'False'
+[3.564s] Level 5:colcon.colcon_core.verb:set package 'color_detection_mode' build argument 'cmake_force_configure' from command line to 'False'
+[3.564s] Level 5:colcon.colcon_core.verb:set package 'color_detection_mode' build argument 'ament_cmake_args' from command line to 'None'
+[3.565s] Level 5:colcon.colcon_core.verb:set package 'color_detection_mode' build argument 'catkin_cmake_args' from command line to 'None'
+[3.565s] Level 5:colcon.colcon_core.verb:set package 'color_detection_mode' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.565s] DEBUG:colcon.colcon_core.verb:Building package 'color_detection_mode' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/EVC/workshops/final_project_v5/build/color_detection_mode', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode', 'merge_install': False, 'path': '/home/jetson/EVC/workshops/final_project_v5/behaviors/color_detection/color_detection_mode', 'symlink_install': False, 'test_result_base': None}
+[3.566s] Level 5:colcon.colcon_core.verb:set package 'goal_navigation' build argument 'cmake_args' from command line to 'None'
+[3.566s] Level 5:colcon.colcon_core.verb:set package 'goal_navigation' build argument 'cmake_target' from command line to 'None'
+[3.566s] Level 5:colcon.colcon_core.verb:set package 'goal_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.566s] Level 5:colcon.colcon_core.verb:set package 'goal_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[3.566s] Level 5:colcon.colcon_core.verb:set package 'goal_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[3.567s] Level 5:colcon.colcon_core.verb:set package 'goal_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[3.567s] Level 5:colcon.colcon_core.verb:set package 'goal_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[3.567s] Level 5:colcon.colcon_core.verb:set package 'goal_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[3.567s] Level 5:colcon.colcon_core.verb:set package 'goal_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.567s] DEBUG:colcon.colcon_core.verb:Building package 'goal_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/EVC/workshops/final_project_v5/build/goal_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation', 'merge_install': False, 'path': '/home/jetson/EVC/workshops/final_project_v5/behaviors/goal_navigation/goal_navigation', 'symlink_install': False, 'test_result_base': None}
+[3.568s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.571s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.572s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jetson/EVC/workshops/final_project_v5/vision/camera/jetson_camera' with build type 'ament_python'
+[3.573s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetson_camera', 'ament_prefix_path')
+[3.582s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera/hook/ament_prefix_path.ps1'
+[3.586s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera/hook/ament_prefix_path.dsv'
+[3.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera/hook/ament_prefix_path.sh'
+[3.591s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.592s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.610s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jetson/EVC/workshops/final_project_v5/vision/interfaces/jetson_camera_interfaces' with build type 'ament_cmake'
+[3.611s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jetson/EVC/workshops/final_project_v5/vision/interfaces/jetson_camera_interfaces'
+[3.613s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.613s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.633s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jetson/EVC/workshops/final_project_v5/motion/control/motor_control' with build type 'ament_python'
+[3.634s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_control', 'ament_prefix_path')
+[3.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/motor_control/share/motor_control/hook/ament_prefix_path.ps1'
+[3.638s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/EVC/workshops/final_project_v5/install/motor_control/share/motor_control/hook/ament_prefix_path.dsv'
+[3.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/motor_control/share/motor_control/hook/ament_prefix_path.sh'
+[3.642s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.642s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.659s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jetson/EVC/workshops/final_project_v5/drivers/display/Adafruit_Python_SSD1306'
+[3.661s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.662s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.890s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jetson/EVC/workshops/final_project_v5/vision/camera/jetson_camera'
+[4.892s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.892s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.921s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation:/home/jetson/EVC/workshops/final_project_v5/install/motor_control:/home/jetson/EVC/workshops/final_project_v5/install/line_following:/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode:/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera:/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking:/opt/ros/foxy /usr/bin/cmake --build /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces -- -j4 -l4
+[6.340s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jetson/EVC/workshops/final_project_v5/motion/control/motor_control'
+[6.342s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.342s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.692s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation:/home/jetson/EVC/workshops/final_project_v5/install/motor_control:/home/jetson/EVC/workshops/final_project_v5/install/line_following:/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode:/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera:/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking:/opt/ros/foxy /usr/bin/cmake --build /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces -- -j4 -l4
+[7.726s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation:/home/jetson/EVC/workshops/final_project_v5/install/motor_control:/home/jetson/EVC/workshops/final_project_v5/install/line_following:/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode:/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera:/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking:/opt/ros/foxy /usr/bin/cmake --install /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces
+[8.026s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(jetson_camera_interfaces)
+[8.043s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation:/home/jetson/EVC/workshops/final_project_v5/install/motor_control:/home/jetson/EVC/workshops/final_project_v5/install/line_following:/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode:/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera:/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking:/opt/ros/foxy /usr/bin/cmake --install /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces
+[8.045s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces' for CMake module files
+[8.049s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces' for CMake config files
+[8.052s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetson_camera_interfaces', 'cmake_prefix_path')
+[8.053s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/hook/cmake_prefix_path.ps1'
+[8.056s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/hook/cmake_prefix_path.dsv'
+[8.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/hook/cmake_prefix_path.sh'
+[8.060s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/lib'
+[8.061s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetson_camera_interfaces', 'ld_library_path_lib')
+[8.063s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/hook/ld_library_path_lib.ps1'
+[8.065s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/hook/ld_library_path_lib.dsv'
+[8.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/hook/ld_library_path_lib.sh'
+[8.068s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/bin'
+[8.068s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/lib/pkgconfig/jetson_camera_interfaces.pc'
+[8.069s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/lib/python3.8/site-packages'
+[8.070s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetson_camera_interfaces', 'pythonpath')
+[8.071s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/hook/pythonpath.ps1'
+[8.073s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/hook/pythonpath.dsv'
+[8.075s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/hook/pythonpath.sh'
+[8.078s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/bin'
+[8.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/package.ps1'
+[8.084s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/package.dsv'
+[8.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/package.sh'
+[8.091s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/package.bash'
+[8.095s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/package.zsh'
+[8.099s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/colcon-core/packages/jetson_camera_interfaces)
+[8.102s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(jetson_camera_interfaces)
+[8.103s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces' for CMake module files
+[8.106s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces' for CMake config files
+[8.111s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetson_camera_interfaces', 'cmake_prefix_path')
+[8.112s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/hook/cmake_prefix_path.ps1'
+[8.114s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/hook/cmake_prefix_path.dsv'
+[8.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/hook/cmake_prefix_path.sh'
+[8.118s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/lib'
+[8.118s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetson_camera_interfaces', 'ld_library_path_lib')
+[8.120s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/hook/ld_library_path_lib.ps1'
+[8.122s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/hook/ld_library_path_lib.dsv'
+[8.123s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/hook/ld_library_path_lib.sh'
+[8.125s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/bin'
+[8.126s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/lib/pkgconfig/jetson_camera_interfaces.pc'
+[8.127s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/lib/python3.8/site-packages'
+[8.127s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetson_camera_interfaces', 'pythonpath')
+[8.128s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/hook/pythonpath.ps1'
+[8.130s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/hook/pythonpath.dsv'
+[8.132s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/hook/pythonpath.sh'
+[8.135s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/bin'
+[8.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/package.ps1'
+[8.140s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/package.dsv'
+[8.143s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/package.sh'
+[8.145s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/package.bash'
+[8.147s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/jetson_camera_interfaces/package.zsh'
+[8.149s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/share/colcon-core/packages/jetson_camera_interfaces)
+[8.153s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jetson/EVC/workshops/final_project_v5/behaviors/aruco_parking/aruco_parking' with build type 'ament_python'
+[8.154s] Level 1:colcon.colcon_core.shell:create_environment_hook('aruco_parking', 'ament_prefix_path')
+[8.155s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/aruco_parking/hook/ament_prefix_path.ps1'
+[8.157s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/aruco_parking/hook/ament_prefix_path.dsv'
+[8.159s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/aruco_parking/hook/ament_prefix_path.sh'
+[8.161s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.162s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.626s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jetson/EVC/workshops/final_project_v5/behaviors/aruco_parking/aruco_parking'
+[9.628s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.629s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.667s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/EVC/workshops/final_project_v5/drivers/display/Adafruit_Python_SSD1306': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/Adafruit_SSD1306/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/Adafruit_SSD1306 build --build-base /home/jetson/EVC/workshops/final_project_v5/build/Adafruit_SSD1306/build install --record /home/jetson/EVC/workshops/final_project_v5/build/Adafruit_SSD1306/install.log --single-version-externally-managed
+[9.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/EVC/workshops/final_project_v5/vision/camera/jetson_camera': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/jetson_camera build --build-base /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/build install --record /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/install.log --single-version-externally-managed install_data
+[9.789s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/EVC/workshops/final_project_v5/motion/control/motor_control': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/motor_control build --build-base /home/jetson/EVC/workshops/final_project_v5/build/motor_control/build install --record /home/jetson/EVC/workshops/final_project_v5/build/motor_control/install.log --install-scripts $base/lib/motor_control --single-version-externally-managed install_data
+[11.248s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306' for CMake module files
+[11.251s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306' for CMake config files
+[11.256s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/EVC/workshops/final_project_v5/drivers/display/Adafruit_Python_SSD1306' returned '0': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/Adafruit_SSD1306/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/Adafruit_SSD1306 build --build-base /home/jetson/EVC/workshops/final_project_v5/build/Adafruit_SSD1306/build install --record /home/jetson/EVC/workshops/final_project_v5/build/Adafruit_SSD1306/install.log --single-version-externally-managed
+[11.257s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306/lib'
+[11.257s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306/bin'
+[11.258s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306/lib/pkgconfig/Adafruit_SSD1306.pc'
+[11.259s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306/lib/python3.8/site-packages'
+[11.259s] Level 1:colcon.colcon_core.shell:create_environment_hook('Adafruit_SSD1306', 'pythonpath')
+[11.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306/share/Adafruit_SSD1306/hook/pythonpath.ps1'
+[11.264s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306/share/Adafruit_SSD1306/hook/pythonpath.dsv'
+[11.266s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306/share/Adafruit_SSD1306/hook/pythonpath.sh'
+[11.270s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306/bin'
+[11.270s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(Adafruit_SSD1306)
+[11.272s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306/share/Adafruit_SSD1306/package.ps1'
+[11.274s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306/share/Adafruit_SSD1306/package.dsv'
+[11.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306/share/Adafruit_SSD1306/package.sh'
+[11.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306/share/Adafruit_SSD1306/package.bash'
+[11.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306/share/Adafruit_SSD1306/package.zsh'
+[11.284s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306/share/colcon-core/packages/Adafruit_SSD1306)
+[11.289s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jetson/EVC/workshops/final_project_v5/behaviors/line_following/line_following' with build type 'ament_python'
+[11.290s] Level 1:colcon.colcon_core.shell:create_environment_hook('line_following', 'ament_prefix_path')
+[11.292s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/line_following/share/line_following/hook/ament_prefix_path.ps1'
+[11.294s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/EVC/workshops/final_project_v5/install/line_following/share/line_following/hook/ament_prefix_path.dsv'
+[11.296s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/line_following/share/line_following/hook/ament_prefix_path.sh'
+[11.300s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.300s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.581s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jetson/EVC/workshops/final_project_v5/behaviors/line_following/line_following'
+[12.583s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.583s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.609s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera' for CMake module files
+[12.612s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/EVC/workshops/final_project_v5/vision/camera/jetson_camera' returned '0': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/jetson_camera build --build-base /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/build install --record /home/jetson/EVC/workshops/final_project_v5/build/jetson_camera/install.log --single-version-externally-managed install_data
+[12.613s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera' for CMake config files
+[12.616s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib'
+[12.616s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/bin'
+[12.616s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/pkgconfig/jetson_camera.pc'
+[12.617s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages'
+[12.618s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetson_camera', 'pythonpath')
+[12.619s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera/hook/pythonpath.ps1'
+[12.620s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera/hook/pythonpath.dsv'
+[12.622s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera/hook/pythonpath.sh'
+[12.624s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/bin'
+[12.625s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(jetson_camera)
+[12.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera/package.ps1'
+[12.628s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera/package.dsv'
+[12.630s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera/package.sh'
+[12.632s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera/package.bash'
+[12.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/jetson_camera/package.zsh'
+[12.634s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/share/colcon-core/packages/jetson_camera)
+[12.646s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/EVC/workshops/final_project_v5/behaviors/aruco_parking/aruco_parking': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/aruco_parking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/aruco_parking build --build-base /home/jetson/EVC/workshops/final_project_v5/build/aruco_parking/build install --record /home/jetson/EVC/workshops/final_project_v5/build/aruco_parking/install.log --single-version-externally-managed install_data
+[12.650s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/motor_control' for CMake module files
+[12.652s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/EVC/workshops/final_project_v5/motion/control/motor_control' returned '0': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/motor_control build --build-base /home/jetson/EVC/workshops/final_project_v5/build/motor_control/build install --record /home/jetson/EVC/workshops/final_project_v5/build/motor_control/install.log --install-scripts $base/lib/motor_control --single-version-externally-managed install_data
+[12.654s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/motor_control' for CMake config files
+[12.657s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib'
+[12.657s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/motor_control/bin'
+[12.658s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/pkgconfig/motor_control.pc'
+[12.659s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages'
+[12.659s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_control', 'pythonpath')
+[12.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/motor_control/share/motor_control/hook/pythonpath.ps1'
+[12.662s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/EVC/workshops/final_project_v5/install/motor_control/share/motor_control/hook/pythonpath.dsv'
+[12.664s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/motor_control/share/motor_control/hook/pythonpath.sh'
+[12.667s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/motor_control/bin'
+[12.667s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_control)
+[12.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/motor_control/share/motor_control/package.ps1'
+[12.671s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson/EVC/workshops/final_project_v5/install/motor_control/share/motor_control/package.dsv'
+[12.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/motor_control/share/motor_control/package.sh'
+[12.675s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/motor_control/share/motor_control/package.bash'
+[12.676s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/motor_control/share/motor_control/package.zsh'
+[12.678s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson/EVC/workshops/final_project_v5/install/motor_control/share/colcon-core/packages/motor_control)
+[12.679s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jetson/EVC/workshops/final_project_v5/behaviors/color_detection/color_detection_mode' with build type 'ament_python'
+[12.680s] Level 1:colcon.colcon_core.shell:create_environment_hook('color_detection_mode', 'ament_prefix_path')
+[12.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/share/color_detection_mode/hook/ament_prefix_path.ps1'
+[12.684s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/share/color_detection_mode/hook/ament_prefix_path.dsv'
+[12.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/share/color_detection_mode/hook/ament_prefix_path.sh'
+[12.689s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.689s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.711s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jetson/EVC/workshops/final_project_v5/behaviors/goal_navigation/goal_navigation' with build type 'ament_python'
+[12.713s] Level 1:colcon.colcon_core.shell:create_environment_hook('goal_navigation', 'ament_prefix_path')
+[12.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/share/goal_navigation/hook/ament_prefix_path.ps1'
+[12.716s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/share/goal_navigation/hook/ament_prefix_path.dsv'
+[12.718s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/share/goal_navigation/hook/ament_prefix_path.sh'
+[12.721s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.721s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.088s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jetson/EVC/workshops/final_project_v5/behaviors/color_detection/color_detection_mode'
+[14.090s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.091s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[15.368s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jetson/EVC/workshops/final_project_v5/behaviors/goal_navigation/goal_navigation'
+[15.369s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[15.370s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[15.410s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking' for CMake module files
+[15.413s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/EVC/workshops/final_project_v5/behaviors/aruco_parking/aruco_parking' returned '0': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/aruco_parking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/aruco_parking build --build-base /home/jetson/EVC/workshops/final_project_v5/build/aruco_parking/build install --record /home/jetson/EVC/workshops/final_project_v5/build/aruco_parking/install.log --single-version-externally-managed install_data
+[15.415s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking' for CMake config files
+[15.418s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/lib'
+[15.418s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/bin'
+[15.418s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/lib/pkgconfig/aruco_parking.pc'
+[15.419s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/lib/python3.8/site-packages'
+[15.419s] Level 1:colcon.colcon_core.shell:create_environment_hook('aruco_parking', 'pythonpath')
+[15.420s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/aruco_parking/hook/pythonpath.ps1'
+[15.422s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/aruco_parking/hook/pythonpath.dsv'
+[15.424s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/aruco_parking/hook/pythonpath.sh'
+[15.426s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/bin'
+[15.426s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aruco_parking)
+[15.428s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/aruco_parking/package.ps1'
+[15.430s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/aruco_parking/package.dsv'
+[15.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/aruco_parking/package.sh'
+[15.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/aruco_parking/package.bash'
+[15.435s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/aruco_parking/package.zsh'
+[15.438s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/colcon-core/packages/aruco_parking)
+[15.452s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/EVC/workshops/final_project_v5/behaviors/line_following/line_following': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/line_following/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/line_following/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/line_following build --build-base /home/jetson/EVC/workshops/final_project_v5/build/line_following/build install --record /home/jetson/EVC/workshops/final_project_v5/build/line_following/install.log --single-version-externally-managed install_data
+[16.905s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/line_following' for CMake module files
+[16.908s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/EVC/workshops/final_project_v5/behaviors/line_following/line_following' returned '0': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/line_following/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/line_following/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/line_following build --build-base /home/jetson/EVC/workshops/final_project_v5/build/line_following/build install --record /home/jetson/EVC/workshops/final_project_v5/build/line_following/install.log --single-version-externally-managed install_data
+[16.910s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/line_following' for CMake config files
+[16.913s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/line_following/lib'
+[16.914s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/line_following/bin'
+[16.914s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/line_following/lib/pkgconfig/line_following.pc'
+[16.915s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/line_following/lib/python3.8/site-packages'
+[16.915s] Level 1:colcon.colcon_core.shell:create_environment_hook('line_following', 'pythonpath')
+[16.917s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/line_following/share/line_following/hook/pythonpath.ps1'
+[16.919s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/EVC/workshops/final_project_v5/install/line_following/share/line_following/hook/pythonpath.dsv'
+[16.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/line_following/share/line_following/hook/pythonpath.sh'
+[16.924s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/line_following/bin'
+[16.924s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(line_following)
+[16.926s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/line_following/share/line_following/package.ps1'
+[16.928s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson/EVC/workshops/final_project_v5/install/line_following/share/line_following/package.dsv'
+[16.931s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/line_following/share/line_following/package.sh'
+[16.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/line_following/share/line_following/package.bash'
+[16.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/line_following/share/line_following/package.zsh'
+[16.936s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson/EVC/workshops/final_project_v5/install/line_following/share/colcon-core/packages/line_following)
+[17.315s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/EVC/workshops/final_project_v5/behaviors/color_detection/color_detection_mode': LD_LIBRARY_PATH=/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/color_detection_mode/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/line_following/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/color_detection_mode build --build-base /home/jetson/EVC/workshops/final_project_v5/build/color_detection_mode/build install --record /home/jetson/EVC/workshops/final_project_v5/build/color_detection_mode/install.log --single-version-externally-managed install_data
+[17.342s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/EVC/workshops/final_project_v5/behaviors/goal_navigation/goal_navigation': AMENT_PREFIX_PATH=/home/jetson/EVC/workshops/final_project_v5/install/motor_control:/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera:/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation:/home/jetson/EVC/workshops/final_project_v5/install/line_following:/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode:/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces:/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking:/opt/ros/foxy PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/goal_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/line_following/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/goal_navigation build --build-base /home/jetson/EVC/workshops/final_project_v5/build/goal_navigation/build install --record /home/jetson/EVC/workshops/final_project_v5/build/goal_navigation/install.log --single-version-externally-managed install_data
+[18.766s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode' for CMake module files
+[18.769s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/EVC/workshops/final_project_v5/behaviors/color_detection/color_detection_mode' returned '0': LD_LIBRARY_PATH=/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/color_detection_mode/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/line_following/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/color_detection_mode build --build-base /home/jetson/EVC/workshops/final_project_v5/build/color_detection_mode/build install --record /home/jetson/EVC/workshops/final_project_v5/build/color_detection_mode/install.log --single-version-externally-managed install_data
+[18.771s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode' for CMake config files
+[18.775s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/lib'
+[18.775s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/bin'
+[18.775s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/lib/pkgconfig/color_detection_mode.pc'
+[18.777s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/lib/python3.8/site-packages'
+[18.777s] Level 1:colcon.colcon_core.shell:create_environment_hook('color_detection_mode', 'pythonpath')
+[18.778s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/share/color_detection_mode/hook/pythonpath.ps1'
+[18.780s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/share/color_detection_mode/hook/pythonpath.dsv'
+[18.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/share/color_detection_mode/hook/pythonpath.sh'
+[18.785s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/bin'
+[18.786s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(color_detection_mode)
+[18.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/share/color_detection_mode/package.ps1'
+[18.790s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/share/color_detection_mode/package.dsv'
+[18.792s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/share/color_detection_mode/package.sh'
+[18.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/share/color_detection_mode/package.bash'
+[18.795s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/share/color_detection_mode/package.zsh'
+[18.797s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/share/colcon-core/packages/color_detection_mode)
+[18.802s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation' for CMake module files
+[18.804s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/EVC/workshops/final_project_v5/behaviors/goal_navigation/goal_navigation' returned '0': AMENT_PREFIX_PATH=/home/jetson/EVC/workshops/final_project_v5/install/motor_control:/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera:/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation:/home/jetson/EVC/workshops/final_project_v5/install/line_following:/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode:/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces:/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking:/opt/ros/foxy PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/goal_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/line_following/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/color_detection_mode/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/jetson_camera_interfaces/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/lib/python3.8/site-packages:/home/jetson/EVC/workshops/final_project_v5/install/Adafruit_SSD1306/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/goal_navigation build --build-base /home/jetson/EVC/workshops/final_project_v5/build/goal_navigation/build install --record /home/jetson/EVC/workshops/final_project_v5/build/goal_navigation/install.log --single-version-externally-managed install_data
+[18.806s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation' for CMake config files
+[18.808s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/lib'
+[18.809s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/bin'
+[18.809s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/lib/pkgconfig/goal_navigation.pc'
+[18.810s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/lib/python3.8/site-packages'
+[18.810s] Level 1:colcon.colcon_core.shell:create_environment_hook('goal_navigation', 'pythonpath')
+[18.811s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/share/goal_navigation/hook/pythonpath.ps1'
+[18.813s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/share/goal_navigation/hook/pythonpath.dsv'
+[18.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/share/goal_navigation/hook/pythonpath.sh'
+[18.818s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/bin'
+[18.818s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(goal_navigation)
+[18.820s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/share/goal_navigation/package.ps1'
+[18.822s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/share/goal_navigation/package.dsv'
+[18.824s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/share/goal_navigation/package.sh'
+[18.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/share/goal_navigation/package.bash'
+[18.828s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/share/goal_navigation/package.zsh'
+[18.829s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/share/colcon-core/packages/goal_navigation)
+[18.830s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[18.831s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[18.831s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[18.832s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[18.855s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[18.856s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[18.856s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[18.927s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.Notifications exited with status 1
+[18.928s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[18.929s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson/EVC/workshops/final_project_v5/install/local_setup.ps1'
+[18.934s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jetson/EVC/workshops/final_project_v5/install/_local_setup_util_ps1.py'
+[18.941s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson/EVC/workshops/final_project_v5/install/setup.ps1'
+[18.947s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson/EVC/workshops/final_project_v5/install/local_setup.sh'
+[18.950s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jetson/EVC/workshops/final_project_v5/install/_local_setup_util_sh.py'
+[18.952s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson/EVC/workshops/final_project_v5/install/setup.sh'
+[18.958s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson/EVC/workshops/final_project_v5/install/local_setup.bash'
+[18.961s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson/EVC/workshops/final_project_v5/install/setup.bash'
+[18.966s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson/EVC/workshops/final_project_v5/install/local_setup.zsh'
+[18.969s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson/EVC/workshops/final_project_v5/install/setup.zsh'

@@ -1,0 +1,79 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces/jetson_camera_interfaces__py/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "jetson_camera_interfaces::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "jetson_camera_interfaces__py::@cd6d66cc05c8c619e486",
+	"name" : "jetson_camera_interfaces__py",
+	"paths" : 
+	{
+		"build" : "jetson_camera_interfaces__py",
+		"source" : "/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces/jetson_camera_interfaces__py"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces/jetson_camera_interfaces__py/CMakeFiles/jetson_camera_interfaces__py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces/jetson_camera_interfaces__py/CMakeFiles/jetson_camera_interfaces__py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces/rosidl_generator_py/jetson_camera_interfaces/_jetson_camera_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

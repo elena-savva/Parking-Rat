@@ -1,0 +1,57 @@
+# Coordinate setup for no-ArUco goal navigation.
+#
+# Convention:
+#   start pose = (0.0, 0.0, 0.0)
+#   +x = forward from the start direction
+#   +y = left from the start direction
+#   theta = counter-clockwise positive
+#   units = meters and radians
+
+go_to_goal_node:
+  ros__parameters:
+    odom_topic: /odom
+    cmd_vel_topic: /cmd_vel
+    goal_reached_topic: /goal_reached
+
+    # goal_x and goal_y are supplied by goal_navigation.launch.py.
+
+    # Stop once the robot is close enough to the goal.
+    goal_tolerance: 0.05
+
+    # Motion tuning for goal navigation.
+    slow_radius: 0.20
+    max_linear_speed: 0.25  #0.12
+    min_linear_speed: 0.15  #0.08
+    kp_heading: 2.8
+    max_angular_speed: 2.2
+    min_turn_speed: 2
+    alignment_tolerance_deg: 10.0
+    control_period_sec: 0.05
+    start_delay_sec: 3.0
+    orthogonal_navigation_enabled: true
+    orthogonal_axis_tolerance: 0.04
+
+    # Obstacle stop and path check.
+    obstacle_detection_enabled: true
+    tof_topic: /tof/front
+    tof_timeout_sec: 1.0
+    obstacle_stop_distance: 0.4
+    obstacle_confirm_count: 3
+    path_clear_distance: 0.40
+    path_check_turn_angle_deg: 90.0
+    path_check_heading_tolerance_deg: 6.0
+    path_check_turn_speed: 1.75
+    path_check_pause_sec: 0.5
+    path_check_timeout_sec: 4.0
+
+    # Obstacle avoidance and resume.
+    avoidance_enabled: true
+    avoid_forward_distance: 0.55    # was 0.25
+    avoid_linear_speed: 0.2
+    avoid_stop_distance: 0.90
+    avoid_max_time_sec: 5.0
+    avoid_resume_pause_sec: 0.5
+
+    # One-line terminal printout of current pose and remaining goal distance.
+    print_telemetry: true
+    print_telemetry_period_sec: 1.0

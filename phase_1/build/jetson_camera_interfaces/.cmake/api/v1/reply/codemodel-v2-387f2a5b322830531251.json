@@ -1,0 +1,213 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				},
+				{
+					"build" : "jetson_camera_interfaces__py",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces/jetson_camera_interfaces__py",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "jetson_camera_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "jetson_camera_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-jetson_camera_interfaces-058f02df720f5c60b24f.json",
+					"name" : "jetson_camera_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "jetson_camera_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-jetson_camera_interfaces__cpp-83abdcb321b80cf2219d.json",
+					"name" : "jetson_camera_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "jetson_camera_interfaces__py::@cd6d66cc05c8c619e486",
+					"jsonFile" : "target-jetson_camera_interfaces__py-9b246e1f4b0ce6e57828.json",
+					"name" : "jetson_camera_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "jetson_camera_interfaces__python::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-jetson_camera_interfaces__python-ae26760cc5361493f961.json",
+					"name" : "jetson_camera_interfaces__python",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "jetson_camera_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-jetson_camera_interfaces__rosidl_generator_c-792fdb6a4623c8ceba23.json",
+					"name" : "jetson_camera_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "jetson_camera_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-jetson_camera_interfaces__rosidl_typesupport_c-bd58248735f6a06b7400.json",
+					"name" : "jetson_camera_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "jetson_camera_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-jetson_camera_interfaces__rosidl_typesupport_c__pyext-6d45cd96921d6ba15bec.json",
+					"name" : "jetson_camera_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "jetson_camera_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-jetson_camera_interfaces__rosidl_typesupport_cpp-7ff93cd01406ff7c2063.json",
+					"name" : "jetson_camera_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "jetson_camera_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-jetson_camera_interfaces__rosidl_typesupport_fastrtps_c-1866b7548dbef298cf8f.json",
+					"name" : "jetson_camera_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "jetson_camera_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-jetson_camera_interfaces__rosidl_typesupport_fastrtps_c__pyext-82d332b19b4b8fa0f9d6.json",
+					"name" : "jetson_camera_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "jetson_camera_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-jetson_camera_interfaces__rosidl_typesupport_fastrtps_cpp-617e5d19c3abdfeb9bc3.json",
+					"name" : "jetson_camera_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "jetson_camera_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-jetson_camera_interfaces__rosidl_typesupport_introspection_c-6693ee43149f8d5112a8.json",
+					"name" : "jetson_camera_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "jetson_camera_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-jetson_camera_interfaces__rosidl_typesupport_introspection_c__pyext-608760417344293bceb6.json",
+					"name" : "jetson_camera_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "jetson_camera_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-jetson_camera_interfaces__rosidl_typesupport_introspection_cpp-0ca2763ce0990019341c.json",
+					"name" : "jetson_camera_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "jetson_camera_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-jetson_camera_interfaces_uninstall-c1522c5c82edc4acd916.json",
+					"name" : "jetson_camera_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-9f77a0933772648ed1e1.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jetson/EVC/workshops/final_project_v5/build/jetson_camera_interfaces",
+		"source" : "/home/jetson/EVC/workshops/final_project_v5/vision/interfaces/jetson_camera_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

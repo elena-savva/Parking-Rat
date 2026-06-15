@@ -1,0 +1,12 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/jetson_camera_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/jetson_camera_interfaces/msg/detail/processed_image_pair__type_support.cpp.o"
+  "libjetson_camera_interfaces__rosidl_typesupport_introspection_cpp.pdb"
+  "libjetson_camera_interfaces__rosidl_typesupport_introspection_cpp.so"
+  "rosidl_typesupport_introspection_cpp/jetson_camera_interfaces/msg/detail/processed_image_pair__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/jetson_camera_interfaces/msg/detail/processed_image_pair__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/jetson_camera_interfaces__rosidl_typesupport_introspection_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,3 @@
+source;share/Adafruit_SSD1306/hook/pythonpath.ps1
+source;share/Adafruit_SSD1306/hook/pythonpath.dsv
+source;share/Adafruit_SSD1306/hook/pythonpath.sh

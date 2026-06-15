@@ -1,0 +1,25 @@
+# Coordinate setup for no-ArUco goal navigation.
+#
+# Convention:
+#   start pose = (0.0, 0.0, 0.0)
+#   +x = forward from the start direction
+#   +y = left from the start direction
+#   theta = counter-clockwise positive
+#   units = meters and radians
+
+goal_publisher_node:
+  ros__parameters:
+    frame_id: odom
+    goal_topic: /goal_pose
+
+    # First safe test: drive straight 0.50 m from the start.
+    goal_x: 1.50
+    goal_y: 0.00
+
+    # The current PID controller only uses x/y, but theta is kept here for later.
+    use_goal_theta: false
+    goal_theta: 0.0
+
+    # Publish a few times so the PID node receives the goal during startup.
+    publish_period_sec: 0.5
+    publish_count: 5

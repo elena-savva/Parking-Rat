@@ -1,0 +1,26 @@
+[4.468s] Invoking command in '/home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/behaviors/line_following/line_following': PYTHONPATH=/home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/build/line_following/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/install/line_following/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/line_following build --build-base /home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/build/line_following/build install --record /home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/build/line_following/install.log --single-version-externally-managed install_data
+[5.724s] running egg_info
+[5.728s] writing ../../../build/line_following/line_following.egg-info/PKG-INFO
+[5.729s] writing dependency_links to ../../../build/line_following/line_following.egg-info/dependency_links.txt
+[5.729s] writing entry points to ../../../build/line_following/line_following.egg-info/entry_points.txt
+[5.730s] writing requirements to ../../../build/line_following/line_following.egg-info/requires.txt
+[5.730s] writing top-level names to ../../../build/line_following/line_following.egg-info/top_level.txt
+[5.741s] reading manifest file '../../../build/line_following/line_following.egg-info/SOURCES.txt'
+[5.746s] writing manifest file '../../../build/line_following/line_following.egg-info/SOURCES.txt'
+[5.747s] running build
+[5.747s] running build_py
+[5.748s] copying line_following/navigator_node.py -> /home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/build/line_following/build/lib/line_following
+[5.749s] running install
+[5.752s] running install_lib
+[5.756s] copying /home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/build/line_following/build/lib/line_following/navigator_node.py -> /home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/install/line_following/lib/python3.8/site-packages/line_following
+[5.759s] byte-compiling /home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/install/line_following/lib/python3.8/site-packages/line_following/navigator_node.py to navigator_node.cpython-38.pyc
+[5.774s] running install_data
+[5.775s] running install_egg_info
+[5.781s] removing '/home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/install/line_following/lib/python3.8/site-packages/line_following-0.0.0-py3.8.egg-info' (and everything under it)
+[5.782s] Copying ../../../build/line_following/line_following.egg-info to /home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/install/line_following/lib/python3.8/site-packages/line_following-0.0.0-py3.8.egg-info
+[5.786s] running install_scripts
+[5.864s] Installing angular_tracker script to /home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/install/line_following/lib/line_following
+[5.865s] Installing line_tracker script to /home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/install/line_following/lib/line_following
+[5.866s] Installing navigator script to /home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/install/line_following/lib/line_following
+[5.866s] writing list of installed files to '/home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/build/line_following/install.log'
+[5.972s] Invoked command in '/home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/behaviors/line_following/line_following' returned '0': PYTHONPATH=/home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/build/line_following/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/install/line_following/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/line_following build --build-base /home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/build/line_following/build install --record /home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/build/line_following/install.log --single-version-externally-managed install_data

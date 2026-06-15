@@ -1,0 +1,16 @@
+[0.120s] Invoking command in '/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/build/jetson_camera_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/build/jetson_camera_interfaces -- -j4 -l4
+[3.724s] [  3%] Built target jetson_camera_interfaces__cpp
+[3.726s] [ 12%] Built target jetson_camera_interfaces__rosidl_generator_c
+[3.727s] [ 22%] Built target jetson_camera_interfaces__rosidl_typesupport_fastrtps_cpp
+[3.728s] [ 32%] Built target jetson_camera_interfaces__rosidl_typesupport_introspection_cpp
+[3.729s] [ 41%] Built target jetson_camera_interfaces__rosidl_typesupport_cpp
+[3.729s] [ 51%] Built target jetson_camera_interfaces__rosidl_typesupport_introspection_c
+[3.730s] [ 61%] Built target jetson_camera_interfaces__rosidl_typesupport_c
+[3.730s] [ 70%] Built target jetson_camera_interfaces__rosidl_typesupport_fastrtps_c
+[3.731s] [ 70%] Built target jetson_camera_interfaces
+[3.731s] [ 74%] Built target jetson_camera_interfaces__py
+[3.731s] [ 80%] Built target jetson_camera_interfaces__python
+[3.732s] [100%] Built target jetson_camera_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[3.732s] [100%] Built target jetson_camera_interfaces__rosidl_typesupport_c__pyext
+[3.732s] [100%] Built target jetson_camera_interfaces__rosidl_typesupport_introspection_c__pyext
+[3.733s] CMake Error: The current CMakeCache.txt directory /home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/build/jetson_camera_interfaces/CMakeCache.txt is different than the directory /home/jetson/EVC/workshops/final_project_v3/build/jetson_camera_interfaces where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt

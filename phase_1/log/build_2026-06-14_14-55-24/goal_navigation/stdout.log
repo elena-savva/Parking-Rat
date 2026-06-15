@@ -1,0 +1,23 @@
+running egg_info
+writing ../../../build/goal_navigation/goal_navigation.egg-info/PKG-INFO
+writing dependency_links to ../../../build/goal_navigation/goal_navigation.egg-info/dependency_links.txt
+writing entry points to ../../../build/goal_navigation/goal_navigation.egg-info/entry_points.txt
+writing requirements to ../../../build/goal_navigation/goal_navigation.egg-info/requires.txt
+writing top-level names to ../../../build/goal_navigation/goal_navigation.egg-info/top_level.txt
+reading manifest file '../../../build/goal_navigation/goal_navigation.egg-info/SOURCES.txt'
+writing manifest file '../../../build/goal_navigation/goal_navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+copying goal_navigation/go_to_goal_node.py -> /home/jetson/EVC/workshops/final_project_v5/build/goal_navigation/build/lib/goal_navigation
+running install
+running install_lib
+copying /home/jetson/EVC/workshops/final_project_v5/build/goal_navigation/build/lib/goal_navigation/go_to_goal_node.py -> /home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/lib/python3.8/site-packages/goal_navigation
+byte-compiling /home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/lib/python3.8/site-packages/goal_navigation/go_to_goal_node.py to go_to_goal_node.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/lib/python3.8/site-packages/goal_navigation-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../../build/goal_navigation/goal_navigation.egg-info to /home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/lib/python3.8/site-packages/goal_navigation-0.0.0-py3.8.egg-info
+running install_scripts
+Installing go_to_goal_node script to /home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/lib/goal_navigation
+Installing telemetry_overlay_node script to /home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/lib/goal_navigation
+writing list of installed files to '/home/jetson/EVC/workshops/final_project_v5/build/goal_navigation/install.log'

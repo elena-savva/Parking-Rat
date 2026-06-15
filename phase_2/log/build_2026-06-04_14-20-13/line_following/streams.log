@@ -1,0 +1,50 @@
+[4.895s] Invoking command in '/home/jetson/EVC/workshops/final_project_v3/behaviors/line_following/line_following': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v3/build/line_following/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v3/install/line_following/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/line_following build --build-base /home/jetson/EVC/workshops/final_project_v3/build/line_following/build install --record /home/jetson/EVC/workshops/final_project_v3/build/line_following/install.log --single-version-externally-managed install_data
+[6.228s] running egg_info
+[6.230s] creating ../../../build/line_following/line_following.egg-info
+[6.231s] writing ../../../build/line_following/line_following.egg-info/PKG-INFO
+[6.232s] writing dependency_links to ../../../build/line_following/line_following.egg-info/dependency_links.txt
+[6.232s] writing entry points to ../../../build/line_following/line_following.egg-info/entry_points.txt
+[6.233s] writing requirements to ../../../build/line_following/line_following.egg-info/requires.txt
+[6.233s] writing top-level names to ../../../build/line_following/line_following.egg-info/top_level.txt
+[6.239s] writing manifest file '../../../build/line_following/line_following.egg-info/SOURCES.txt'
+[6.247s] reading manifest file '../../../build/line_following/line_following.egg-info/SOURCES.txt'
+[6.251s] writing manifest file '../../../build/line_following/line_following.egg-info/SOURCES.txt'
+[6.251s] running build
+[6.252s] running build_py
+[6.252s] creating /home/jetson/EVC/workshops/final_project_v3/build/line_following/build
+[6.253s] creating /home/jetson/EVC/workshops/final_project_v3/build/line_following/build/lib
+[6.253s] creating /home/jetson/EVC/workshops/final_project_v3/build/line_following/build/lib/line_following
+[6.253s] copying line_following/navigator_node.py -> /home/jetson/EVC/workshops/final_project_v3/build/line_following/build/lib/line_following
+[6.254s] copying line_following/angular_tracker_node.py -> /home/jetson/EVC/workshops/final_project_v3/build/line_following/build/lib/line_following
+[6.256s] copying line_following/__init__.py -> /home/jetson/EVC/workshops/final_project_v3/build/line_following/build/lib/line_following
+[6.256s] copying line_following/line_tracker_node.py -> /home/jetson/EVC/workshops/final_project_v3/build/line_following/build/lib/line_following
+[6.258s] running install
+[6.262s] running install_lib
+[6.266s] creating /home/jetson/EVC/workshops/final_project_v3/install/line_following/lib/python3.8/site-packages/line_following
+[6.267s] copying /home/jetson/EVC/workshops/final_project_v3/build/line_following/build/lib/line_following/navigator_node.py -> /home/jetson/EVC/workshops/final_project_v3/install/line_following/lib/python3.8/site-packages/line_following
+[6.267s] copying /home/jetson/EVC/workshops/final_project_v3/build/line_following/build/lib/line_following/angular_tracker_node.py -> /home/jetson/EVC/workshops/final_project_v3/install/line_following/lib/python3.8/site-packages/line_following
+[6.268s] copying /home/jetson/EVC/workshops/final_project_v3/build/line_following/build/lib/line_following/__init__.py -> /home/jetson/EVC/workshops/final_project_v3/install/line_following/lib/python3.8/site-packages/line_following
+[6.269s] copying /home/jetson/EVC/workshops/final_project_v3/build/line_following/build/lib/line_following/line_tracker_node.py -> /home/jetson/EVC/workshops/final_project_v3/install/line_following/lib/python3.8/site-packages/line_following
+[6.272s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/line_following/lib/python3.8/site-packages/line_following/navigator_node.py to navigator_node.cpython-38.pyc
+[6.279s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/line_following/lib/python3.8/site-packages/line_following/angular_tracker_node.py to angular_tracker_node.cpython-38.pyc
+[6.282s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/line_following/lib/python3.8/site-packages/line_following/__init__.py to __init__.cpython-38.pyc
+[6.282s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/line_following/lib/python3.8/site-packages/line_following/line_tracker_node.py to line_tracker_node.cpython-38.pyc
+[6.286s] running install_data
+[6.287s] creating /home/jetson/EVC/workshops/final_project_v3/install/line_following/share/ament_index
+[6.287s] creating /home/jetson/EVC/workshops/final_project_v3/install/line_following/share/ament_index/resource_index
+[6.288s] creating /home/jetson/EVC/workshops/final_project_v3/install/line_following/share/ament_index/resource_index/packages
+[6.289s] copying resource/line_following -> /home/jetson/EVC/workshops/final_project_v3/install/line_following/share/ament_index/resource_index/packages
+[6.289s] copying package.xml -> /home/jetson/EVC/workshops/final_project_v3/install/line_following/share/line_following
+[6.290s] creating /home/jetson/EVC/workshops/final_project_v3/install/line_following/share/line_following/config
+[6.290s] copying config/line_following.yaml -> /home/jetson/EVC/workshops/final_project_v3/install/line_following/share/line_following/config
+[6.291s] creating /home/jetson/EVC/workshops/final_project_v3/install/line_following/share/line_following/launch
+[6.291s] copying launch/full_mission.launch.py -> /home/jetson/EVC/workshops/final_project_v3/install/line_following/share/line_following/launch
+[6.292s] copying launch/line_following.launch.py -> /home/jetson/EVC/workshops/final_project_v3/install/line_following/share/line_following/launch
+[6.292s] running install_egg_info
+[6.299s] Copying ../../../build/line_following/line_following.egg-info to /home/jetson/EVC/workshops/final_project_v3/install/line_following/lib/python3.8/site-packages/line_following-0.0.0-py3.8.egg-info
+[6.303s] running install_scripts
+[6.391s] Installing angular_tracker script to /home/jetson/EVC/workshops/final_project_v3/install/line_following/lib/line_following
+[6.392s] Installing line_tracker script to /home/jetson/EVC/workshops/final_project_v3/install/line_following/lib/line_following
+[6.456s] Installing navigator script to /home/jetson/EVC/workshops/final_project_v3/install/line_following/lib/line_following
+[6.457s] writing list of installed files to '/home/jetson/EVC/workshops/final_project_v3/build/line_following/install.log'
+[6.500s] Invoked command in '/home/jetson/EVC/workshops/final_project_v3/behaviors/line_following/line_following' returned '0': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v3/build/line_following/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v3/install/line_following/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/line_following build --build-base /home/jetson/EVC/workshops/final_project_v3/build/line_following/build install --record /home/jetson/EVC/workshops/final_project_v3/build/line_following/install.log --single-version-externally-managed install_data

@@ -1,0 +1,5 @@
+  File "/home/jetson/EVC/workshops/final_project_v5/install/goal_navigation/lib/python3.8/site-packages/goal_navigation/go_to_goal_node.py", line 41
+    self.declare_parameter('orthogonal_axis_tolerance', 0.04)
+    ^
+SyntaxError: invalid syntax
+

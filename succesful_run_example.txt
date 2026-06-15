@@ -1,0 +1,707 @@
+jetson@nano:~/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4$ ros2 launch line_following full_mission.launch.py
+[INFO] [launch]: All log files can be found below /home/jetson/.ros/log/2026-06-14-15-07-42-064127-nano-24079
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [publisher_node-1]: process started with pid [24081]
+[INFO] [processing_node-2]: process started with pid [24083]
+[INFO] [line_tracker-3]: process started with pid [24085]
+[INFO] [aruco_detector_node-4]: process started with pid [24087]
+[INFO] [go_stop_node-5]: process started with pid [24089]
+[INFO] [angular_tracker-6]: process started with pid [24091]
+[INFO] [kinematics_node-7]: process started with pid [24093]
+[INFO] [odometry_node-8]: process started with pid [24095]
+[INFO] [pid_controller-9]: process started with pid [24097]
+[INFO] [navigator-10]: process started with pid [24099]
+[kinematics_node-7] [INFO] [1781442465.500401203] [kinematics_node]: Kinematics initialized with shared gain/trim. gain=0.478  trim=-0.08
+[angular_tracker-6] [INFO] [1781442465.664402253] [angular_tracker]: Angular tracker ready! Waiting for enable...
+[angular_tracker-6] [INFO] [1781442465.668636268] [angular_tracker]: Angular tracker disabled.
+[pid_controller-9] [INFO] [1781442465.670850023] [pid_controller]: PID Controller ready. Waiting for goal on /goal_pose ...
+[navigator-10] [INFO] [1781442465.714635266] [navigator]: Navigator ready — CENTER_ARUCO
+[odometry_node-8] [INFO] [1781442466.090754178] [odometry_node]: Odometry node ready. baseline=0.185m  left_m/tick=0.001515  right_m/tick=0.001403  use_imu_heading=True
+[odometry_node-8] [WARN] [1781442466.094388543] [odometry_node]: IMU heading enabled, but no recent IMU data is available. Using encoder heading fallback.
+[odometry_node-8] [INFO] [1781442466.097437632] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442466.607890523] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442467.100169195] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442467.607878469] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442468.100550689] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442468.608380482] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442469.110170640] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442469.608920768] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442470.127706567] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442470.629944123] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442471.138357879] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[line_tracker-3] [INFO] [1781442471.183520499] [line_tracker]: Line tracker ready! Waiting for enable...
+[navigator-10] [INFO] [1781442471.607794223] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442472.142791992] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442472.613877801] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442473.150070491] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442473.611802045] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442474.160346297] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442474.628479574] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442475.169445449] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[publisher_node-1] [INFO] [1781442475.308971481] [camera_publisher]: Loaded config {'sensor_id': 0, 'width': 640, 'height': 480, 'fps': 10}
+[navigator-10] [INFO] [1781442475.627250436] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[aruco_detector_node-4] [INFO] [1781442475.952637855] [aruco_detector]: ArUco detector ready.
+[odometry_node-8] [INFO] [1781442476.170076719] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[go_stop_node-5] [INFO] [1781442476.181356540] [go_stop_node]: Go/Stop node ready | input=/camera/image_undistorted | output=/robot/debug/compressed
+[processing_node-2] [INFO] [1781442476.372423215] [image_processor]: Processing node ready. line→/camera/image_line  aruco/color→/camera/image_undistorted  LUT disabled — clean undistorted feed to all nodes
+[navigator-10] [INFO] [1781442476.618379790] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442477.177284033] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442477.624448165] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442478.178221958] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442478.608258928] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[publisher_node-1] nvbuf_utils: Could not get EGL display connection
+[publisher_node-1] GST_ARGUS: NvArgusCameraSrc: Setting Exposure Time Range : 13000 13000
+[publisher_node-1] GST_ARGUS: Invalid Exposure Time Range Input
+[publisher_node-1] GST_ARGUS: NvArgusCameraSrc: Setting Gain Range : 1 1
+[publisher_node-1] GST_ARGUS: NvArgusCameraSrc: Setting ISP Digital Gain Range : 1 1
+[publisher_node-1] GST_ARGUS: Creating output stream
+[publisher_node-1] CONSUMER: Waiting until producer is connected...
+[publisher_node-1] GST_ARGUS: Available Sensor modes :
+[publisher_node-1] GST_ARGUS: 3264 x 2464 FR = 21.000000 fps Duration = 47619048 ; Analog Gain range min 1.000000, max 10.625000; Exposure Range min 13000, max 683709000;
+[publisher_node-1] 
+[publisher_node-1] GST_ARGUS: 3264 x 1848 FR = 28.000001 fps Duration = 35714284 ; Analog Gain range min 1.000000, max 10.625000; Exposure Range min 13000, max 683709000;
+[publisher_node-1] 
+[publisher_node-1] GST_ARGUS: 1920 x 1080 FR = 29.999999 fps Duration = 33333334 ; Analog Gain range min 1.000000, max 10.625000; Exposure Range min 13000, max 683709000;
+[publisher_node-1] 
+[publisher_node-1] GST_ARGUS: 1640 x 1232 FR = 29.999999 fps Duration = 33333334 ; Analog Gain range min 1.000000, max 10.625000; Exposure Range min 13000, max 683709000;
+[publisher_node-1] 
+[publisher_node-1] GST_ARGUS: 1280 x 720 FR = 59.999999 fps Duration = 16666667 ; Analog Gain range min 1.000000, max 10.625000; Exposure Range min 13000, max 683709000;
+[publisher_node-1] 
+[publisher_node-1] GST_ARGUS: 1280 x 720 FR = 120.000005 fps Duration = 8333333 ; Analog Gain range min 1.000000, max 10.625000; Exposure Range min 13000, max 683709000;
+[publisher_node-1] 
+[publisher_node-1] GST_ARGUS: Running with following settings:
+[publisher_node-1]    Camera index = 0 
+[publisher_node-1]    Camera mode  = 5 
+[publisher_node-1]    Output Stream W = 1280 H = 720 
+[publisher_node-1]    seconds to Run    = 0 
+[publisher_node-1]    Frame Rate = 120.000005 
+[publisher_node-1] GST_ARGUS: Setup Complete, Starting captures for 0 seconds
+[publisher_node-1] GST_ARGUS: Starting repeat capture requests.
+[publisher_node-1] CONSUMER: Producer has connected; continuing.
+[publisher_node-1] [ WARN:0@9.771] global cap_gstreamer.cpp:1728 open OpenCV | GStreamer warning: Cannot query video position: status=0, value=-1, duration=-1
+[publisher_node-1] [INFO] [1781442478.945895871] [camera_publisher]: Camera publisher initialised. Raw frames only. exposure=13000 µs
+[processing_node-2] [INFO] [1781442479.202033742] [image_processor]: Undistortion maps ready for 640x480.
+[odometry_node-8] [INFO] [1781442479.219932274] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[processing_node-2] [INFO] [1781442479.427320666] [image_processor]: Published first processed frame set.
+[go_stop_node-5] [INFO] [1781442479.557894743] [go_stop_node]: Color changed → NONE (confidence: 0.0%)
+[navigator-10] [INFO] [1781442479.627037871] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442480.206077406] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442480.623159296] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[go_stop_node-5] [INFO] [1781442481.095541770] [go_stop_node]: Color changed → PINK (confidence: 1.8%)
+[navigator-10] [INFO] [1781442481.124564962] [navigator]: [CENTER_ARUCO] color detection: pink
+[odometry_node-8] [INFO] [1781442481.233211079] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442481.452393363] [navigator]: [CENTER_ARUCO] color detection: none
+[go_stop_node-5] [INFO] [1781442481.464777899] [go_stop_node]: Color changed → NONE (confidence: 0.0%)
+[navigator-10] [INFO] [1781442481.646468545] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442482.228892062] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442482.677211204] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442483.221046331] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442483.607915197] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442484.221573202] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442484.611761680] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442485.229948337] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442485.609596178] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442486.233595790] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442486.610183966] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442487.233206725] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442487.608908364] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442488.240395344] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442488.608560016] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442489.240470856] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442489.607860192] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442490.249900295] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442490.607810376] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442491.260033338] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442491.607824146] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442492.269753860] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442492.607779573] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442493.269915693] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442493.611205183] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442494.270012150] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442494.607833633] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442495.270194538] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442495.608063727] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442496.280381287] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442496.610113078] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442497.289290963] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442497.609135781] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442498.290334596] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442498.607757006] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442499.290195795] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442499.609005529] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442500.298923200] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442500.607861430] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442501.302137696] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442501.610152253] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442502.318675855] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442502.607906755] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442503.320069245] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442503.610652833] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442504.320185094] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442504.607944702] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442505.320521669] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442505.607836679] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442506.322786409] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442506.607761254] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442507.339410985] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442507.614081346] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442508.335310234] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442508.608778114] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442509.340505960] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442509.607864152] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442510.350077205] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442510.607952446] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442511.350208359] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442511.610447876] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442512.359832557] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442512.612557506] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442513.360122499] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442513.611202561] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442514.360148363] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442514.607904745] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442515.360147604] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442515.611186671] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442516.370330584] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442516.612002641] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442517.377535355] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=0.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442517.608618287] [navigator]: [CENTER_ARUCO] waiting for marker (detected=False, id=-1)
+[odometry_node-8] [INFO] [1781442518.373045655] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=2.6 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442518.505696355] [navigator]: [CENTER_ARUCO] ArUco ID changed: -1 → 1
+[navigator-10] [INFO] [1781442518.592938615] [navigator]: [CENTER_ARUCO] ArUco ID changed: 1 → 0
+[navigator-10] [INFO] [1781442518.608220251] [navigator]: [CENTER_ARUCO] centering ID 0 — angle_error=-5.1°  threshold=3.6°
+[navigator-10] [INFO] [1781442518.687549706] [navigator]: [CENTER_ARUCO] ArUco ID changed: 0 → 1
+[navigator-10] [INFO] [1781442519.181964351] [navigator]: [CENTER_ARUCO] ArUco marker lost
+[odometry_node-8] [INFO] [1781442519.381688049] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=18.4 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442519.589951546] [navigator]: [CENTER_ARUCO] ArUco marker acquired (id=1)
+[navigator-10] [INFO] [1781442519.607959345] [navigator]: [CENTER_ARUCO] centering ID 1 — angle_error=8.7°  threshold=3.6°
+[navigator-10] [INFO] [1781442520.080224572] [navigator]: [CENTER_ARUCO] ArUco marker lost
+[navigator-10] [INFO] [1781442520.283550807] [navigator]: [CENTER_ARUCO] ArUco marker acquired (id=1)
+[odometry_node-8] [INFO] [1781442520.390756852] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=1.3 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442520.489282156] [navigator]: [CENTER_ARUCO] ArUco ID changed: 1 → 0
+[navigator-10] [INFO] [1781442520.609106175] [navigator]: [CENTER_ARUCO] centering ID 0 — angle_error=-6.3°  threshold=3.6°
+[navigator-10] [INFO] [1781442520.686376046] [navigator]: [CENTER_ARUCO] ArUco ID changed: 0 → 1
+[navigator-10] [INFO] [1781442520.708421812] [navigator]: [CENTER_ARUCO] ✓ centred  angle=-2.5° → SEEK_ARUCO
+[navigator-10] [INFO] [1781442520.713464231] [navigator]: CENTER_ARUCO → SEEK_ARUCO
+[navigator-10] [INFO] [1781442520.785120730] [navigator]: [SEEK_ARUCO] ArUco ID changed: 1 → 0
+[navigator-10] [INFO] [1781442521.289028470] [navigator]: [SEEK_ARUCO] ArUco marker lost
+[navigator-10] [INFO] [1781442521.308025669] [navigator]: [SEEK_ARUCO] marker not detected — stopped (1/10 ticks)
+[odometry_node-8] [INFO] [1781442521.400002057] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=8.5 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442521.408479771] [navigator]: [SEEK_ARUCO] marker not detected — stopped (2/10 ticks)
+[navigator-10] [INFO] [1781442521.486964411] [navigator]: [SEEK_ARUCO] ArUco marker acquired (id=0)
+[navigator-10] [INFO] [1781442521.489479162] [navigator]: [SEEK_ARUCO] ArUco ID changed: 0 → 1
+[navigator-10] [INFO] [1781442522.394029473] [navigator]: [SEEK_ARUCO] approaching ID 1 — dist=0.441m  speed=0.088  omega=-0.111
+[odometry_node-8] [INFO] [1781442522.400803602] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=11.3 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442523.098196954] [navigator]: Latch: dist=0.286m  angle=9.7°
+[pid_controller-9] [INFO] [1781442523.102510761] [pid_controller]: New goal → x: 0.56  y: 0.12
+[pid_controller-9] [INFO] [1781442523.106638261] [pid_controller]: dist: 0.28  desired: 13.5°  theta: 13.9°  err: -0.4°
+[pid_controller-9] [INFO] [1781442523.117053576] [pid_controller]: dist: 0.28  desired: 13.5°  theta: 13.4°  err: 0.1°
+[navigator-10] [INFO] [1781442523.118648564] [navigator]: Drive waypoint → (0.558, 0.119)  (0.286m forward)
+[navigator-10] [INFO] [1781442523.120866068] [navigator]: SEEK_ARUCO → PID_DRIVE
+[pid_controller-9] [INFO] [1781442523.126426000] [pid_controller]: dist: 0.28  desired: 13.5°  theta: 13.4°  err: 0.1°
+[pid_controller-9] [INFO] [1781442523.139008870] [pid_controller]: dist: 0.28  desired: 13.5°  theta: 13.8°  err: -0.3°
+[pid_controller-9] [INFO] [1781442523.147003604] [pid_controller]: dist: 0.28  desired: 13.5°  theta: 13.8°  err: -0.3°
+[pid_controller-9] [INFO] [1781442523.154075241] [pid_controller]: dist: 0.28  desired: 13.5°  theta: 13.8°  err: -0.3°
+[pid_controller-9] [INFO] [1781442523.163685223] [pid_controller]: dist: 0.28  desired: 13.5°  theta: 13.7°  err: -0.3°
+[pid_controller-9] [INFO] [1781442523.173953399] [pid_controller]: dist: 0.28  desired: 13.5°  theta: 13.7°  err: -0.2°
+[pid_controller-9] [INFO] [1781442523.186925758] [pid_controller]: dist: 0.27  desired: 13.5°  theta: 13.7°  err: -0.2°
+[pid_controller-9] [INFO] [1781442523.196147189] [pid_controller]: dist: 0.27  desired: 13.5°  theta: 14.1°  err: -0.6°
+[pid_controller-9] [INFO] [1781442523.207022307] [pid_controller]: dist: 0.27  desired: 13.5°  theta: 13.6°  err: -0.2°
+[pid_controller-9] [INFO] [1781442523.220100971] [pid_controller]: dist: 0.27  desired: 13.5°  theta: 14.1°  err: -0.6°
+[pid_controller-9] [INFO] [1781442523.230998694] [pid_controller]: dist: 0.27  desired: 13.5°  theta: 14.0°  err: -0.6°
+[pid_controller-9] [INFO] [1781442523.240581436] [pid_controller]: dist: 0.27  desired: 13.5°  theta: 14.0°  err: -0.5°
+[pid_controller-9] [INFO] [1781442523.244663883] [pid_controller]: dist: 0.27  desired: 13.5°  theta: 14.0°  err: -0.5°
+[pid_controller-9] [INFO] [1781442523.251508014] [pid_controller]: dist: 0.27  desired: 13.5°  theta: 14.0°  err: -0.5°
+[pid_controller-9] [INFO] [1781442523.261578373] [pid_controller]: dist: 0.27  desired: 13.5°  theta: 13.9°  err: -0.5°
+[pid_controller-9] [INFO] [1781442523.271219658] [pid_controller]: dist: 0.27  desired: 13.5°  theta: 13.9°  err: -0.4°
+[pid_controller-9] [INFO] [1781442523.284782709] [pid_controller]: dist: 0.26  desired: 13.5°  theta: 14.3°  err: -0.9°
+[pid_controller-9] [INFO] [1781442523.293910336] [pid_controller]: dist: 0.26  desired: 13.4°  theta: 14.3°  err: -0.8°
+[pid_controller-9] [INFO] [1781442523.303566100] [pid_controller]: dist: 0.26  desired: 13.4°  theta: 14.3°  err: -0.8°
+[pid_controller-9] [INFO] [1781442523.314239859] [pid_controller]: dist: 0.26  desired: 13.4°  theta: 14.7°  err: -1.3°
+[pid_controller-9] [INFO] [1781442523.326224798] [pid_controller]: dist: 0.26  desired: 13.4°  theta: 14.7°  err: -1.2°
+[pid_controller-9] [INFO] [1781442523.343045743] [pid_controller]: dist: 0.26  desired: 13.4°  theta: 14.6°  err: -1.2°
+[pid_controller-9] [INFO] [1781442523.349129960] [pid_controller]: dist: 0.26  desired: 13.4°  theta: 14.6°  err: -1.2°
+[pid_controller-9] [INFO] [1781442523.355152924] [pid_controller]: dist: 0.26  desired: 13.4°  theta: 14.1°  err: -0.7°
+[pid_controller-9] [INFO] [1781442523.362340918] [pid_controller]: dist: 0.26  desired: 13.4°  theta: 14.6°  err: -1.1°
+[pid_controller-9] [INFO] [1781442523.372273148] [pid_controller]: dist: 0.25  desired: 13.4°  theta: 14.5°  err: -1.1°
+[pid_controller-9] [INFO] [1781442523.383616247] [pid_controller]: dist: 0.25  desired: 13.4°  theta: 14.5°  err: -1.1°
+[pid_controller-9] [INFO] [1781442523.393145342] [pid_controller]: dist: 0.25  desired: 13.4°  theta: 14.4°  err: -1.1°
+[odometry_node-8] [INFO] [1781442523.400956529] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=14.4 deg | source=encoder_fallback
+[pid_controller-9] [INFO] [1781442523.410699171] [pid_controller]: dist: 0.25  desired: 13.4°  theta: 14.4°  err: -1.0°
+[pid_controller-9] [INFO] [1781442523.419919717] [pid_controller]: dist: 0.25  desired: 13.4°  theta: 14.4°  err: -1.0°
+[pid_controller-9] [INFO] [1781442523.425829658] [pid_controller]: dist: 0.25  desired: 13.4°  theta: 14.8°  err: -1.4°
+[pid_controller-9] [INFO] [1781442523.440300804] [pid_controller]: dist: 0.25  desired: 13.4°  theta: 14.8°  err: -1.4°
+[pid_controller-9] [INFO] [1781442523.446064856] [pid_controller]: dist: 0.24  desired: 13.4°  theta: 14.7°  err: -1.4°
+[pid_controller-9] [INFO] [1781442523.453342488] [pid_controller]: dist: 0.24  desired: 13.4°  theta: 14.7°  err: -1.4°
+[pid_controller-9] [INFO] [1781442523.462711944] [pid_controller]: dist: 0.24  desired: 13.3°  theta: 14.7°  err: -1.3°
+[pid_controller-9] [INFO] [1781442523.471754776] [pid_controller]: dist: 0.24  desired: 13.3°  theta: 14.6°  err: -1.3°
+[pid_controller-9] [INFO] [1781442523.483324183] [pid_controller]: dist: 0.24  desired: 13.3°  theta: 15.1°  err: -1.7°
+[pid_controller-9] [INFO] [1781442523.503310157] [pid_controller]: dist: 0.24  desired: 13.3°  theta: 15.0°  err: -1.7°
+[pid_controller-9] [INFO] [1781442523.519421449] [pid_controller]: dist: 0.23  desired: 13.3°  theta: 15.4°  err: -2.1°
+[pid_controller-9] [INFO] [1781442523.529020494] [pid_controller]: dist: 0.23  desired: 13.3°  theta: 15.4°  err: -2.1°
+[pid_controller-9] [INFO] [1781442523.534699439] [pid_controller]: dist: 0.23  desired: 13.3°  theta: 15.4°  err: -2.1°
+[pid_controller-9] [INFO] [1781442523.548626145] [pid_controller]: dist: 0.23  desired: 13.3°  theta: 14.9°  err: -1.6°
+[pid_controller-9] [INFO] [1781442523.555146831] [pid_controller]: dist: 0.23  desired: 13.3°  theta: 14.9°  err: -1.6°
+[pid_controller-9] [INFO] [1781442523.561710226] [pid_controller]: dist: 0.23  desired: 13.3°  theta: 14.8°  err: -1.6°
+[pid_controller-9] [INFO] [1781442523.571684853] [pid_controller]: dist: 0.23  desired: 13.2°  theta: 14.8°  err: -1.5°
+[pid_controller-9] [INFO] [1781442523.582972429] [pid_controller]: dist: 0.23  desired: 13.2°  theta: 14.8°  err: -1.5°
+[pid_controller-9] [INFO] [1781442523.601624515] [pid_controller]: dist: 0.22  desired: 13.2°  theta: 15.2°  err: -1.9°
+[pid_controller-9] [INFO] [1781442523.607106737] [pid_controller]: dist: 0.22  desired: 13.2°  theta: 15.2°  err: -1.9°
+[pid_controller-9] [INFO] [1781442523.616055817] [pid_controller]: dist: 0.22  desired: 13.2°  theta: 15.1°  err: -1.9°
+[pid_controller-9] [INFO] [1781442523.623640644] [pid_controller]: dist: 0.22  desired: 13.2°  theta: 15.1°  err: -1.9°
+[pid_controller-9] [INFO] [1781442523.635415160] [pid_controller]: dist: 0.22  desired: 13.2°  theta: 15.1°  err: -1.9°
+[pid_controller-9] [INFO] [1781442523.643102178] [pid_controller]: dist: 0.22  desired: 13.2°  theta: 15.0°  err: -1.8°
+[pid_controller-9] [INFO] [1781442523.651192434] [pid_controller]: dist: 0.22  desired: 13.2°  theta: 15.0°  err: -1.8°
+[pid_controller-9] [INFO] [1781442523.661282272] [pid_controller]: dist: 0.22  desired: 13.2°  theta: 15.4°  err: -2.3°
+[pid_controller-9] [INFO] [1781442523.682353117] [pid_controller]: dist: 0.21  desired: 13.1°  theta: 15.4°  err: -2.2°
+[pid_controller-9] [INFO] [1781442523.695492772] [pid_controller]: dist: 0.21  desired: 13.1°  theta: 15.3°  err: -2.2°
+[pid_controller-9] [INFO] [1781442523.703298282] [pid_controller]: dist: 0.21  desired: 13.1°  theta: 15.3°  err: -2.2°
+[pid_controller-9] [INFO] [1781442523.714699872] [pid_controller]: dist: 0.21  desired: 13.1°  theta: 15.2°  err: -2.2°
+[pid_controller-9] [INFO] [1781442523.725788589] [pid_controller]: dist: 0.21  desired: 13.1°  theta: 15.2°  err: -2.1°
+[pid_controller-9] [INFO] [1781442523.732467612] [pid_controller]: dist: 0.21  desired: 13.0°  theta: 15.2°  err: -2.1°
+[pid_controller-9] [INFO] [1781442523.741767378] [pid_controller]: dist: 0.20  desired: 13.0°  theta: 15.1°  err: -2.1°
+[pid_controller-9] [INFO] [1781442523.752058055] [pid_controller]: dist: 0.20  desired: 13.0°  theta: 15.1°  err: -2.1°
+[pid_controller-9] [INFO] [1781442523.761200526] [pid_controller]: dist: 0.20  desired: 13.0°  theta: 15.1°  err: -2.1°
+[pid_controller-9] [INFO] [1781442523.771455055] [pid_controller]: dist: 0.20  desired: 13.0°  theta: 15.0°  err: -2.0°
+[pid_controller-9] [INFO] [1781442523.782115221] [pid_controller]: dist: 0.20  desired: 13.0°  theta: 15.0°  err: -2.0°
+[pid_controller-9] [INFO] [1781442523.795448005] [pid_controller]: dist: 0.20  desired: 13.0°  theta: 15.0°  err: -2.0°
+[pid_controller-9] [INFO] [1781442523.803506803] [pid_controller]: dist: 0.20  desired: 12.9°  theta: 14.9°  err: -2.0°
+[pid_controller-9] [INFO] [1781442523.815440021] [pid_controller]: dist: 0.19  desired: 12.9°  theta: 14.9°  err: -2.0°
+[pid_controller-9] [INFO] [1781442523.829852729] [pid_controller]: dist: 0.19  desired: 12.9°  theta: 14.8°  err: -1.9°
+[pid_controller-9] [INFO] [1781442523.834443157] [pid_controller]: dist: 0.19  desired: 12.9°  theta: 14.8°  err: -1.9°
+[pid_controller-9] [INFO] [1781442523.841974493] [pid_controller]: dist: 0.19  desired: 12.9°  theta: 14.8°  err: -1.9°
+[pid_controller-9] [INFO] [1781442523.851881618] [pid_controller]: dist: 0.19  desired: 12.9°  theta: 15.2°  err: -2.4°
+[pid_controller-9] [INFO] [1781442523.862357716] [pid_controller]: dist: 0.19  desired: 12.8°  theta: 14.7°  err: -1.9°
+[pid_controller-9] [INFO] [1781442523.872775792] [pid_controller]: dist: 0.19  desired: 12.8°  theta: 14.7°  err: -1.9°
+[pid_controller-9] [INFO] [1781442523.895509075] [pid_controller]: dist: 0.18  desired: 12.8°  theta: 14.7°  err: -1.8°
+[pid_controller-9] [INFO] [1781442523.903332918] [pid_controller]: dist: 0.18  desired: 12.8°  theta: 14.6°  err: -1.8°
+[pid_controller-9] [INFO] [1781442523.916774195] [pid_controller]: dist: 0.18  desired: 12.8°  theta: 14.6°  err: -1.8°
+[pid_controller-9] [INFO] [1781442523.922955810] [pid_controller]: dist: 0.18  desired: 12.8°  theta: 14.5°  err: -1.8°
+[pid_controller-9] [INFO] [1781442523.927473893] [pid_controller]: dist: 0.18  desired: 12.8°  theta: 14.5°  err: -1.7°
+[pid_controller-9] [INFO] [1781442523.932865487] [pid_controller]: dist: 0.18  desired: 12.7°  theta: 14.5°  err: -1.7°
+[pid_controller-9] [INFO] [1781442523.941952592] [pid_controller]: dist: 0.17  desired: 12.7°  theta: 14.0°  err: -1.2°
+[pid_controller-9] [INFO] [1781442523.951680546] [pid_controller]: dist: 0.17  desired: 12.7°  theta: 14.4°  err: -1.7°
+[pid_controller-9] [INFO] [1781442523.961398083] [pid_controller]: dist: 0.17  desired: 12.7°  theta: 14.3°  err: -1.6°
+[pid_controller-9] [INFO] [1781442523.971848659] [pid_controller]: dist: 0.17  desired: 12.7°  theta: 14.3°  err: -1.6°
+[pid_controller-9] [INFO] [1781442523.981230459] [pid_controller]: dist: 0.17  desired: 12.7°  theta: 14.3°  err: -1.6°
+[pid_controller-9] [INFO] [1781442523.992602986] [pid_controller]: dist: 0.17  desired: 12.6°  theta: 14.7°  err: -2.0°
+[pid_controller-9] [INFO] [1781442524.002042703] [pid_controller]: dist: 0.16  desired: 12.6°  theta: 14.6°  err: -2.0°
+[navigator-10] [INFO] [1781442524.013890242] [navigator]: [PID_DRIVE] ArUco marker lost
+[pid_controller-9] [INFO] [1781442524.025915650] [pid_controller]: dist: 0.16  desired: 12.6°  theta: 14.6°  err: -2.0°
+[pid_controller-9] [INFO] [1781442524.030283781] [pid_controller]: dist: 0.16  desired: 12.6°  theta: 14.1°  err: -1.5°
+[pid_controller-9] [INFO] [1781442524.044884879] [pid_controller]: dist: 0.16  desired: 12.5°  theta: 14.5°  err: -1.9°
+[pid_controller-9] [INFO] [1781442524.053865679] [pid_controller]: dist: 0.16  desired: 12.5°  theta: 14.4°  err: -1.9°
+[pid_controller-9] [INFO] [1781442524.061429203] [pid_controller]: dist: 0.15  desired: 12.5°  theta: 14.4°  err: -1.9°
+[pid_controller-9] [INFO] [1781442524.071453936] [pid_controller]: dist: 0.15  desired: 12.5°  theta: 13.9°  err: -1.4°
+[pid_controller-9] [INFO] [1781442524.086460252] [pid_controller]: dist: 0.15  desired: 12.5°  theta: 14.3°  err: -1.8°
+[pid_controller-9] [INFO] [1781442524.097730432] [pid_controller]: dist: 0.15  desired: 12.4°  theta: 14.2°  err: -1.8°
+[pid_controller-9] [INFO] [1781442524.105205465] [pid_controller]: dist: 0.15  desired: 12.4°  theta: 13.7°  err: -1.3°
+[pid_controller-9] [INFO] [1781442524.115765627] [pid_controller]: dist: 0.14  desired: 12.4°  theta: 14.1°  err: -1.7°
+[pid_controller-9] [INFO] [1781442524.123969689] [pid_controller]: dist: 0.14  desired: 12.4°  theta: 14.1°  err: -1.7°
+[pid_controller-9] [INFO] [1781442524.136036296] [pid_controller]: dist: 0.14  desired: 12.3°  theta: 14.0°  err: -1.7°
+[pid_controller-9] [INFO] [1781442524.144510676] [pid_controller]: dist: 0.14  desired: 12.3°  theta: 14.0°  err: -1.7°
+[pid_controller-9] [INFO] [1781442524.151515280] [pid_controller]: dist: 0.14  desired: 12.3°  theta: 14.0°  err: -1.7°
+[pid_controller-9] [INFO] [1781442524.161438604] [pid_controller]: dist: 0.13  desired: 12.3°  theta: 13.9°  err: -1.6°
+[pid_controller-9] [INFO] [1781442524.171250622] [pid_controller]: dist: 0.13  desired: 12.3°  theta: 13.9°  err: -1.6°
+[pid_controller-9] [INFO] [1781442524.183961881] [pid_controller]: dist: 0.13  desired: 12.2°  theta: 13.8°  err: -1.6°
+[pid_controller-9] [INFO] [1781442524.201199087] [pid_controller]: dist: 0.13  desired: 12.2°  theta: 13.8°  err: -1.6°
+[pid_controller-9] [INFO] [1781442524.208794904] [pid_controller]: dist: 0.13  desired: 12.2°  theta: 13.7°  err: -1.5°
+[pid_controller-9] [INFO] [1781442524.216650154] [pid_controller]: dist: 0.12  desired: 12.2°  theta: 13.7°  err: -1.5°
+[pid_controller-9] [INFO] [1781442524.229776163] [pid_controller]: dist: 0.12  desired: 12.1°  theta: 13.6°  err: -1.5°
+[pid_controller-9] [INFO] [1781442524.245055715] [pid_controller]: dist: 0.12  desired: 12.1°  theta: 12.6°  err: -0.5°
+[pid_controller-9] [INFO] [1781442524.249384210] [pid_controller]: dist: 0.12  desired: 12.1°  theta: 12.6°  err: -0.5°
+[pid_controller-9] [INFO] [1781442524.255725152] [pid_controller]: dist: 0.11  desired: 12.1°  theta: 13.4°  err: -1.4°
+[pid_controller-9] [INFO] [1781442524.262343756] [pid_controller]: dist: 0.11  desired: 12.1°  theta: 13.4°  err: -1.4°
+[pid_controller-9] [INFO] [1781442524.271596490] [pid_controller]: dist: 0.11  desired: 12.0°  theta: 12.9°  err: -0.9°
+[pid_controller-9] [INFO] [1781442524.284213267] [pid_controller]: dist: 0.11  desired: 12.0°  theta: 13.3°  err: -1.3°
+[pid_controller-9] [INFO] [1781442524.306383983] [pid_controller]: dist: 0.11  desired: 12.0°  theta: 13.2°  err: -1.3°
+[pid_controller-9] [INFO] [1781442524.316320276] [pid_controller]: dist: 0.10  desired: 12.0°  theta: 12.7°  err: -0.8°
+[pid_controller-9] [INFO] [1781442524.325457121] [pid_controller]: dist: 0.10  desired: 11.9°  theta: 13.1°  err: -1.2°
+[pid_controller-9] [INFO] [1781442524.333772643] [pid_controller]: dist: 0.10  desired: 11.9°  theta: 13.1°  err: -1.2°
+[pid_controller-9] [INFO] [1781442524.344715003] [pid_controller]: dist: 0.10  desired: 11.9°  theta: 13.0°  err: -1.1°
+[pid_controller-9] [INFO] [1781442524.352034927] [pid_controller]: dist: 0.10  desired: 11.9°  theta: 12.5°  err: -0.7°
+[pid_controller-9] [INFO] [1781442524.361805226] [pid_controller]: dist: 0.09  desired: 11.8°  theta: 12.5°  err: -0.6°
+[pid_controller-9] [INFO] [1781442524.389860935] [pid_controller]: dist: 0.09  desired: 11.8°  theta: 12.4°  err: -0.6°
+[pid_controller-9] [INFO] [1781442524.396035309] [pid_controller]: dist: 0.09  desired: 11.8°  theta: 12.8°  err: -1.0°
+[pid_controller-9] [INFO] [1781442524.404152077] [pid_controller]: dist: 0.08  desired: 11.8°  theta: 12.3°  err: -0.5°
+[odometry_node-8] [INFO] [1781442524.407677322] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=12.3 deg | source=encoder_fallback
+[pid_controller-9] [INFO] [1781442524.417501789] [pid_controller]: dist: 0.08  desired: 11.8°  theta: 12.2°  err: -0.4°
+[pid_controller-9] [INFO] [1781442524.424262429] [pid_controller]: dist: 0.08  desired: 11.8°  theta: 12.6°  err: -0.9°
+[pid_controller-9] [INFO] [1781442524.432354456] [pid_controller]: dist: 0.08  desired: 11.7°  theta: 12.1°  err: -0.4°
+[pid_controller-9] [INFO] [1781442524.442798730] [pid_controller]: dist: 0.08  desired: 11.7°  theta: 12.1°  err: -0.3°
+[pid_controller-9] [INFO] [1781442524.451483168] [pid_controller]: dist: 0.07  desired: 11.7°  theta: 12.5°  err: -0.8°
+[pid_controller-9] [INFO] [1781442524.461444149] [pid_controller]: dist: 0.07  desired: 11.7°  theta: 12.0°  err: -0.3°
+[pid_controller-9] [INFO] [1781442524.472149523] [pid_controller]: dist: 0.07  desired: 11.7°  theta: 12.4°  err: -0.7°
+[pid_controller-9] [INFO] [1781442524.483639032] [pid_controller]: dist: 0.07  desired: 11.7°  theta: 11.9°  err: -0.2°
+[pid_controller-9] [INFO] [1781442524.498636859] [pid_controller]: dist: 0.07  desired: 11.6°  theta: 12.3°  err: -0.6°
+[pid_controller-9] [INFO] [1781442524.506981861] [pid_controller]: dist: 0.06  desired: 11.6°  theta: 12.2°  err: -0.6°
+[pid_controller-9] [INFO] [1781442524.518179123] [pid_controller]: dist: 0.06  desired: 11.6°  theta: 12.2°  err: -0.5°
+[pid_controller-9] [INFO] [1781442524.526481468] [pid_controller]: dist: 0.06  desired: 11.6°  theta: 12.2°  err: -0.5°
+[pid_controller-9] [INFO] [1781442524.536527399] [pid_controller]: dist: 0.06  desired: 11.6°  theta: 12.1°  err: -0.5°
+[pid_controller-9] [INFO] [1781442524.543782739] [pid_controller]: dist: 0.05  desired: 11.6°  theta: 12.0°  err: -0.5°
+[pid_controller-9] [INFO] [1781442524.552029405] [pid_controller]: dist: 0.05  desired: 11.5°  theta: 12.0°  err: -0.4°
+[pid_controller-9] [INFO] [1781442524.561740432] [pid_controller]: dist: 0.05  desired: 11.5°  theta: 12.4°  err: -0.9°
+[pid_controller-9] [INFO] [1781442524.571580420] [pid_controller]: dist: 0.05  desired: 11.5°  theta: 11.9°  err: -0.4°
+[pid_controller-9] [INFO] [1781442524.587536604] [pid_controller]: dist: 0.05  desired: 11.5°  theta: 12.3°  err: -0.8°
+[pid_controller-9] [INFO] [1781442524.594364745] [pid_controller]: dist: 0.05  desired: 11.4°  theta: 12.2°  err: -0.8°
+[pid_controller-9] [INFO] [1781442524.603477475] [pid_controller]: dist: 0.04  desired: 11.4°  theta: 12.2°  err: -0.8°
+[pid_controller-9] [INFO] [1781442524.613275066] [pid_controller]: dist: 0.04  desired: 11.4°  theta: 12.6°  err: -1.2°
+[pid_controller-9] [INFO] [1781442524.624460401] [pid_controller]: dist: 0.04  desired: 11.3°  theta: 12.6°  err: -1.3°
+[pid_controller-9] [INFO] [1781442524.634622116] [pid_controller]: dist: 0.04  desired: 11.3°  theta: 12.1°  err: -0.8°
+[pid_controller-9] [INFO] [1781442524.642388302] [pid_controller]: dist: 0.04  desired: 11.2°  theta: 12.0°  err: -0.8°
+[pid_controller-9] [INFO] [1781442524.651904219] [pid_controller]: dist: 0.04  desired: 11.2°  theta: 12.0°  err: -0.8°
+[pid_controller-9] [INFO] [1781442524.661602016] [pid_controller]: dist: 0.03  desired: 11.1°  theta: 12.4°  err: -1.3°
+[pid_controller-9] [INFO] [1781442524.671268770] [pid_controller]: dist: 0.03  desired: 11.1°  theta: 11.9°  err: -0.8°
+[pid_controller-9] [INFO] [1781442524.681753567] [pid_controller]: dist: 0.03  desired: 11.0°  theta: 11.9°  err: -0.8°
+[pid_controller-9] [INFO] [1781442524.692188882] [pid_controller]: dist: 0.03  desired: 11.0°  theta: 11.8°  err: -0.9°
+[pid_controller-9] [INFO] [1781442524.703685735] [pid_controller]: dist: 0.03  desired: 10.9°  theta: 11.8°  err: -0.9°
+[pid_controller-9] [INFO] [1781442524.716174227] [pid_controller]: dist: 0.03  desired: 10.9°  theta: 11.8°  err: -0.9°
+[pid_controller-9] [INFO] [1781442524.728161718] [pid_controller]: dist: 0.02  desired: 10.8°  theta: 11.7°  err: -0.9°
+[pid_controller-9] [INFO] [1781442524.732754594] [pid_controller]: dist: 0.02  desired: 10.7°  theta: 12.1°  err: -1.4°
+[pid_controller-9] [INFO] [1781442524.745263920] [pid_controller]: dist: 0.02  desired: 10.6°  theta: 11.6°  err: -1.0°
+[pid_controller-9] [INFO] [1781442524.747478716] [pid_controller]: Goal reached!
+[navigator-10] [INFO] [1781442524.755782415] [navigator]: Drive done — starting odom spin -3.5°
+[navigator-10] [INFO] [1781442524.762898480] [navigator]: Odom spin: -3.5° from θ=11.6°
+[navigator-10] [INFO] [1781442524.766119082] [navigator]: PID_DRIVE → ODOM_SPIN
+[navigator-10] [INFO] [1781442525.009671535] [navigator]: [ODOM_SPIN] ✓ done → WAIT_FOR_COLOR
+[navigator-10] [INFO] [1781442525.012087742] [navigator]: ODOM_SPIN → WAIT_FOR_COLOR
+[odometry_node-8] [INFO] [1781442525.411312977] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=7.3 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442526.416991122] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=7.3 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442527.420407015] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=7.3 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442528.420469794] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=7.3 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442529.435736177] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=7.3 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442530.439651120] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=7.3 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442531.437287927] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=7.3 deg | source=encoder_fallback
+[go_stop_node-5] [INFO] [1781442532.296698641] [go_stop_node]: Color changed → GREEN (confidence: 2.1%)
+[navigator-10] [INFO] [1781442532.300060965] [navigator]: [WAIT_FOR_COLOR] color detection: green
+[navigator-10] [INFO] [1781442532.303910229] [navigator]: [WAIT_FOR_COLOR] GREEN detected — starting line follower
+[angular_tracker-6] [INFO] [1781442532.308496542] [angular_tracker]: Angular tracker enabled.
+[navigator-10] [INFO] [1781442532.315119521] [navigator]: WAIT_FOR_COLOR → LINE_FOLLOW_1
+[line_tracker-3] [INFO] [1781442532.316590340] [line_tracker]: Line tracker enabled.
+[odometry_node-8] [INFO] [1781442532.432551542] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=8.2 deg | source=encoder_fallback
+[go_stop_node-5] [INFO] [1781442532.997347226] [go_stop_node]: Color changed → NONE (confidence: 0.0%)
+[navigator-10] [INFO] [1781442532.997925313] [navigator]: [LINE_FOLLOW_1] color detection: none
+[go_stop_node-5] [INFO] [1781442533.293163789] [go_stop_node]: Color changed → GREEN (confidence: 2.0%)
+[navigator-10] [INFO] [1781442533.300928151] [navigator]: [LINE_FOLLOW_1] color detection: green
+[odometry_node-8] [INFO] [1781442533.441404709] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=9.9 deg | source=encoder_fallback
+[go_stop_node-5] [INFO] [1781442533.802952302] [go_stop_node]: Color changed → PINK (confidence: 2.1%)
+[navigator-10] [INFO] [1781442533.814211856] [navigator]: [LINE_FOLLOW_1] color detection: pink
+[go_stop_node-5] [INFO] [1781442533.986022745] [go_stop_node]: Color changed → NONE (confidence: 0.0%)
+[navigator-10] [INFO] [1781442534.002609152] [navigator]: [LINE_FOLLOW_1] color detection: none
+[odometry_node-8] [INFO] [1781442534.443494364] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-14.9 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442535.451031336] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-7.5 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442536.450484190] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=2.2 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442537.460466780] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-5.3 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442538.478808686] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=4.0 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442539.494372025] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=12.3 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442540.488750395] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=9.3 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442541.496746340] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-32.1 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442542.502841968] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-57.9 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442543.503106139] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-67.7 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442544.512597045] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-73.1 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442545.522687019] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-117.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442546.302723509] [navigator]: [LINE_FOLLOW_1] ArUco marker acquired (id=1)
+[navigator-10] [INFO] [1781442546.305470609] [navigator]: [LINE_FOLLOW_1] ArUco ID changed: 1 → 2
+[odometry_node-8] [INFO] [1781442546.540013626] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-151.1 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442547.284841206] [navigator]: [LINE_FOLLOW_1] ArUco marker lost
+[odometry_node-8] [INFO] [1781442547.542268544] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-168.0 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442547.690722526] [navigator]: [LINE_FOLLOW_1] ArUco marker acquired (id=2)
+[line_tracker-3] [INFO] [1781442548.241799619] [line_tracker]: Line lost — publishing /line_tracker/lost
+[navigator-10] [INFO] [1781442548.242845530] [navigator]: Line lost — tracking decision markers
+[navigator-10] [INFO] [1781442548.245884669] [navigator]: LINE_FOLLOW_1 → CENTER_DECISION
+[angular_tracker-6] [INFO] [1781442548.246107122] [angular_tracker]: Angular tracker disabled.
+[line_tracker-3] [INFO] [1781442548.270129912] [line_tracker]: Line tracker disabled.
+[navigator-10] [INFO] [1781442548.309968358] [navigator]: [CENTER_DECISION] ✓ centred  angle=-1.1° → SEEK_DECISION
+[navigator-10] [INFO] [1781442548.312451545] [navigator]: CENTER_DECISION → SEEK_DECISION
+[odometry_node-8] [INFO] [1781442548.540662524] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-169.8 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442548.597343372] [navigator]: [SEEK_DECISION] approaching ID 2 — dist=0.310m  speed=0.062  omega=0.017
+[navigator-10] [INFO] [1781442548.806642835] [navigator]: Decision marker (ID 2) reached at 0.293m — evaluating path.
+[navigator-10] [INFO] [1781442548.818502247] [navigator]: Decision: Detected ID 2 → Routing LEFT (Target ID 3) — execution turning 20° via Odometry.
+[navigator-10] [INFO] [1781442548.820700271] [navigator]: Odom spin: 20.0° from θ=-170.3°
+[navigator-10] [INFO] [1781442548.822820741] [navigator]: SEEK_DECISION → ODOM_SPIN
+[navigator-10] [INFO] [1781442549.307887060] [navigator]: [ODOM_SPIN] ✓ done → CENTER_TARGET
+[navigator-10] [INFO] [1781442549.310382070] [navigator]: ODOM_SPIN → CENTER_TARGET
+[odometry_node-8] [INFO] [1781442549.542501114] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-148.8 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442549.596649033] [navigator]: [CENTER_TARGET] ArUco ID changed: 2 → 3
+[navigator-10] [INFO] [1781442550.098327850] [navigator]: [CENTER_TARGET] ArUco ID changed: 2 → 3
+[navigator-10] [INFO] [1781442550.107607040] [navigator]: [CENTER_TARGET] centering ID 3 — angle_error=-9.7°  threshold=3.6°
+[navigator-10] [INFO] [1781442550.393269142] [navigator]: [CENTER_TARGET] ArUco ID changed: 2 → 3
+[odometry_node-8] [INFO] [1781442550.550053224] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-140.2 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442550.590207928] [navigator]: [CENTER_TARGET] ArUco ID changed: 2 → 3
+[navigator-10] [INFO] [1781442551.100276326] [navigator]: [CENTER_TARGET] ArUco ID changed: 2 → 3
+[navigator-10] [INFO] [1781442551.108268088] [navigator]: [CENTER_TARGET] centering ID 3 — angle_error=-0.7°  threshold=3.6°
+[navigator-10] [INFO] [1781442551.112736377] [navigator]: [CENTER_TARGET] ✓ centred  angle=-0.7° → APPROACH_TARGET
+[navigator-10] [INFO] [1781442551.115563896] [navigator]: CENTER_TARGET → APPROACH_TARGET
+[odometry_node-8] [INFO] [1781442551.559880540] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-135.5 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442551.892568348] [navigator]: [APPROACH_TARGET] approaching ID 3 — dist=0.453m  speed=0.091  omega=0.075
+[navigator-10] [INFO] [1781442552.494598676] [navigator]: Latch: dist=0.283m  angle=-6.7°
+[pid_controller-9] [INFO] [1781442552.498544869] [pid_controller]: New goal → x: 0.94  y: -0.75
+[navigator-10] [INFO] [1781442552.501130662] [navigator]: Drive waypoint → (0.943, -0.753)  (0.283m forward)
+[pid_controller-9] [INFO] [1781442552.504293502] [pid_controller]: dist: 0.28  desired: -138.0°  theta: -138.1°  err: 0.1°
+[navigator-10] [INFO] [1781442552.504347878] [navigator]: APPROACH_TARGET → PID_DRIVE
+[pid_controller-9] [INFO] [1781442552.515271954] [pid_controller]: dist: 0.28  desired: -138.0°  theta: -138.1°  err: 0.1°
+[pid_controller-9] [INFO] [1781442552.527838258] [pid_controller]: dist: 0.28  desired: -138.0°  theta: -138.2°  err: 0.1°
+[pid_controller-9] [INFO] [1781442552.540346175] [pid_controller]: dist: 0.28  desired: -138.0°  theta: -138.2°  err: 0.1°
+[pid_controller-9] [INFO] [1781442552.545796885] [pid_controller]: dist: 0.28  desired: -138.0°  theta: -138.2°  err: 0.2°
+[pid_controller-9] [INFO] [1781442552.551597498] [pid_controller]: dist: 0.27  desired: -138.0°  theta: -138.2°  err: 0.2°
+[odometry_node-8] [INFO] [1781442552.560674340] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-138.3 deg | source=encoder_fallback
+[pid_controller-9] [INFO] [1781442552.561790097] [pid_controller]: dist: 0.27  desired: -138.0°  theta: -138.3°  err: 0.3°
+[pid_controller-9] [INFO] [1781442552.574883706] [pid_controller]: dist: 0.27  desired: -138.0°  theta: -137.9°  err: -0.1°
+[pid_controller-9] [INFO] [1781442552.584288681] [pid_controller]: dist: 0.27  desired: -138.0°  theta: -138.4°  err: 0.4°
+[pid_controller-9] [INFO] [1781442552.594219555] [pid_controller]: dist: 0.27  desired: -138.0°  theta: -138.4°  err: 0.4°
+[pid_controller-9] [INFO] [1781442552.605096337] [pid_controller]: dist: 0.27  desired: -138.0°  theta: -138.0°  err: -0.0°
+[pid_controller-9] [INFO] [1781442552.615977078] [pid_controller]: dist: 0.26  desired: -138.0°  theta: -138.0°  err: -0.0°
+[pid_controller-9] [INFO] [1781442552.629486896] [pid_controller]: dist: 0.26  desired: -138.0°  theta: -138.5°  err: 0.5°
+[pid_controller-9] [INFO] [1781442552.638455349] [pid_controller]: dist: 0.26  desired: -138.0°  theta: -138.5°  err: 0.5°
+[pid_controller-9] [INFO] [1781442552.646915301] [pid_controller]: dist: 0.26  desired: -138.0°  theta: -138.6°  err: 0.6°
+[pid_controller-9] [INFO] [1781442552.656161990] [pid_controller]: dist: 0.26  desired: -138.0°  theta: -138.6°  err: 0.6°
+[pid_controller-9] [INFO] [1781442552.663471965] [pid_controller]: dist: 0.26  desired: -138.0°  theta: -138.7°  err: 0.7°
+[pid_controller-9] [INFO] [1781442552.671862748] [pid_controller]: dist: 0.25  desired: -138.0°  theta: -138.7°  err: 0.7°
+[pid_controller-9] [INFO] [1781442552.686397174] [pid_controller]: dist: 0.25  desired: -138.0°  theta: -138.7°  err: 0.8°
+[pid_controller-9] [INFO] [1781442552.700191061] [pid_controller]: dist: 0.25  desired: -138.0°  theta: -138.8°  err: 0.8°
+[pid_controller-9] [INFO] [1781442552.706743933] [pid_controller]: dist: 0.25  desired: -138.0°  theta: -138.8°  err: 0.8°
+[pid_controller-9] [INFO] [1781442552.719677590] [pid_controller]: dist: 0.25  desired: -138.0°  theta: -138.8°  err: 0.9°
+[pid_controller-9] [INFO] [1781442552.729895502] [pid_controller]: dist: 0.24  desired: -137.9°  theta: -138.9°  err: 1.0°
+[pid_controller-9] [INFO] [1781442552.742431181] [pid_controller]: dist: 0.24  desired: -137.9°  theta: -138.9°  err: 1.0°
+[pid_controller-9] [INFO] [1781442552.748895978] [pid_controller]: dist: 0.24  desired: -137.9°  theta: -138.9°  err: 1.0°
+[pid_controller-9] [INFO] [1781442552.754929618] [pid_controller]: dist: 0.24  desired: -137.9°  theta: -138.6°  err: 0.6°
+[pid_controller-9] [INFO] [1781442552.763126907] [pid_controller]: dist: 0.24  desired: -137.9°  theta: -139.1°  err: 1.1°
+[pid_controller-9] [INFO] [1781442552.771148722] [pid_controller]: dist: 0.24  desired: -137.9°  theta: -139.1°  err: 1.2°
+[pid_controller-9] [INFO] [1781442552.785415017] [pid_controller]: dist: 0.24  desired: -137.9°  theta: -139.1°  err: 1.2°
+[pid_controller-9] [INFO] [1781442552.796542952] [pid_controller]: dist: 0.23  desired: -137.9°  theta: -139.2°  err: 1.3°
+[pid_controller-9] [INFO] [1781442552.804232988] [pid_controller]: dist: 0.23  desired: -137.9°  theta: -139.2°  err: 1.3°
+[pid_controller-9] [INFO] [1781442552.815924426] [pid_controller]: dist: 0.23  desired: -137.9°  theta: -139.3°  err: 1.4°
+[pid_controller-9] [INFO] [1781442552.824329793] [pid_controller]: dist: 0.23  desired: -137.9°  theta: -139.3°  err: 1.5°
+[pid_controller-9] [INFO] [1781442552.834336762] [pid_controller]: dist: 0.23  desired: -137.9°  theta: -139.4°  err: 1.5°
+[pid_controller-9] [INFO] [1781442552.843295111] [pid_controller]: dist: 0.22  desired: -137.8°  theta: -139.4°  err: 1.6°
+[pid_controller-9] [INFO] [1781442552.851650424] [pid_controller]: dist: 0.22  desired: -137.8°  theta: -139.4°  err: 1.6°
+[pid_controller-9] [INFO] [1781442552.861244050] [pid_controller]: dist: 0.22  desired: -137.8°  theta: -139.5°  err: 1.7°
+[pid_controller-9] [INFO] [1781442552.871225081] [pid_controller]: dist: 0.22  desired: -137.8°  theta: -139.5°  err: 1.7°
+[pid_controller-9] [INFO] [1781442552.886258166] [pid_controller]: dist: 0.22  desired: -137.8°  theta: -139.1°  err: 1.4°
+[pid_controller-9] [INFO] [1781442552.909411089] [pid_controller]: dist: 0.21  desired: -137.8°  theta: -139.7°  err: 1.9°
+[pid_controller-9] [INFO] [1781442552.919899372] [pid_controller]: dist: 0.21  desired: -137.7°  theta: -139.7°  err: 2.0°
+[pid_controller-9] [INFO] [1781442552.930641047] [pid_controller]: dist: 0.21  desired: -137.7°  theta: -139.8°  err: 2.0°
+[pid_controller-9] [INFO] [1781442552.940573483] [pid_controller]: dist: 0.21  desired: -137.7°  theta: -139.8°  err: 2.1°
+[pid_controller-9] [INFO] [1781442552.944836402] [pid_controller]: dist: 0.21  desired: -137.7°  theta: -139.8°  err: 2.1°
+[pid_controller-9] [INFO] [1781442552.949018486] [pid_controller]: dist: 0.21  desired: -137.7°  theta: -139.9°  err: 2.2°
+[pid_controller-9] [INFO] [1781442552.954301796] [pid_controller]: dist: 0.20  desired: -137.7°  theta: -139.9°  err: 2.3°
+[pid_controller-9] [INFO] [1781442552.961357024] [pid_controller]: dist: 0.20  desired: -137.6°  theta: -140.0°  err: 2.3°
+[pid_controller-9] [INFO] [1781442552.971485299] [pid_controller]: dist: 0.20  desired: -137.6°  theta: -140.0°  err: 2.4°
+[pid_controller-9] [INFO] [1781442552.982533023] [pid_controller]: dist: 0.20  desired: -137.6°  theta: -140.1°  err: 2.5°
+[pid_controller-9] [INFO] [1781442552.992656974] [pid_controller]: dist: 0.19  desired: -137.6°  theta: -139.7°  err: 2.1°
+[pid_controller-9] [INFO] [1781442553.004130959] [pid_controller]: dist: 0.19  desired: -137.5°  theta: -140.2°  err: 2.6°
+[pid_controller-9] [INFO] [1781442553.014862634] [pid_controller]: dist: 0.19  desired: -137.5°  theta: -140.2°  err: 2.7°
+[pid_controller-9] [INFO] [1781442553.025118516] [pid_controller]: dist: 0.19  desired: -137.5°  theta: -140.3°  err: 2.8°
+[pid_controller-9] [INFO] [1781442553.035295333] [pid_controller]: dist: 0.19  desired: -137.4°  theta: -139.9°  err: 2.4°
+[pid_controller-9] [INFO] [1781442553.041982271] [pid_controller]: dist: 0.18  desired: -137.4°  theta: -139.9°  err: 2.5°
+[pid_controller-9] [INFO] [1781442553.051732775] [pid_controller]: dist: 0.18  desired: -137.4°  theta: -140.4°  err: 3.0°
+[pid_controller-9] [INFO] [1781442553.061378433] [pid_controller]: dist: 0.18  desired: -137.3°  theta: -140.0°  err: 2.7°
+[pid_controller-9] [INFO] [1781442553.071483686] [pid_controller]: dist: 0.18  desired: -137.3°  theta: -140.1°  err: 2.7°
+[pid_controller-9] [INFO] [1781442553.082377032] [pid_controller]: dist: 0.18  desired: -137.3°  theta: -140.6°  err: 3.3°
+[pid_controller-9] [INFO] [1781442553.095606842] [pid_controller]: dist: 0.17  desired: -137.2°  theta: -140.6°  err: 3.4°
+[navigator-10] [INFO] [1781442553.104133930] [navigator]: [PID_DRIVE] ArUco marker lost
+[pid_controller-9] [INFO] [1781442553.107475628] [pid_controller]: dist: 0.17  desired: -137.2°  theta: -141.1°  err: 3.9°
+[pid_controller-9] [INFO] [1781442553.117389053] [pid_controller]: dist: 0.17  desired: -137.1°  theta: -140.7°  err: 3.6°
+[pid_controller-9] [INFO] [1781442553.124623245] [pid_controller]: dist: 0.17  desired: -137.1°  theta: -140.8°  err: 3.7°
+[pid_controller-9] [INFO] [1781442553.134645527] [pid_controller]: dist: 0.17  desired: -137.1°  theta: -140.4°  err: 3.3°
+[pid_controller-9] [INFO] [1781442553.142461504] [pid_controller]: dist: 0.16  desired: -137.0°  theta: -140.9°  err: 3.9°
+[pid_controller-9] [INFO] [1781442553.151792466] [pid_controller]: dist: 0.16  desired: -137.0°  theta: -140.5°  err: 3.5°
+[pid_controller-9] [INFO] [1781442553.161308225] [pid_controller]: dist: 0.16  desired: -136.9°  theta: -141.0°  err: 4.1°
+[pid_controller-9] [INFO] [1781442553.174197975] [pid_controller]: dist: 0.16  desired: -136.9°  theta: -140.6°  err: 3.7°
+[pid_controller-9] [INFO] [1781442553.192834118] [pid_controller]: dist: 0.15  desired: -136.8°  theta: -141.1°  err: 4.4°
+[pid_controller-9] [INFO] [1781442553.203596627] [pid_controller]: dist: 0.15  desired: -136.7°  theta: -141.2°  err: 4.4°
+[pid_controller-9] [INFO] [1781442553.212672323] [pid_controller]: dist: 0.15  desired: -136.7°  theta: -140.8°  err: 4.1°
+[pid_controller-9] [INFO] [1781442553.229902962] [pid_controller]: dist: 0.15  desired: -136.6°  theta: -141.3°  err: 4.7°
+[pid_controller-9] [INFO] [1781442553.237113924] [pid_controller]: dist: 0.15  desired: -136.5°  theta: -141.3°  err: 4.7°
+[pid_controller-9] [INFO] [1781442553.241983993] [pid_controller]: dist: 0.14  desired: -136.5°  theta: -140.9°  err: 4.4°
+[pid_controller-9] [INFO] [1781442553.249906223] [pid_controller]: dist: 0.14  desired: -136.4°  theta: -141.0°  err: 4.6°
+[pid_controller-9] [INFO] [1781442553.254232685] [pid_controller]: dist: 0.14  desired: -136.3°  theta: -141.0°  err: 4.7°
+[pid_controller-9] [INFO] [1781442553.262026370] [pid_controller]: dist: 0.14  desired: -136.2°  theta: -141.1°  err: 4.8°
+[pid_controller-9] [INFO] [1781442553.272073340] [pid_controller]: dist: 0.13  desired: -136.2°  theta: -141.1°  err: 4.9°
+[pid_controller-9] [INFO] [1781442553.284335626] [pid_controller]: dist: 0.13  desired: -136.1°  theta: -141.2°  err: 5.1°
+[pid_controller-9] [INFO] [1781442553.292729430] [pid_controller]: dist: 0.13  desired: -136.0°  theta: -140.8°  err: 4.8°
+[pid_controller-9] [INFO] [1781442553.306505399] [pid_controller]: dist: 0.13  desired: -135.9°  theta: -141.3°  err: 5.4°
+[pid_controller-9] [INFO] [1781442553.315467447] [pid_controller]: dist: 0.13  desired: -135.8°  theta: -140.9°  err: 5.1°
+[pid_controller-9] [INFO] [1781442553.324000629] [pid_controller]: dist: 0.12  desired: -135.7°  theta: -141.4°  err: 5.7°
+[pid_controller-9] [INFO] [1781442553.333357061] [pid_controller]: dist: 0.12  desired: -135.7°  theta: -141.4°  err: 5.8°
+[pid_controller-9] [INFO] [1781442553.343168765] [pid_controller]: dist: 0.12  desired: -135.6°  theta: -141.0°  err: 5.5°
+[pid_controller-9] [INFO] [1781442553.351736375] [pid_controller]: dist: 0.12  desired: -135.4°  theta: -141.1°  err: 5.7°
+[pid_controller-9] [INFO] [1781442553.361787616] [pid_controller]: dist: 0.12  desired: -135.4°  theta: -141.1°  err: 5.8°
+[pid_controller-9] [INFO] [1781442553.371607028] [pid_controller]: dist: 0.11  desired: -135.2°  theta: -141.2°  err: 6.0°
+[pid_controller-9] [INFO] [1781442553.386598341] [pid_controller]: dist: 0.11  desired: -135.1°  theta: -140.8°  err: 5.7°
+[pid_controller-9] [INFO] [1781442553.402832341] [pid_controller]: dist: 0.11  desired: -135.0°  theta: -140.8°  err: 5.8°
+[pid_controller-9] [INFO] [1781442553.414044496] [pid_controller]: dist: 0.11  desired: -134.8°  theta: -140.9°  err: 6.0°
+[pid_controller-9] [INFO] [1781442553.420453407] [pid_controller]: dist: 0.10  desired: -134.8°  theta: -140.9°  err: 6.2°
+[pid_controller-9] [INFO] [1781442553.427218420] [pid_controller]: dist: 0.10  desired: -134.6°  theta: -141.0°  err: 6.4°
+[pid_controller-9] [INFO] [1781442553.434721316] [pid_controller]: dist: 0.10  desired: -134.4°  theta: -141.1°  err: 6.7°
+[pid_controller-9] [INFO] [1781442553.442341090] [pid_controller]: dist: 0.10  desired: -134.3°  theta: -141.1°  err: 6.8°
+[pid_controller-9] [INFO] [1781442553.452637441] [pid_controller]: dist: 0.10  desired: -134.2°  theta: -141.1°  err: 6.9°
+[pid_controller-9] [INFO] [1781442553.462452218] [pid_controller]: dist: 0.09  desired: -134.0°  theta: -140.7°  err: 6.7°
+[pid_controller-9] [INFO] [1781442553.471238010] [pid_controller]: dist: 0.09  desired: -133.8°  theta: -140.8°  err: 7.0°
+[pid_controller-9] [INFO] [1781442553.481892496] [pid_controller]: dist: 0.09  desired: -133.7°  theta: -140.8°  err: 7.1°
+[pid_controller-9] [INFO] [1781442553.496702450] [pid_controller]: dist: 0.09  desired: -133.5°  theta: -140.9°  err: 7.4°
+[pid_controller-9] [INFO] [1781442553.513350991] [pid_controller]: dist: 0.08  desired: -133.2°  theta: -141.0°  err: 7.8°
+[pid_controller-9] [INFO] [1781442553.519724328] [pid_controller]: dist: 0.08  desired: -133.2°  theta: -141.0°  err: 7.8°
+[pid_controller-9] [INFO] [1781442553.532212296] [pid_controller]: dist: 0.08  desired: -133.0°  theta: -140.6°  err: 7.6°
+[pid_controller-9] [INFO] [1781442553.536448079] [pid_controller]: dist: 0.08  desired: -132.6°  theta: -141.1°  err: 8.5°
+[pid_controller-9] [INFO] [1781442553.545059962] [pid_controller]: dist: 0.08  desired: -132.4°  theta: -140.7°  err: 8.3°
+[pid_controller-9] [INFO] [1781442553.551261210] [pid_controller]: dist: 0.07  desired: -132.2°  theta: -140.8°  err: 8.5°
+[odometry_node-8] [INFO] [1781442553.564107782] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-140.8 deg | source=encoder_fallback
+[pid_controller-9] [INFO] [1781442553.565631049] [pid_controller]: dist: 0.07  desired: -131.9°  theta: -140.8°  err: 8.9°
+[pid_controller-9] [INFO] [1781442553.571940582] [pid_controller]: dist: 0.07  desired: -131.7°  theta: -140.9°  err: 9.2°
+[pid_controller-9] [INFO] [1781442553.581430871] [pid_controller]: dist: 0.07  desired: -131.4°  theta: -140.5°  err: 9.0°
+[pid_controller-9] [INFO] [1781442553.591231638] [pid_controller]: dist: 0.07  desired: -131.2°  theta: -140.5°  err: 9.3°
+[pid_controller-9] [INFO] [1781442553.607298185] [pid_controller]: dist: 0.06  desired: -130.9°  theta: -140.1°  err: 9.2°
+[pid_controller-9] [INFO] [1781442553.627853960] [pid_controller]: dist: 0.06  desired: -130.5°  theta: -140.2°  err: 9.7°
+[pid_controller-9] [INFO] [1781442553.635769575] [pid_controller]: dist: 0.06  desired: -130.2°  theta: -140.2°  err: 10.0°
+[pid_controller-9] [INFO] [1781442553.649639974] [pid_controller]: dist: 0.06  desired: -130.1°  theta: -140.7°  err: 10.6°
+[pid_controller-9] [INFO] [1781442553.661591315] [pid_controller]: dist: 0.06  desired: -129.9°  theta: -138.9°  err: 9.0°
+[pid_controller-9] [INFO] [1781442553.666692953] [pid_controller]: dist: 0.06  desired: -130.0°  theta: -137.5°  err: 7.5°
+[pid_controller-9] [INFO] [1781442553.670718157] [pid_controller]: dist: 0.06  desired: -129.9°  theta: -136.2°  err: 6.3°
+[pid_controller-9] [INFO] [1781442553.674839667] [pid_controller]: dist: 0.06  desired: -129.8°  theta: -136.2°  err: 6.5°
+[pid_controller-9] [INFO] [1781442553.686207191] [pid_controller]: dist: 0.05  desired: -129.6°  theta: -136.3°  err: 6.7°
+[pid_controller-9] [INFO] [1781442553.698257701] [pid_controller]: dist: 0.05  desired: -129.3°  theta: -135.9°  err: 6.5°
+[pid_controller-9] [INFO] [1781442553.717569382] [pid_controller]: dist: 0.05  desired: -129.1°  theta: -135.5°  err: 6.4°
+[pid_controller-9] [INFO] [1781442553.723981573] [pid_controller]: dist: 0.05  desired: -128.9°  theta: -135.5°  err: 6.6°
+[pid_controller-9] [INFO] [1781442553.732911953] [pid_controller]: dist: 0.05  desired: -128.6°  theta: -135.1°  err: 6.5°
+[pid_controller-9] [INFO] [1781442553.743805455] [pid_controller]: dist: 0.04  desired: -128.2°  theta: -135.6°  err: 7.4°
+[pid_controller-9] [INFO] [1781442553.751544034] [pid_controller]: dist: 0.04  desired: -128.0°  theta: -135.6°  err: 7.6°
+[pid_controller-9] [INFO] [1781442553.761340789] [pid_controller]: dist: 0.04  desired: -127.9°  theta: -135.2°  err: 7.3°
+[pid_controller-9] [INFO] [1781442553.771195880] [pid_controller]: dist: 0.04  desired: -127.5°  theta: -134.8°  err: 7.3°
+[pid_controller-9] [INFO] [1781442553.784555537] [pid_controller]: dist: 0.04  desired: -127.2°  theta: -134.8°  err: 7.6°
+[pid_controller-9] [INFO] [1781442553.798088688] [pid_controller]: dist: 0.04  desired: -127.1°  theta: -134.4°  err: 7.3°
+[pid_controller-9] [INFO] [1781442553.814718114] [pid_controller]: dist: 0.04  desired: -126.7°  theta: -134.0°  err: 7.3°
+[pid_controller-9] [INFO] [1781442553.820156844] [pid_controller]: dist: 0.03  desired: -126.4°  theta: -134.0°  err: 7.7°
+[pid_controller-9] [INFO] [1781442553.824342834] [pid_controller]: dist: 0.03  desired: -126.0°  theta: -134.1°  err: 8.1°
+[pid_controller-9] [INFO] [1781442553.839118673] [pid_controller]: dist: 0.03  desired: -126.0°  theta: -133.2°  err: 7.1°
+[pid_controller-9] [INFO] [1781442553.848401978] [pid_controller]: dist: 0.03  desired: -125.9°  theta: -131.8°  err: 5.9°
+[pid_controller-9] [INFO] [1781442553.852978707] [pid_controller]: dist: 0.03  desired: -125.9°  theta: -131.8°  err: 5.9°
+[pid_controller-9] [INFO] [1781442553.861406470] [pid_controller]: dist: 0.03  desired: -125.5°  theta: -131.4°  err: 5.9°
+[pid_controller-9] [INFO] [1781442553.871113275] [pid_controller]: dist: 0.03  desired: -125.2°  theta: -131.5°  err: 6.3°
+[pid_controller-9] [INFO] [1781442553.885243212] [pid_controller]: dist: 0.03  desired: -125.1°  theta: -131.0°  err: 6.0°
+[pid_controller-9] [INFO] [1781442553.893028771] [pid_controller]: dist: 0.03  desired: -124.7°  theta: -131.1°  err: 6.3°
+[pid_controller-9] [INFO] [1781442553.903345488] [pid_controller]: dist: 0.02  desired: -124.2°  theta: -130.7°  err: 6.5°
+[pid_controller-9] [INFO] [1781442553.913160265] [pid_controller]: dist: 0.02  desired: -123.8°  theta: -130.7°  err: 6.9°
+[pid_controller-9] [INFO] [1781442553.922637064] [pid_controller]: dist: 0.02  desired: -123.3°  theta: -130.7°  err: 7.4°
+[pid_controller-9] [INFO] [1781442553.933654163] [pid_controller]: dist: 0.02  desired: -122.8°  theta: -130.8°  err: 7.9°
+[pid_controller-9] [INFO] [1781442553.944160884] [pid_controller]: dist: 0.02  desired: -122.6°  theta: -130.3°  err: 7.8°
+[pid_controller-9] [INFO] [1781442553.946278177] [pid_controller]: Goal reached!
+[navigator-10] [INFO] [1781442553.952312598] [navigator]: Drive done — starting odom spin -35.6°
+[navigator-10] [INFO] [1781442553.954853131] [navigator]: Odom spin: -35.6° from θ=-130.3°
+[navigator-10] [INFO] [1781442553.957247305] [navigator]: PID_DRIVE → ODOM_SPIN
+[navigator-10] [INFO] [1781442554.012705464] [navigator]: [ODOM_SPIN] target=-35.6°  turned=0.7°  remaining=-36.3°
+[odometry_node-8] [INFO] [1781442554.572979112] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-164.4 deg | source=encoder_fallback
+[navigator-10] [INFO] [1781442554.609153610] [navigator]: [ODOM_SPIN] ✓ done → LINE_FOLLOW_2
+[navigator-10] [INFO] [1781442554.612917246] [navigator]: ODOM_SPIN → LINE_FOLLOW_2
+[angular_tracker-6] [INFO] [1781442554.612924799] [angular_tracker]: Angular tracker enabled.
+[line_tracker-3] [INFO] [1781442554.613892062] [line_tracker]: Line tracker enabled.
+[odometry_node-8] [INFO] [1781442555.580161902] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-180.0 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442556.595096754] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-170.0 deg | source=encoder_fallback
+[line_tracker-3] [INFO] [1781442557.144152716] [line_tracker]: Line lost — publishing /line_tracker/lost
+[navigator-10] [INFO] [1781442557.144763929] [navigator]: Line lost — mission complete
+[navigator-10] [INFO] [1781442557.147905518] [navigator]: LINE_FOLLOW_2 → DONE
+[angular_tracker-6] [INFO] [1781442557.149394253] [angular_tracker]: Angular tracker disabled.
+[line_tracker-3] [INFO] [1781442557.165127823] [line_tracker]: Line tracker disabled.
+[odometry_node-8] [INFO] [1781442557.600032076] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442558.602625405] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442559.610853398] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442560.620056512] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442561.620078607] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442562.620951029] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442563.629992188] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442564.640341496] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442565.642271629] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442566.650106693] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442567.660379154] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442568.660155095] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442569.660181712] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442570.672569515] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442571.682964395] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442572.685287713] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442573.693474294] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442574.700180622] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442575.710688027] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442576.719894558] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442577.720208517] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442578.720594762] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442579.720545676] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442580.729854940] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442581.730009126] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442582.730012727] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442583.739699426] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442584.740633556] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442585.749976012] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442586.759820401] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442587.760241110] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442588.769874541] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442589.772504353] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442590.777157906] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442591.791830241] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+[odometry_node-8] [INFO] [1781442592.801921049] [odometry_node]: IMU step | heading=0.0 deg | gyro_z=0.00 deg/s | odom_theta=-163.4 deg | source=encoder_fallback
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[kinematics_node-7] WARNING: Carrier board is not from a Jetson Developer Kit.
+[kinematics_node-7] WARNNIG: Jetson.GPIO library has not been verified with this carrier board,
+[kinematics_node-7] WARNING: and in fact is unlikely to work correctly.
+[ERROR] [pid_controller-9]: process has died [pid 24097, exit code -2, cmd '/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/motor_control/lib/motor_control/pid_controller --ros-args -r __node:=pid_controller'].
+[ERROR] [kinematics_node-7]: process has died [pid 24093, exit code -2, cmd '/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/motor_control/lib/motor_control/kinematics_node --ros-args -r __node:=kinematics_node --params-file /home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/motor_control/share/motor_control/config/kinematics.yaml'].
+[ERROR] [angular_tracker-6]: process has died [pid 24091, exit code -2, cmd '/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/line_following/lib/line_following/angular_tracker --ros-args -r __node:=angular_tracker'].
+[ERROR] [odometry_node-8]: process has died [pid 24095, exit code -2, cmd '/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/motor_control/lib/motor_control/odometry_node --ros-args -r __node:=odometry_node --params-file /home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/motor_control/share/motor_control/config/kinematics.yaml'].
+[kinematics_node-7] EXECUTABLE: /usr/bin/python3
+[kinematics_node-7] PATHS: ['/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/motor_control/lib/motor_control', '/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/motor_control/lib/python3.8/site-packages', '/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/line_following/lib/python3.8/site-packages', '/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/color_detection_mode/lib/python3.8/site-packages', '/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/jetson_camera_interfaces/lib/python3.8/site-packages', '/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/jetson_camera/lib/python3.8/site-packages', '/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/goal_navigation/lib/python3.8/site-packages', '/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/aruco_parking/lib/python3.8/site-packages', '/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/Adafruit_SSD1306/lib/python3.8/site-packages', '/opt/ros/foxy/lib/python3.8/site-packages', '/usr/lib/python38.zip', '/usr/lib/python3.8', '/usr/lib/python3.8/lib-dynload', '/home/jetson/.local/lib/python3.8/site-packages', '/usr/local/lib/python3.8/dist-packages', '/usr/lib/python3/dist-packages', '/usr/lib/python3.8/dist-packages']
+[odometry_node-8] WARNING: Carrier board is not from a Jetson Developer Kit.
+[odometry_node-8] WARNNIG: Jetson.GPIO library has not been verified with this carrier board,
+[odometry_node-8] WARNING: and in fact is unlikely to work correctly.
+[odometry_node-8] /usr/lib/python3/dist-packages/Jetson/GPIO/gpio.py:383: RuntimeWarning: This channel is already in use, continuing anyway. Use GPIO.setwarnings(False) to disable warnings
+[odometry_node-8]   warnings.warn(
+[ERROR] [processing_node-2]: process has died [pid 24083, exit code -2, cmd '/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/jetson_camera/lib/jetson_camera/processing_node --ros-args -r __node:=image_processor --params-file /home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/jetson_camera/share/jetson_camera/config/parameters.yaml'].
+[ERROR] [go_stop_node-5]: process has died [pid 24089, exit code -2, cmd '/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/color_detection_mode/lib/color_detection_mode/go_stop_node --ros-args -r __node:=go_stop_node --params-file /tmp/launch_params_zmjo0dkz'].
+[ERROR] [aruco_detector_node-4]: process has died [pid 24087, exit code -2, cmd '/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/aruco_parking/lib/aruco_parking/aruco_detector_node --ros-args -r __node:=aruco_detector --params-file /home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/aruco_parking/share/aruco_parking/config/aruco_parking.yaml --params-file /tmp/launch_params_d_0pcjaw'].
+[ERROR] [line_tracker-3]: process has died [pid 24085, exit code -2, cmd '/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/line_following/lib/line_following/line_tracker --ros-args -r __node:=line_tracker --params-file /home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/line_following/share/line_following/config/line_following.yaml --params-file /tmp/launch_params_7c__1_ue'].
+[navigator-10] Traceback (most recent call last):
+[navigator-10]   File "/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/line_following/lib/line_following/navigator", line 33, in <module>
+[navigator-10]     sys.exit(load_entry_point('line-following==0.0.0', 'console_scripts', 'navigator')())
+[navigator-10]   File "/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/line_following/lib/python3.8/site-packages/line_following/navigator_node.py", line 699, in main
+[navigator-10]     node.destroy_node()
+[navigator-10]   File "/opt/ros/foxy/lib/python3.8/site-packages/rclpy/node.py", line 1533, in destroy_node
+[navigator-10]     self.handle.destroy()
+[navigator-10]   File "/opt/ros/foxy/lib/python3.8/site-packages/rclpy/handle.py", line 95, in destroy
+[navigator-10]     self.__destroy()
+[navigator-10]   File "/opt/ros/foxy/lib/python3.8/site-packages/rclpy/handle.py", line 138, in __destroy
+[navigator-10]     _rclpy_capsule.rclpy_pycapsule_destroy(self.__capsule)
+[navigator-10] KeyboardInterrupt
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[ERROR] [navigator-10]: process has died [pid 24099, exit code -2, cmd '/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/line_following/lib/line_following/navigator --ros-args -r __node:=navigator'].
+[publisher_node-1] GST_ARGUS: Cleaning up
+[publisher_node-1] CONSUMER: Done Success
+[publisher_node-1] GST_ARGUS: Done Success
+[publisher_node-1] Traceback (most recent call last):
+[publisher_node-1]   File "/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/jetson_camera/lib/jetson_camera/publisher_node", line 33, in <module>
+[publisher_node-1]     sys.exit(load_entry_point('jetson-camera==0.0.0', 'console_scripts', 'publisher_node')())
+[publisher_node-1]   File "/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/jetson_camera/lib/python3.8/site-packages/jetson_camera/publisher_node.py", line 112, in main
+[publisher_node-1]     node.cap.release()
+[publisher_node-1] KeyboardInterrupt
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[ERROR] [publisher_node-1]: process has died [pid 24081, exit code -2, cmd '/home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/jetson_camera/lib/jetson_camera/publisher_node --ros-args -r __node:=camera_publisher --params-file /home/jetson/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4/install/jetson_camera/share/jetson_camera/config/parameters.yaml'].
+Task exception was never retrieved
+future: <Task finished name='Task-629' coro=<LaunchService._process_one_event() done, defined at /opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py:226> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 360, in run
+    return loop.run_until_complete(run_async_task)
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 603, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 570, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 1859, in _run_once
+    handle._run()
+  File "/usr/lib/python3.8/asyncio/events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 228, in _process_one_event
+    await self.__process_event(next_event)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 249, in __process_event
+    self.__context._pop_locals()
+  File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_context.py", line 111, in _pop_locals
+    self.__locals = self.__locals_stack.pop()
+KeyboardInterrupt
+^C
+jetson@nano:~/EVC/workshops/final_project_map_v3/final_project_map_v2/final_project_v4$ 
+

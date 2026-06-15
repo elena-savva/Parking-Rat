@@ -1,0 +1,4 @@
+[console_scripts]
+color_detection_node = color_detection_mode.color_detection_node:main
+go_stop_node = color_detection_mode.go_stop_node:main
+

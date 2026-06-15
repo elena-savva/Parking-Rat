@@ -1,0 +1,4 @@
+source;share/jetson_camera_interfaces/local_setup.bash
+source;share/jetson_camera_interfaces/local_setup.dsv
+source;share/jetson_camera_interfaces/local_setup.sh
+source;share/jetson_camera_interfaces/local_setup.zsh

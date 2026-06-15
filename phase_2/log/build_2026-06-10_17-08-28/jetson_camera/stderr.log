@@ -1,0 +1,5 @@
+  File "/home/jetson/EVC/workshops/final_project_map_v2/final_project_v4/install/jetson_camera/lib/python3.8/site-packages/jetson_camera/publisher_node.py", line 1
+    ```
+    ^
+SyntaxError: invalid syntax
+

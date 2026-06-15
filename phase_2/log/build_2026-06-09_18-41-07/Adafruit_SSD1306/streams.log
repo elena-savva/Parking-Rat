@@ -1,0 +1,18 @@
+[4.010s] Invoking command in '/home/jetson/EVC/workshops/final_project_v4/drivers/display/Adafruit_Python_SSD1306': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v4/build/Adafruit_SSD1306/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v4/install/Adafruit_SSD1306/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/Adafruit_SSD1306 build --build-base /home/jetson/EVC/workshops/final_project_v4/build/Adafruit_SSD1306/build install --record /home/jetson/EVC/workshops/final_project_v4/build/Adafruit_SSD1306/install.log --single-version-externally-managed
+[5.310s] running egg_info
+[5.315s] writing ../../../build/Adafruit_SSD1306/Adafruit_SSD1306.egg-info/PKG-INFO
+[5.318s] writing dependency_links to ../../../build/Adafruit_SSD1306/Adafruit_SSD1306.egg-info/dependency_links.txt
+[5.320s] writing requirements to ../../../build/Adafruit_SSD1306/Adafruit_SSD1306.egg-info/requires.txt
+[5.321s] writing top-level names to ../../../build/Adafruit_SSD1306/Adafruit_SSD1306.egg-info/top_level.txt
+[5.335s] reading manifest file '../../../build/Adafruit_SSD1306/Adafruit_SSD1306.egg-info/SOURCES.txt'
+[5.339s] writing manifest file '../../../build/Adafruit_SSD1306/Adafruit_SSD1306.egg-info/SOURCES.txt'
+[5.340s] running build
+[5.341s] running build_py
+[5.343s] running install
+[5.347s] running install_lib
+[5.354s] running install_egg_info
+[5.363s] removing '/home/jetson/EVC/workshops/final_project_v4/install/Adafruit_SSD1306/lib/python3.8/site-packages/Adafruit_SSD1306-1.6.2-py3.8.egg-info' (and everything under it)
+[5.365s] Copying ../../../build/Adafruit_SSD1306/Adafruit_SSD1306.egg-info to /home/jetson/EVC/workshops/final_project_v4/install/Adafruit_SSD1306/lib/python3.8/site-packages/Adafruit_SSD1306-1.6.2-py3.8.egg-info
+[5.369s] running install_scripts
+[5.453s] writing list of installed files to '/home/jetson/EVC/workshops/final_project_v4/build/Adafruit_SSD1306/install.log'
+[5.916s] Invoked command in '/home/jetson/EVC/workshops/final_project_v4/drivers/display/Adafruit_Python_SSD1306' returned '0': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v4/build/Adafruit_SSD1306/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v4/install/Adafruit_SSD1306/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/Adafruit_SSD1306 build --build-base /home/jetson/EVC/workshops/final_project_v4/build/Adafruit_SSD1306/build install --record /home/jetson/EVC/workshops/final_project_v4/build/Adafruit_SSD1306/install.log --single-version-externally-managed

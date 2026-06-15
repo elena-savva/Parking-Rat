@@ -1,0 +1,41 @@
+[4.527s] Invoking command in '/home/jetson/EVC/workshops/final_project_v5/behaviors/aruco_parking/aruco_parking': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/aruco_parking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/aruco_parking build --build-base /home/jetson/EVC/workshops/final_project_v5/build/aruco_parking/build install --record /home/jetson/EVC/workshops/final_project_v5/build/aruco_parking/install.log --single-version-externally-managed install_data
+[6.296s] running egg_info
+[6.299s] creating ../../../build/aruco_parking/aruco_parking.egg-info
+[6.299s] writing ../../../build/aruco_parking/aruco_parking.egg-info/PKG-INFO
+[6.300s] writing dependency_links to ../../../build/aruco_parking/aruco_parking.egg-info/dependency_links.txt
+[6.301s] writing entry points to ../../../build/aruco_parking/aruco_parking.egg-info/entry_points.txt
+[6.301s] writing requirements to ../../../build/aruco_parking/aruco_parking.egg-info/requires.txt
+[6.302s] writing top-level names to ../../../build/aruco_parking/aruco_parking.egg-info/top_level.txt
+[6.311s] writing manifest file '../../../build/aruco_parking/aruco_parking.egg-info/SOURCES.txt'
+[6.320s] reading manifest file '../../../build/aruco_parking/aruco_parking.egg-info/SOURCES.txt'
+[6.326s] writing manifest file '../../../build/aruco_parking/aruco_parking.egg-info/SOURCES.txt'
+[6.326s] running build
+[6.327s] running build_py
+[6.328s] creating /home/jetson/EVC/workshops/final_project_v5/build/aruco_parking/build
+[6.328s] creating /home/jetson/EVC/workshops/final_project_v5/build/aruco_parking/build/lib
+[6.328s] creating /home/jetson/EVC/workshops/final_project_v5/build/aruco_parking/build/lib/aruco_parking
+[6.329s] copying aruco_parking/aruco_detector_node.py -> /home/jetson/EVC/workshops/final_project_v5/build/aruco_parking/build/lib/aruco_parking
+[6.331s] copying aruco_parking/__init__.py -> /home/jetson/EVC/workshops/final_project_v5/build/aruco_parking/build/lib/aruco_parking
+[6.332s] running install
+[6.337s] running install_lib
+[6.342s] creating /home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/lib/python3.8/site-packages/aruco_parking
+[6.344s] copying /home/jetson/EVC/workshops/final_project_v5/build/aruco_parking/build/lib/aruco_parking/aruco_detector_node.py -> /home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/lib/python3.8/site-packages/aruco_parking
+[6.346s] copying /home/jetson/EVC/workshops/final_project_v5/build/aruco_parking/build/lib/aruco_parking/__init__.py -> /home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/lib/python3.8/site-packages/aruco_parking
+[6.349s] byte-compiling /home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/lib/python3.8/site-packages/aruco_parking/aruco_detector_node.py to aruco_detector_node.cpython-38.pyc
+[6.359s] byte-compiling /home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/lib/python3.8/site-packages/aruco_parking/__init__.py to __init__.cpython-38.pyc
+[6.360s] running install_data
+[6.362s] creating /home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/ament_index
+[6.363s] creating /home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/ament_index/resource_index
+[6.364s] creating /home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/ament_index/resource_index/packages
+[6.365s] copying resource/aruco_parking -> /home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/ament_index/resource_index/packages
+[6.367s] copying package.xml -> /home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/aruco_parking
+[6.369s] creating /home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/aruco_parking/config
+[6.372s] copying config/aruco_parking.yaml -> /home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/aruco_parking/config
+[6.374s] creating /home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/aruco_parking/launch
+[6.376s] copying launch/aruco_parking.launch.py -> /home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/share/aruco_parking/launch
+[6.382s] running install_egg_info
+[6.390s] Copying ../../../build/aruco_parking/aruco_parking.egg-info to /home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/lib/python3.8/site-packages/aruco_parking-0.0.0-py3.8.egg-info
+[6.396s] running install_scripts
+[6.482s] Installing aruco_detector_node script to /home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/lib/aruco_parking
+[6.485s] writing list of installed files to '/home/jetson/EVC/workshops/final_project_v5/build/aruco_parking/install.log'
+[6.632s] Invoked command in '/home/jetson/EVC/workshops/final_project_v5/behaviors/aruco_parking/aruco_parking' returned '0': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/aruco_parking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/aruco_parking/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/aruco_parking build --build-base /home/jetson/EVC/workshops/final_project_v5/build/aruco_parking/build install --record /home/jetson/EVC/workshops/final_project_v5/build/aruco_parking/install.log --single-version-externally-managed install_data

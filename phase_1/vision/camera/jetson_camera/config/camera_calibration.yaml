@@ -1,0 +1,32 @@
+board_cols: 8
+board_rows: 6
+square_size_mm: 25.0
+image_width: 640
+image_height: 480
+valid_images:
+- 1.png
+- 3.png
+- 5.png
+- 7.png
+- 8.png
+- 11.png
+- 20.png
+- 23.png
+camera_matrix:
+- - 388.8050318501275
+  - 0.0
+  - 321.4769366114376
+- - 0.0
+  - 521.4749597093411
+  - 239.95349602157592
+- - 0.0
+  - 0.0
+  - 1.0
+dist_coeffs:
+- - -0.3268898943649612
+  - 0.12238891937488032
+  - -0.0037515927362927913
+  - 0.0016705227414213388
+  - -0.018178994703657823
+rms_reprojection_error: 0.7281574464455115
+mean_reprojection_error_px: 0.10390378221026736

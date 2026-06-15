@@ -1,0 +1,20 @@
+# go_stop.yaml
+# Configuration for the go_stop_node (green = GO, pink/magenta = STOP).
+# No movement is commanded — display only.
+
+go_stop_node:
+  ros__parameters:
+    input_topic:      /camera/image_raw
+    output_topic:     /robot/debug/compressed
+    result_topic:     /color_detection/result
+
+    # Fraction of image height defining the search region.
+    # 0.20 top to 0.80 bottom = middle 60% of the frame.
+    # Adjust if the color target appears higher or lower in the camera view.
+    roi_top_frac:    0.50
+    roi_bottom_frac: 1.00
+
+    # Minimum blob area in pixels to count as a real detection.
+    # Increase if you get false positives from small colored objects.
+    # Decrease if the color target is small in the frame.
+    min_area: 150

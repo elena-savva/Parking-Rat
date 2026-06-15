@@ -1,0 +1,46 @@
+kinematics_node:
+  ros__parameters:
+    gain: 0.478 #0.2765
+    trim: -0.08 #-0.38
+    baseline: 0.185        # your measured value
+    wheel_radius: 0.0325   # measure this too if you can
+    ticks_per_rev: 137.0   # this one is fixed by the encoder hardware
+    cmd_timeout_sec: 0.5
+
+odometry_node:
+  ros__parameters:
+    baseline: 0.185
+    wheel_radius: 0.0325
+    ticks_per_rev: 137.0
+    use_imu_heading: true
+    imu_topic: /imu/data_raw
+    imu_timeout_sec: 0.5
+    log_imu_debug: true
+    imu_debug_log_period_sec: 1.0
+
+imu_reader_node:
+  ros__parameters:
+    imu_topic: /imu/data_raw
+    i2c_bus: 1
+    device_address: 104
+    publish_rate_hz: 20.0
+    calibrate_on_start: true
+    calibration_samples: 100
+    log_xyz: true
+    xyz_log_period_sec: 1.0
+    error_log_period_sec: 1.0
+
+tof_reader_node:
+  ros__parameters:
+    tof_topic: /tof/front
+    i2c_bus: 1
+    device_address: 41
+    publish_rate_hz: 8.0
+    measurement_delay_sec: 0.02
+    min_range_m: 0.03
+    max_range_m: 2.0
+    log_distance: true
+    distance_log_period_sec: 1.0
+    error_log_period_sec: 1.0
+    
+   

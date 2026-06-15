@@ -1,0 +1,5 @@
+kinematics_node:
+  ros__parameters:
+    gain: 0.3219
+    trim: -0.2400
+

@@ -1,0 +1,39 @@
+[8.727s] Invoking command in '/home/jetson/EVC/workshops/final_project_v5/motion/control/motor_control': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/motor_control build --build-base /home/jetson/EVC/workshops/final_project_v5/build/motor_control/build install --record /home/jetson/EVC/workshops/final_project_v5/build/motor_control/install.log --install-scripts $base/lib/motor_control --single-version-externally-managed install_data
+[10.924s] /usr/local/lib/python3.8/dist-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[10.924s]   warnings.warn(
+[11.208s] running egg_info
+[11.209s] writing ../../../build/motor_control/motor_control.egg-info/PKG-INFO
+[11.209s] writing dependency_links to ../../../build/motor_control/motor_control.egg-info/dependency_links.txt
+[11.210s] writing entry points to ../../../build/motor_control/motor_control.egg-info/entry_points.txt
+[11.211s] writing requirements to ../../../build/motor_control/motor_control.egg-info/requires.txt
+[11.216s] writing top-level names to ../../../build/motor_control/motor_control.egg-info/top_level.txt
+[11.233s] reading manifest file '../../../build/motor_control/motor_control.egg-info/SOURCES.txt'
+[11.250s] writing manifest file '../../../build/motor_control/motor_control.egg-info/SOURCES.txt'
+[11.250s] running build
+[11.250s] running build_py
+[11.251s] copying motor_control/imu_reader_node.py -> /home/jetson/EVC/workshops/final_project_v5/build/motor_control/build/lib/motor_control
+[11.258s] copying motor_control/odometry_node.py -> /home/jetson/EVC/workshops/final_project_v5/build/motor_control/build/lib/motor_control
+[11.259s] copying motor_control/tof_reader_node.py -> /home/jetson/EVC/workshops/final_project_v5/build/motor_control/build/lib/motor_control
+[11.262s] running install
+[11.266s] running install_lib
+[11.273s] copying /home/jetson/EVC/workshops/final_project_v5/build/motor_control/build/lib/motor_control/imu_reader_node.py -> /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages/motor_control
+[11.274s] copying /home/jetson/EVC/workshops/final_project_v5/build/motor_control/build/lib/motor_control/odometry_node.py -> /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages/motor_control
+[11.274s] copying /home/jetson/EVC/workshops/final_project_v5/build/motor_control/build/lib/motor_control/tof_reader_node.py -> /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages/motor_control
+[11.278s] byte-compiling /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages/motor_control/imu_reader_node.py to imu_reader_node.cpython-38.pyc
+[11.290s] byte-compiling /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages/motor_control/odometry_node.py to odometry_node.cpython-38.pyc
+[11.291s] byte-compiling /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages/motor_control/tof_reader_node.py to tof_reader_node.cpython-38.pyc
+[11.297s] running install_data
+[11.299s] copying config/kinematics.yaml -> /home/jetson/EVC/workshops/final_project_v5/install/motor_control/share/motor_control/config
+[11.299s] running install_egg_info
+[11.324s] removing '/home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages/motor_control-0.0.0-py3.8.egg-info' (and everything under it)
+[11.326s] Copying ../../../build/motor_control/motor_control.egg-info to /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages/motor_control-0.0.0-py3.8.egg-info
+[11.341s] running install_scripts
+[11.448s] Installing hand_follower script to /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/motor_control
+[11.450s] Installing imu_reader_node script to /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/motor_control
+[11.452s] Installing kinematics_node script to /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/motor_control
+[11.454s] Installing movement_node script to /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/motor_control
+[11.455s] Installing odometry_node script to /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/motor_control
+[11.457s] Installing pid_controller script to /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/motor_control
+[11.458s] Installing tof_reader_node script to /home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/motor_control
+[11.461s] writing list of installed files to '/home/jetson/EVC/workshops/final_project_v5/build/motor_control/install.log'
+[12.747s] Invoked command in '/home/jetson/EVC/workshops/final_project_v5/motion/control/motor_control' returned '0': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v5/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v5/install/motor_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/motor_control build --build-base /home/jetson/EVC/workshops/final_project_v5/build/motor_control/build install --record /home/jetson/EVC/workshops/final_project_v5/build/motor_control/install.log --install-scripts $base/lib/motor_control --single-version-externally-managed install_data

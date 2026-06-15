@@ -1,0 +1,78 @@
+[4.923s] Invoking command in '/home/jetson/EVC/workshops/final_project_v3/motion/control/motor_control': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v3/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/motor_control build --build-base /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build install --record /home/jetson/EVC/workshops/final_project_v3/build/motor_control/install.log --install-scripts $base/lib/motor_control --single-version-externally-managed install_data
+[6.101s] /usr/local/lib/python3.8/dist-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[6.101s]   warnings.warn(
+[6.260s] running egg_info
+[6.263s] creating ../../../build/motor_control/motor_control.egg-info
+[6.263s] writing ../../../build/motor_control/motor_control.egg-info/PKG-INFO
+[6.264s] writing dependency_links to ../../../build/motor_control/motor_control.egg-info/dependency_links.txt
+[6.265s] writing entry points to ../../../build/motor_control/motor_control.egg-info/entry_points.txt
+[6.266s] writing requirements to ../../../build/motor_control/motor_control.egg-info/requires.txt
+[6.266s] writing top-level names to ../../../build/motor_control/motor_control.egg-info/top_level.txt
+[6.273s] writing manifest file '../../../build/motor_control/motor_control.egg-info/SOURCES.txt'
+[6.280s] reading manifest file '../../../build/motor_control/motor_control.egg-info/SOURCES.txt'
+[6.285s] writing manifest file '../../../build/motor_control/motor_control.egg-info/SOURCES.txt'
+[6.286s] running build
+[6.286s] running build_py
+[6.287s] creating /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build
+[6.287s] creating /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib
+[6.288s] creating /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control
+[6.288s] copying motor_control/Adafruit_PWM_Servo_Driver.py -> /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control
+[6.289s] copying motor_control/kinematics_node.py -> /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control
+[6.290s] copying motor_control/hat.py -> /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control
+[6.292s] copying motor_control/encoderDriver.py -> /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control
+[6.293s] copying motor_control/motorDriver.py -> /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control
+[6.294s] copying motor_control/hand_follower_node.py -> /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control
+[6.296s] copying motor_control/Adafruit_I2C.py -> /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control
+[6.298s] copying motor_control/pid_controller_node.py -> /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control
+[6.301s] copying motor_control/odometry_node.py -> /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control
+[6.303s] copying motor_control/visualizer_node.py -> /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control
+[6.304s] copying motor_control/__init__.py -> /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control
+[6.306s] copying motor_control/movement_node.py -> /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control
+[6.309s] running install
+[6.314s] running install_lib
+[6.318s] creating /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control
+[6.318s] copying /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control/Adafruit_PWM_Servo_Driver.py -> /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control
+[6.319s] copying /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control/kinematics_node.py -> /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control
+[6.320s] copying /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control/hat.py -> /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control
+[6.320s] copying /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control/encoderDriver.py -> /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control
+[6.321s] copying /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control/motorDriver.py -> /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control
+[6.322s] copying /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control/hand_follower_node.py -> /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control
+[6.323s] copying /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control/Adafruit_I2C.py -> /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control
+[6.324s] copying /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control/pid_controller_node.py -> /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control
+[6.325s] copying /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control/odometry_node.py -> /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control
+[6.325s] copying /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control/visualizer_node.py -> /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control
+[6.326s] copying /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control/__init__.py -> /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control
+[6.327s] copying /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build/lib/motor_control/movement_node.py -> /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control
+[6.418s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control/Adafruit_PWM_Servo_Driver.py to Adafruit_PWM_Servo_Driver.cpython-38.pyc
+[6.422s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control/kinematics_node.py to kinematics_node.cpython-38.pyc
+[6.427s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control/hat.py to hat.cpython-38.pyc
+[6.441s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control/encoderDriver.py to encoderDriver.cpython-38.pyc
+[6.441s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control/motorDriver.py to motorDriver.cpython-38.pyc
+[6.447s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control/hand_follower_node.py to hand_follower_node.cpython-38.pyc
+[6.448s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control/Adafruit_I2C.py to Adafruit_I2C.cpython-38.pyc
+[6.463s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control/pid_controller_node.py to pid_controller_node.cpython-38.pyc
+[6.466s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control/odometry_node.py to odometry_node.cpython-38.pyc
+[6.470s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control/visualizer_node.py to visualizer_node.cpython-38.pyc
+[6.473s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control/__init__.py to __init__.cpython-38.pyc
+[6.473s] byte-compiling /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control/movement_node.py to movement_node.cpython-38.pyc
+[6.480s] running install_data
+[6.481s] creating /home/jetson/EVC/workshops/final_project_v3/install/motor_control/share/ament_index
+[6.482s] creating /home/jetson/EVC/workshops/final_project_v3/install/motor_control/share/ament_index/resource_index
+[6.482s] creating /home/jetson/EVC/workshops/final_project_v3/install/motor_control/share/ament_index/resource_index/packages
+[6.483s] copying resource/motor_control -> /home/jetson/EVC/workshops/final_project_v3/install/motor_control/share/ament_index/resource_index/packages
+[6.484s] copying package.xml -> /home/jetson/EVC/workshops/final_project_v3/install/motor_control/share/motor_control
+[6.484s] creating /home/jetson/EVC/workshops/final_project_v3/install/motor_control/share/motor_control/config
+[6.485s] copying config/kinematics.yaml -> /home/jetson/EVC/workshops/final_project_v3/install/motor_control/share/motor_control/config
+[6.486s] creating /home/jetson/EVC/workshops/final_project_v3/install/motor_control/share/motor_control/launch
+[6.486s] copying launch/kinematics_only.launch.py -> /home/jetson/EVC/workshops/final_project_v3/install/motor_control/share/motor_control/launch
+[6.489s] copying launch/motor_control.launch.py -> /home/jetson/EVC/workshops/final_project_v3/install/motor_control/share/motor_control/launch
+[6.489s] running install_egg_info
+[6.496s] Copying ../../../build/motor_control/motor_control.egg-info to /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages/motor_control-0.0.0-py3.8.egg-info
+[6.500s] running install_scripts
+[6.589s] Installing hand_follower script to /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/motor_control
+[6.590s] Installing kinematics_node script to /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/motor_control
+[6.591s] Installing movement_node script to /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/motor_control
+[6.591s] Installing odometry_node script to /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/motor_control
+[6.592s] Installing pid_controller script to /home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/motor_control
+[6.593s] writing list of installed files to '/home/jetson/EVC/workshops/final_project_v3/build/motor_control/install.log'
+[6.704s] Invoked command in '/home/jetson/EVC/workshops/final_project_v3/motion/control/motor_control' returned '0': PYTHONPATH=/home/jetson/EVC/workshops/final_project_v3/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/EVC/workshops/final_project_v3/install/motor_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/motor_control build --build-base /home/jetson/EVC/workshops/final_project_v3/build/motor_control/build install --record /home/jetson/EVC/workshops/final_project_v3/build/motor_control/install.log --install-scripts $base/lib/motor_control --single-version-externally-managed install_data

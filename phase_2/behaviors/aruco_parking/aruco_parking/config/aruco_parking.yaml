@@ -1,0 +1,19 @@
+/**:
+  ros__parameters:
+
+    # ── Input topic ──────────────────────────────────────────────────────────
+    # Compressed image published by jetson_camera processing_node
+    input_topic:  /camera/image_raw
+    debug_topic:  /robot/debug/compressed
+
+    # ── ArUco marker ─────────────────────────────────────────────────────────
+    # Physical side length of the printed marker (metres)
+    marker_size_m: 0.067
+    # DICT_ARUCO_ORIGINAL = 16
+    dict_id: 16
+
+    # ── Camera intrinsics (from calibration/camera/output/camera_calibration.yaml) ──
+    fx: 388.805
+    fy: 521.475
+    cx: 321.477
+    cy: 239.953

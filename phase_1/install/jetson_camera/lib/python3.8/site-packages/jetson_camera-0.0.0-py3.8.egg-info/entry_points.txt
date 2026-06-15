@@ -1,0 +1,7 @@
+[console_scripts]
+calibrate_camera = jetson_camera.calibrate_camera:main
+pair_subscriber_node = jetson_camera.pair_subscriber_node:main
+processing_node = jetson_camera.processing_node:main
+publisher_node = jetson_camera.publisher_node:main
+subscriber_node = jetson_camera.subscriber_node:main
+

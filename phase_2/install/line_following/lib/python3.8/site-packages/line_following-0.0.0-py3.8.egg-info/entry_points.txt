@@ -1,0 +1,5 @@
+[console_scripts]
+angular_tracker = line_following.angular_tracker_node:main
+line_tracker = line_following.line_tracker_node:main
+navigator = line_following.navigator_node:main
+
