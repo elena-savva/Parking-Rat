@@ -1,5 +1,3 @@
-working implementation, the kp values are changed here but you can see what they were with the working implementation, 1.5 and 1.2 is what a working implementation had
-
 #!/usr/bin/env python3
 """
 navigator_node.py — mission state machine
@@ -639,6 +637,7 @@ class NavigatorNode(Node):
             self._run_centering()
 
         elif self.state == S.CENTER_TARGET:
+            self._after_center = S.APPROACH_TARGET
             self._seek_lost_ticks = 0
             self._seek_retries    = 0
             self._run_centering()
